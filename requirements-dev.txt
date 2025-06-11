@@ -1,0 +1,38 @@
+# Prior Authorization Form Filling Pipeline - Development Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Include core requirements
+-r requirements.txt
+
+# Testing frameworks
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+pytest-xdist>=3.0.0
+
+# Code formatting and linting
+black>=22.0.0
+flake8>=5.0.0
+isort>=5.10.0
+autopep8>=2.0.0
+
+# Type checking
+mypy>=0.991
+types-PyYAML>=6.0.0
+types-requests>=2.28.0
+
+# Code quality and security
+bandit>=1.7.0
+safety>=2.3.0
+pre-commit>=2.20.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.2.0
+myst-parser>=0.18.0
+
+# Development utilities
+jupyter>=1.0.0
+ipython>=8.0.0
+matplotlib>=3.5.0
+seaborn>=0.11.0 

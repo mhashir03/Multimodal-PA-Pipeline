@@ -1,0 +1,32 @@
+{
+  "confidence_threshold": 0.6,
+  "use_advanced_ocr": true,
+  "generate_comprehensive_reports": true,
+  "generate_missing_fields_reports": true,
+  "save_intermediate_files": true,
+  "log_file": "logs/pa_pipeline.log",
+  "tesseract_config": "--psm 6 -c tessedit_char_whitelist=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz .,()-/:",
+  "max_processing_time": 300,
+  "retry_attempts": 3,
+  "output_format": "pdf",
+  "flatten_output": true,
+  "debug_mode": false,
+  "ocr_preprocessing": {
+    "denoise": true,
+    "threshold": true,
+    "resize_factor": 1.5,
+    "blur_kernel_size": 3
+  },
+  "field_matching": {
+    "fuzzy_match_threshold": 0.8,
+    "semantic_match_threshold": 0.7,
+    "use_semantic_matching": true
+  },
+  "form_filling": {
+    "validate_field_types": true,
+    "handle_checkboxes": true,
+    "process_conditional_fields": true,
+    "overlay_font_size": 10,
+    "overlay_font_color": "black"
+  }
+} 
