@@ -135,8 +135,16 @@ def extract_medical_patterns() -> Dict[str, Any]:
     patterns = {
         # Patient Information - Enhanced patterns based on actual medical documents
         "patient_name": {
-            "pattern": r"(?:patient[:\s]*name[:\s]*|patient[:\s]*|name[:\s]*)[:]?\s*([A-Za-z]+[,]?\s*[A-Za-z]+(?:[A-Za-z\s,.-]{0,30})?)",
+            "pattern": r"(?:Patient[:\s]*Name|Name)[:\s]*([A-Z][a-z]+,\s*[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*(?:DOB|Date|MRN|\n|$)",
             "weight": 3.0
+        },
+        "patient_name_alt": {
+            "pattern": r"([A-Z][a-z]+,\s*[A-Z][a-z]+)\s*\([^)]*MRN[^)]*\)",
+            "weight": 3.5
+        },
+        "patient_name_simple": {
+            "pattern": r"^([A-Z][a-z]+,\s*[A-Z][a-z]+)\s*(?:DOB|Date|\d{2}/\d{2}/\d{4})",
+            "weight": 3.2
         },
         "dob": {
             "pattern": r"(?:DOB|date[:\s]*of[:\s]*birth|birth[:\s]*date|born)[:\s]*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})",
@@ -169,12 +177,16 @@ def extract_medical_patterns() -> Dict[str, Any]:
         
         # Clinical Information - Enhanced for medical records
         "diagnosis": {
-            "pattern": r"(?:diagnosis|dx|condition|disease|principal[:\s]*problem)[:\s]*([A-Za-z][A-Za-z\s,.-]{5,100}?)(?:\n|$|\.|\()",
+            "pattern": r"(?:Primary\s*diagnosis|diagnosis|dx|condition|disease|principal[:\s]*problem)[:\s]*([A-Za-z][A-Za-z\s,.-]{10,200}?)(?:\n\n|\n[A-Z]|$|\s*-)",
             "weight": 3.0
         },
         "primary_diagnosis": {
-            "pattern": r"(?:primary[:\s]*diagnosis|main[:\s]*diagnosis|principal[:\s]*problem)[:\s]*([A-Za-z][A-Za-z\s,.-]{5,100}?)(?:\n|$|\.|\()",
+            "pattern": r"(?:Primary[:\s]*diagnosis|main[:\s]*diagnosis|principal[:\s]*problem)[:\s]*([A-Za-z][A-Za-z\s,.-]{10,200}?)(?:\n\n|\n[A-Z]|$|\s*-)",
             "weight": 3.0
+        },
+        "diagnosis_with_code": {
+            "pattern": r"Primary[:\s]*([A-Za-z][A-Za-z\s,.-]{10,200}?)\s*[A-Z]\d{2,3}\.\d+",
+            "weight": 3.5
         },
         "multiple_sclerosis": {
             "pattern": r"(Multiple\s*sclerosis(?:\s*in\s*pediatric\s*patient)?(?:\s*\([^)]+\))?)",

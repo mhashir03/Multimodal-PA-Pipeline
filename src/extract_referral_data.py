@@ -353,49 +353,71 @@ class EnhancedReferralDataExtractor:
     
     def _process_extracted_text_enhanced(self, extracted_data: Dict[str, Any]) -> None:
         """
-        Enhanced text processing with improved pattern matching and validation.
+        Enhanced text processing with improved pattern matching and error handling.
         """
-        raw_text = extracted_data.get("raw_text", "")
-        if not raw_text:
-            return
-        
         logger.info("Processing extracted text with enhanced pattern matching")
         
-        # Pre-process text for better pattern matching
+        raw_text = extracted_data.get("raw_text", "")
+        if not raw_text:
+            logger.warning("No raw text available for processing")
+            return
+        
+        # Preprocess text for better pattern matching
         processed_text = self._preprocess_text_for_patterns(raw_text)
         extracted_data["processed_text"] = processed_text
         
-        # Apply enhanced patterns
-        for field_name, pattern_info in self.patterns.items():
-            pattern = pattern_info["pattern"] if isinstance(pattern_info, dict) else pattern_info
-            
-            matches = re.finditer(pattern, processed_text, re.IGNORECASE | re.MULTILINE | re.DOTALL)
-            
-            best_match = ""
-            best_confidence = 0.0
-            
-            for match in matches:
-                if match.groups():
-                    candidate = match.group(1).strip()
-                    
-                    # Apply field-specific validation
-                    if self._validate_field_candidate(field_name, candidate):
-                        confidence = calculate_confidence_score(candidate, field_name)
-                        
-                        if confidence > best_confidence:
-                            best_match = candidate
-                            best_confidence = confidence
-            
-            if best_match and best_confidence >= self.confidence_threshold:
-                # Categorize and store the field
-                category = self._categorize_field(field_name)
-                if category not in extracted_data:
-                    extracted_data[category] = {}
+        # Get patterns for extraction
+        patterns = self.patterns
+        
+        # Process each pattern
+        for field_name, pattern_info in patterns.items():
+            try:
+                pattern = pattern_info["pattern"] if isinstance(pattern_info, dict) else pattern_info
                 
-                # Normalize the value
-                normalized_value = normalize_field_value(field_name, best_match)
-                extracted_data[category][field_name] = normalized_value
-                extracted_data["metadata"]["confidence_scores"][field_name] = best_confidence
+                matches = re.finditer(pattern, processed_text, re.IGNORECASE | re.MULTILINE | re.DOTALL)
+                
+                best_match = ""
+                best_confidence = 0.0
+                
+                for match in matches:
+                    if match.groups():
+                        # Fix: Add proper null check before calling strip()
+                        candidate = match.group(1)
+                        if candidate is None:
+                            continue
+                        
+                        # Additional check to ensure candidate is a string
+                        if not isinstance(candidate, str):
+                            continue
+                            
+                        candidate = candidate.strip()
+                        
+                        # Skip empty candidates
+                        if not candidate:
+                            continue
+                        
+                        # Apply field-specific validation
+                        if self._validate_field_candidate(field_name, candidate):
+                            confidence = calculate_confidence_score(candidate, field_name)
+                            
+                            if confidence > best_confidence:
+                                best_match = candidate
+                                best_confidence = confidence
+                
+                if best_match and best_confidence >= self.confidence_threshold:
+                    # Categorize and store the field
+                    category = self._categorize_field(field_name)
+                    if category not in extracted_data:
+                        extracted_data[category] = {}
+                    
+                    # Normalize the value
+                    normalized_value = normalize_field_value(field_name, best_match)
+                    extracted_data[category][field_name] = normalized_value
+                    extracted_data["metadata"]["confidence_scores"][field_name] = best_confidence
+                    
+            except Exception as e:
+                logger.warning(f"Error processing pattern for {field_name}: {e}")
+                continue
         
         # Extract additional complex fields
         self._extract_complex_medical_fields(processed_text, extracted_data)

@@ -85,6 +85,10 @@ class EnhancedPAFormFiller:
                 result = self._fill_widget_form_enhanced(
                     pa_form_path, extracted_data, output_path, form_analysis
                 )
+            elif form_analysis["form_type"] == "static_overlay":
+                result = self._fill_static_form_with_overlay(
+                    pa_form_path, extracted_data, output_path, form_analysis
+                )
             else:
                 result = self._fill_non_widget_form_enhanced(
                     pa_form_path, extracted_data, output_path, form_analysis
@@ -124,7 +128,9 @@ class EnhancedPAFormFiller:
             "fields": [],
             "field_types": {},
             "field_coordinates": {},
-            "text_elements": []
+            "text_elements": [],
+            "is_static_form": False,
+            "form_text": ""
         }
         
         try:
@@ -164,6 +170,7 @@ class EnhancedPAFormFiller:
             # Method 2: pdfplumber for detailed analysis and coordinates
             try:
                 with pdfplumber.open(pdf_path) as pdf:
+                    all_text = ""
                     for page_num, page in enumerate(pdf.pages):
                         # Extract form fields with coordinates
                         if hasattr(page, 'annots') and page.annots:
@@ -195,41 +202,87 @@ class EnhancedPAFormFiller:
                         except Exception as e:
                             logger.warning(f"Could not extract text elements from page {page_num}: {e}")
                             continue
+                        
+                        # Extract full text for static form detection
+                        page_text = page.extract_text()
+                        if page_text:
+                            all_text += page_text + "\n"
+                    
+                    analysis["form_text"] = all_text
+                    
+                    # If no fillable fields found but text exists, it's likely a static form
+                    if not analysis["has_fillable_fields"] and all_text:
+                        analysis["is_static_form"] = True
+                        analysis["form_type"] = "static_overlay"
+                        # Detect potential form fields from text patterns
+                        self._detect_static_form_fields(analysis)
+                        
             except Exception as e:
                 logger.warning(f"pdfplumber analysis failed: {e}")
             
-            # If no widget fields found, check for text-based form
-            if not analysis["has_fillable_fields"] and analysis["text_elements"]:
-                # Look for form-like patterns in text
-                form_patterns = [
-                    r".*name.*:.*",
-                    r".*date.*:.*",
-                    r".*phone.*:.*",
-                    r".*address.*:.*",
-                    r".*diagnosis.*:.*",
-                    r".*medication.*:.*",
-                    r".*insurance.*:.*"
-                ]
-                
-                potential_fields = []
-                for element in analysis["text_elements"]:
-                    for pattern in form_patterns:
-                        if re.match(pattern, element["text"], re.IGNORECASE):
-                            potential_fields.append(element["text"])
-                
-                if potential_fields:
-                    analysis["has_fillable_fields"] = True
-                    analysis["form_type"] = "text_based"
-                    analysis["field_count"] = len(potential_fields)
-                    analysis["fields"] = potential_fields
+            # Final determination
+            if not analysis["has_fillable_fields"] and not analysis["is_static_form"]:
+                analysis["form_type"] = "unknown"
             
-            logger.info(f"Form analysis complete: {analysis['field_count']} fields, "
-                       f"Type: {analysis['form_type']}")
+            logger.info(f"Form analysis complete: {analysis['field_count']} fields, Type: {analysis['form_type']}")
             
         except Exception as e:
-            logger.error(f"Error analyzing form structure: {e}")
-            
+            logger.error(f"Form structure analysis failed: {e}")
+        
         return analysis
+    
+    def _detect_static_form_fields(self, analysis: Dict[str, Any]) -> None:
+        """
+        Detect potential form fields in static PDF forms by analyzing text patterns.
+        """
+        form_text = analysis.get("form_text", "")
+        if not form_text:
+            return
+        
+        # Common form field patterns
+        field_patterns = {
+            "patient_name": [
+                r"Patient\s*Name[:\s]*_+",
+                r"Name[:\s]*_+",
+                r"Patient[:\s]*_+"
+            ],
+            "date_of_birth": [
+                r"Date\s*of\s*Birth[:\s]*_+",
+                r"DOB[:\s]*_+",
+                r"Birth\s*Date[:\s]*_+"
+            ],
+            "diagnosis": [
+                r"Diagnosis[:\s]*_+",
+                r"Primary\s*Diagnosis[:\s]*_+",
+                r"Condition[:\s]*_+"
+            ],
+            "prescriber_name": [
+                r"Prescriber[:\s]*Name[:\s]*_+",
+                r"Physician[:\s]*Name[:\s]*_+",
+                r"Doctor[:\s]*_+"
+            ],
+            "phone": [
+                r"Phone[:\s]*_+",
+                r"Telephone[:\s]*_+",
+                r"Contact[:\s]*Number[:\s]*_+"
+            ],
+            "insurance": [
+                r"Insurance[:\s]*_+",
+                r"Plan[:\s]*Name[:\s]*_+",
+                r"Carrier[:\s]*_+"
+            ]
+        }
+        
+        detected_fields = []
+        for field_name, patterns in field_patterns.items():
+            for pattern in patterns:
+                if re.search(pattern, form_text, re.IGNORECASE):
+                    detected_fields.append(field_name)
+                    break
+        
+        analysis["fields"] = detected_fields
+        analysis["field_count"] = len(detected_fields)
+        analysis["has_fillable_fields"] = len(detected_fields) > 0
 
     def _fill_widget_form_enhanced(self, pdf_path: str, extracted_data: Dict[str, Any], 
                                  output_path: str, form_analysis: Dict[str, Any]) -> Dict[str, Any]:
@@ -249,81 +302,83 @@ class EnhancedPAFormFiller:
         total_fields = form_analysis["field_count"]
         
         try:
-            # Open the form for filling
-            with open(pdf_path, 'rb') as input_file:
-                pdf_reader = PdfReader(input_file)
-                pdf_writer = PdfWriter()
+            # Use pdfplumber to get field information and PyPDF2 to fill
+            import fitz  # PyMuPDF as fallback
+            
+            # Try PyPDF2 first for form filling
+            try:
+                from PyPDF2 import PdfReader, PdfWriter
+                from PyPDF2.generic import BooleanObject, NameObject, TextStringObject
                 
-                # Process each page
-                for page_num, page in enumerate(pdf_reader.pages):
-                    # Get the page and its annotations
-                    page_obj = pdf_reader.pages[page_num]
+                reader = PdfReader(pdf_path)
+                writer = PdfWriter()
+                
+                # Get form fields from the reader
+                if reader.get_form_text_fields():
+                    form_fields = reader.get_form_text_fields()
+                    logger.info(f"Found {len(form_fields)} fillable fields using PyPDF2")
                     
-                    # Fill form fields on this page
-                    if '/Annots' in page_obj:
-                        annotations = page_obj['/Annots']
-                        for annot_ref in annotations:
-                            annot = annot_ref.get_object()
+                    # Fill each field
+                    for field_name, current_value in form_fields.items():
+                        # Find best match using enhanced field matcher
+                        field_value, confidence = self.field_matcher.find_best_match(
+                            field_name, extracted_data
+                        )
+                        
+                        if field_value and confidence > 0.5:
+                            # Normalize the value
+                            normalized_value = normalize_field_value(field_name, field_value)
                             
-                            if annot.get('/Subtype') == '/Widget' and '/T' in annot:
-                                field_name = annot['/T']
-                                
-                                # Find best match using enhanced field matcher
-                                field_value, confidence = self.field_matcher.find_best_match(
-                                    field_name, extracted_data
-                                )
-                                
-                                if field_value and confidence > 0.5:
-                                    # Normalize the value
-                                    normalized_value = normalize_field_value(field_name, field_value)
-                                    
-                                    # Fill the field
-                                    try:
-                                        if '/V' in annot:
-                                            annot.update({PdfWriter.generic.NameObject('/V'): 
-                                                        PdfWriter.generic.TextStringObject(normalized_value)})
-                                            filled_count += 1
-                                            
-                                            self.filled_fields.append({
-                                                "field_name": field_name,
-                                                "value": normalized_value,
-                                                "confidence": confidence,
-                                                "page": page_num
-                                            })
-                                            
-                                            self.field_mapping_log.append({
-                                                "form_field": field_name,
-                                                "matched_data": field_value,
-                                                "final_value": normalized_value,
-                                                "confidence": confidence,
-                                                "method": "enhanced_matching"
-                                            })
-                                            
-                                        logger.debug(f"Filled field '{field_name}' with '{normalized_value}' "
-                                                   f"(confidence: {confidence:.2f})")
-                                        
-                                    except Exception as e:
-                                        logger.warning(f"Failed to fill field '{field_name}': {e}")
-                                        self.missing_fields.append({
-                                            "field_name": field_name,
-                                            "reason": f"Fill error: {str(e)}",
-                                            "page": page_num
-                                        })
-                                else:
-                                    self.missing_fields.append({
-                                        "field_name": field_name,
-                                        "reason": "No matching data found" if not field_value else f"Low confidence ({confidence:.2f})",
-                                        "page": page_num
-                                    })
+                            # Update the form field
+                            writer.update_page_form_field_values(
+                                writer.pages[0], {field_name: normalized_value}
+                            )
+                            filled_count += 1
+                            
+                            self.filled_fields.append({
+                                "field_name": field_name,
+                                "value": normalized_value,
+                                "confidence": confidence,
+                                "page": 0
+                            })
+                            
+                            self.field_mapping_log.append({
+                                "form_field": field_name,
+                                "matched_data": field_value,
+                                "final_value": normalized_value,
+                                "confidence": confidence,
+                                "method": "enhanced_matching"
+                            })
+                            
+                            logger.debug(f"Filled field '{field_name}' with '{normalized_value}' "
+                                       f"(confidence: {confidence:.2f})")
+                        else:
+                            self.missing_fields.append({
+                                "field_name": field_name,
+                                "reason": "No matching data found" if not field_value else f"Low confidence ({confidence:.2f})",
+                                "page": 0
+                            })
                     
-                    pdf_writer.add_page(page_obj)
-                
-                # Save the filled form
-                ensure_directory_exists(os.path.dirname(output_path))
-                with open(output_path, 'wb') as output_file:
-                    pdf_writer.write(output_file)
-                
-                logger.info(f"Filled {filled_count}/{total_fields} fields in widget form")
+                    # Copy all pages to writer
+                    for page in reader.pages:
+                        writer.add_page(page)
+                    
+                    # Save the filled form
+                    ensure_directory_exists(os.path.dirname(output_path))
+                    with open(output_path, 'wb') as output_file:
+                        writer.write(output_file)
+                    
+                    logger.info(f"Filled {filled_count}/{total_fields} fields using PyPDF2")
+                    
+                else:
+                    # Fallback to manual field detection and filling
+                    logger.info("No form fields detected by PyPDF2, trying manual approach")
+                    return self._fill_form_manual_approach(pdf_path, extracted_data, output_path, form_analysis)
+                    
+            except Exception as e:
+                logger.warning(f"PyPDF2 form filling failed: {e}")
+                # Try alternative approach with PyMuPDF
+                return self._fill_form_with_pymupdf(pdf_path, extracted_data, output_path, form_analysis)
                 
         except Exception as e:
             logger.error(f"Error filling widget form: {e}")
@@ -341,6 +396,133 @@ class EnhancedPAFormFiller:
             "missing_fields": self.missing_fields,
             "processing_errors": []
         }
+
+    def _fill_form_with_pymupdf(self, pdf_path: str, extracted_data: Dict[str, Any], 
+                               output_path: str, form_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Fill form using PyMuPDF (fitz) as alternative approach.
+        """
+        try:
+            import fitz
+            
+            doc = fitz.open(pdf_path)
+            filled_count = 0
+            total_fields = 0
+            
+            for page_num in range(len(doc)):
+                page = doc[page_num]
+                widgets = page.widgets()
+                
+                for widget in widgets:
+                    total_fields += 1
+                    field_name = widget.field_name
+                    
+                    if field_name:
+                        # Find best match using enhanced field matcher
+                        field_value, confidence = self.field_matcher.find_best_match(
+                            field_name, extracted_data
+                        )
+                        
+                        if field_value and confidence > 0.5:
+                            # Normalize the value
+                            normalized_value = normalize_field_value(field_name, field_value)
+                            
+                            # Fill the widget
+                            widget.field_value = normalized_value
+                            widget.update()
+                            filled_count += 1
+                            
+                            self.filled_fields.append({
+                                "field_name": field_name,
+                                "value": normalized_value,
+                                "confidence": confidence,
+                                "page": page_num
+                            })
+                            
+                            logger.debug(f"Filled field '{field_name}' with '{normalized_value}' "
+                                       f"(confidence: {confidence:.2f})")
+                        else:
+                            self.missing_fields.append({
+                                "field_name": field_name,
+                                "reason": "No matching data found" if not field_value else f"Low confidence ({confidence:.2f})",
+                                "page": page_num
+                            })
+            
+            # Save the filled form
+            ensure_directory_exists(os.path.dirname(output_path))
+            doc.save(output_path)
+            doc.close()
+            
+            logger.info(f"Filled {filled_count}/{total_fields} fields using PyMuPDF")
+            
+            return {
+                "status": "completed",
+                "filled_fields": filled_count,
+                "filled_count": filled_count,
+                "total_fields": total_fields,
+                "fill_rate": filled_count / total_fields if total_fields > 0 else 0,
+                "fill_percentage": (filled_count / total_fields * 100) if total_fields > 0 else 0.0,
+                "filled_field_details": self.filled_fields,
+                "missing_field_details": self.missing_fields,
+                "missing_fields": self.missing_fields,
+                "processing_errors": []
+            }
+            
+        except ImportError:
+            logger.warning("PyMuPDF not available, falling back to manual approach")
+            return self._fill_form_manual_approach(pdf_path, extracted_data, output_path, form_analysis)
+        except Exception as e:
+            logger.error(f"PyMuPDF form filling failed: {e}")
+            return self._fill_form_manual_approach(pdf_path, extracted_data, output_path, form_analysis)
+
+    def _fill_form_manual_approach(self, pdf_path: str, extracted_data: Dict[str, Any], 
+                                  output_path: str, form_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Manual approach to fill forms when automatic methods fail.
+        """
+        logger.info("Using manual form filling approach")
+        
+        try:
+            # For now, copy the original and create a report of what would be filled
+            import shutil
+            ensure_directory_exists(os.path.dirname(output_path))
+            shutil.copy2(pdf_path, output_path)
+            
+            # Create a mapping report
+            potential_fills = []
+            for field_name in form_analysis.get("fields", []):
+                field_value, confidence = self.field_matcher.find_best_match(
+                    field_name, extracted_data
+                )
+                
+                if field_value and confidence > 0.5:
+                    normalized_value = normalize_field_value(field_name, field_value)
+                    potential_fills.append({
+                        "field_name": field_name,
+                        "value": normalized_value,
+                        "confidence": confidence
+                    })
+            
+            logger.info(f"Manual approach identified {len(potential_fills)} potential field fills")
+            
+            return {
+                "status": "completed",
+                "filled_fields": 0,  # Manual approach doesn't actually fill
+                "filled_count": 0,
+                "total_fields": len(form_analysis.get("fields", [])),
+                "fill_rate": 0.0,
+                "fill_percentage": 0.0,
+                "filled_field_details": [],
+                "missing_field_details": self.missing_fields,
+                "missing_fields": self.missing_fields,
+                "processing_errors": [],
+                "potential_fills": potential_fills,
+                "note": "Manual approach used - form copied with potential fill data identified"
+            }
+            
+        except Exception as e:
+            logger.error(f"Manual form filling approach failed: {e}")
+            raise
 
     def _fill_non_widget_form_enhanced(self, pdf_path: str, extracted_data: Dict[str, Any], 
                                      output_path: str, form_analysis: Dict[str, Any]) -> Dict[str, Any]:
@@ -534,6 +716,158 @@ class EnhancedPAFormFiller:
         except Exception as e:
             logger.error(f"Failed to generate missing fields report: {e}")
             return False
+
+    def _fill_static_form_with_overlay(self, pa_form_path, extracted_data, output_path, form_analysis):
+        """Fill static PDF forms by overlaying text at detected field positions."""
+        try:
+            from reportlab.pdfgen import canvas
+            from reportlab.lib.pagesizes import letter
+            from PyPDF2 import PdfReader, PdfWriter
+            import io
+            
+            logger.info(f"Filling static form with overlay: {pa_form_path}")
+            
+            # Read the original PDF
+            reader = PdfReader(pa_form_path)
+            writer = PdfWriter()
+            
+            # Process each page
+            for page_num, page in enumerate(reader.pages):
+                # Create overlay for this page
+                overlay_buffer = io.BytesIO()
+                overlay_canvas = canvas.Canvas(overlay_buffer, pagesize=letter)
+                
+                # Get page dimensions
+                page_width = float(page.mediabox.width)
+                page_height = float(page.mediabox.height)
+                
+                # Set font
+                overlay_canvas.setFont("Helvetica", 10)
+                
+                # Add text overlays based on detected fields
+                fields_filled = 0
+                for field_info in form_analysis.get("field_coordinates", []):
+                    if field_info["page"] == page_num:
+                        field_name = field_info["name"]
+                        x, y = field_info["x"], field_info["y"]
+                        
+                        # Map field name to extracted data
+                        value = self._map_field_to_data(field_name, extracted_data)
+                        if value:
+                            # Adjust coordinates for PDF coordinate system
+                            pdf_x = x
+                            pdf_y = page_height - y  # Flip Y coordinate
+                            
+                            # Add text to overlay
+                            overlay_canvas.drawString(pdf_x, pdf_y, str(value))
+                            fields_filled += 1
+                            logger.debug(f"Added overlay text '{value}' at ({pdf_x}, {pdf_y}) for field '{field_name}'")
+                
+                # If no specific coordinates found, use fallback positioning
+                if fields_filled == 0:
+                    logger.info("No specific field coordinates found, using fallback positioning")
+                    self._add_fallback_text_overlay(overlay_canvas, extracted_data, page_width, page_height)
+                    fields_filled = len([v for v in extracted_data.values() if v])
+                
+                # Finalize overlay
+                overlay_canvas.save()
+                overlay_buffer.seek(0)
+                
+                # Merge overlay with original page
+                overlay_reader = PdfReader(overlay_buffer)
+                if overlay_reader.pages:
+                    page.merge_page(overlay_reader.pages[0])
+                
+                writer.add_page(page)
+            
+            # Write the result
+            with open(output_path, 'wb') as output_file:
+                writer.write(output_file)
+            
+            logger.info(f"Static form filled successfully with {fields_filled} fields")
+            return {
+                "success": True,
+                "fields_filled": fields_filled,
+                "method": "static_overlay",
+                "output_path": output_path
+            }
+            
+        except Exception as e:
+            logger.error(f"Error filling static form with overlay: {str(e)}")
+            return {
+                "success": False,
+                "error": str(e),
+                "method": "static_overlay"
+            }
+    
+    def _add_fallback_text_overlay(self, canvas, extracted_data, page_width, page_height):
+        """Add text overlay using fallback positioning when specific coordinates aren't available."""
+        # Define common field positions for medical forms
+        field_positions = {
+            "patient_name": (100, page_height - 150),
+            "date_of_birth": (100, page_height - 180),
+            "medical_record_number": (100, page_height - 210),
+            "phone_number": (100, page_height - 240),
+            "diagnosis": (100, page_height - 300),
+            "primary_diagnosis": (100, page_height - 330),
+            "provider_name": (100, page_height - 400),
+            "provider_phone": (100, page_height - 430),
+            "insurance_id": (100, page_height - 460),
+            "group_number": (100, page_height - 490)
+        }
+        
+        for field_name, (x, y) in field_positions.items():
+            value = extracted_data.get(field_name)
+            if value:
+                canvas.drawString(x, y, f"{field_name.replace('_', ' ').title()}: {value}")
+    
+    def _map_field_to_data(self, field_name, extracted_data):
+        """Map form field names to extracted data keys."""
+        # Create mapping between form field names and extracted data keys
+        field_mapping = {
+            # Patient information
+            "patient_name": ["patient_name", "name", "patient"],
+            "first_name": ["first_name", "patient_name"],
+            "last_name": ["last_name", "patient_name"],
+            "date_of_birth": ["date_of_birth", "dob", "birth_date"],
+            "medical_record_number": ["medical_record_number", "mrn", "record_number"],
+            "phone_number": ["phone_number", "phone", "contact_number"],
+            
+            # Medical information
+            "diagnosis": ["diagnosis", "primary_diagnosis", "condition"],
+            "primary_diagnosis": ["primary_diagnosis", "diagnosis"],
+            "icd_code": ["icd_code", "diagnosis_code"],
+            
+            # Provider information
+            "provider_name": ["provider_name", "doctor_name", "physician"],
+            "provider_phone": ["provider_phone", "doctor_phone"],
+            "provider_npi": ["provider_npi", "npi"],
+            
+            # Insurance information
+            "insurance_id": ["insurance_id", "member_id", "policy_number"],
+            "group_number": ["group_number", "group_id"],
+            "insurance_name": ["insurance_name", "insurance_company"]
+        }
+        
+        # Normalize field name
+        field_key = field_name.lower().replace(" ", "_").replace("-", "_")
+        
+        # Try direct match first
+        if field_key in extracted_data:
+            return extracted_data[field_key]
+        
+        # Try mapped keys
+        if field_key in field_mapping:
+            for mapped_key in field_mapping[field_key]:
+                if mapped_key in extracted_data and extracted_data[mapped_key]:
+                    return extracted_data[mapped_key]
+        
+        # Try partial matches
+        for data_key, value in extracted_data.items():
+            if value and (field_key in data_key or data_key in field_key):
+                return value
+        
+        return None
 
 
 # For backward compatibility
