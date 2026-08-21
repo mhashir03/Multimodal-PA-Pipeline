@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract_referral_data import extract_referral_data
 from fill_pa_form import fill_pa_form
 from generate_report import generate_comprehensive_report, generate_missing_fields_report
-from utils import setup_logging, validate_input_files, ensure_directory_exists, get_patient_directories
+from utils import setup_logging, validate_input_files, ensure_directory_exists, get_patient_directories, find_patient_files
 
 
 class PAProcessingPipeline:
@@ -94,8 +94,10 @@ class PAProcessingPipeline:
             patient_output_dir = os.path.join(output_dir, patient_id)
             ensure_directory_exists(patient_output_dir)
             
-            # Extract referral data
-            referral_path = os.path.join(patient_dir, "referral_package.pdf")
+            pa_form_path, referral_path = find_patient_files(patient_dir)
+            if not pa_form_path or not referral_path:
+                raise FileNotFoundError("Missing required files: PA.pdf and/or referral_package.pdf")
+
             self.logger.info(f"Extracting data from referral: {referral_path}")
             
             extraction_results = extract_referral_data(
@@ -104,9 +106,6 @@ class PAProcessingPipeline:
                 use_advanced_ocr=self.config.get('use_advanced_ocr', True)
             )
             result['extraction_results'] = extraction_results
-            
-            # Fill PA form
-            pa_form_path = os.path.join(patient_dir, "PA.pdf")
             pa_filled_path = os.path.join(patient_output_dir, "PA_filled.pdf")
             
             self.logger.info(f"Filling PA form: {pa_form_path}")

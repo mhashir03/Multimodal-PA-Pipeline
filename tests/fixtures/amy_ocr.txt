@@ -1,0 +1,49 @@
+--- Page 1 ---
+ThisfacsimilecontainsConfidentialProtectedHealthInformationthatis legallyprivilegedandprotected.Thisinformationtsintended
+onlyfortheuseoftheindividualorentitynamedaboveastheRecipient.Ifyouarenottheintendedrecipientofthisinformationor
+AmyChen
+Urgent PleaseReply PleaseReviewReferral-ForYourRecords
+
+--- Page 2 ---
+Patientinformation
+PatientName DateofBirth Age SocialSecurity
+Chen,Amy 05/23/1983 39/y.o. Number
+Address PhoneNumbers
+2751 Hm:615-593-1048
+MarketDR Cell: xxx-xx-8110
+HILLDALETN 615-593-1048
+DateofBirth
+05/23/1983
+MedicalProblems
+Migraines ee2/19/2016
+
+--- Page 3 ---
+Chen,Amy(MRN01051001)DOB:05/23/1983 EncounterDate:04/01/2023
+MRN:01051001
+Chen,Amy
+Primarydiagnosis:Intractablechronicmigrainewithoutauraandwith
+Statusmigrainosus
+ReasonforVisit:BotulinumToxinInjection
+Name:AmyChen
+MRN:071051001
+DOB:5/23/1983
+PROCEDURE:
+Botoxforchronicmigraine
+Provider:AngelaNicole,NP(Neurology)
+
+--- Page 6 ---
+Intractablechronicmigrainewithoutauraandwithstatusmigrainosus
+-ketorolac(TORADOL)injection30mg
+Primaryinsomnia
+Cervicalgia
+ShewouldliketoconsideraddingVyepti(overBotox)iftheinsurancewillapprove.
+
+--- Page 8 ---
+Added:eptinezumab-jjmr(VYEPTI)100mg/mL=0 4/1/2023 4/1/2023
+Infuse1mL(100mgtotal)intoavenouscatheteroncefor1dose.-intravenous
+Wt50.9kgBMI21.85kg/m
+
+--- Page 9 ---
+Primary:IntractablechronicmigrainewithoutauraandwithstatusmigrainosusG43.711
+PrimaryinsomniaF51.01
+CervicalgiaM54.2
