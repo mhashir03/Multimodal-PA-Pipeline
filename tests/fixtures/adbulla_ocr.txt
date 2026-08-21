@@ -1,0 +1,54 @@
+--- Page 2 ---
+MRN:041152153
+Abdulla,Shakh
+Reasonforcall:TruximaSecondInitialDoseNeededWeekofJune3
+BetterLifeMultipleSclerosisCenter
+Gu,HaoH,MD toErfanRostami,RN
+IsDr,GucamfartablewiththispatientbeingseenforhomeInfusion , Thanks,
+
+--- Page 3 ---
+Abdulla,Shakh(MR#041162163)DOB:04/01/2001
+1ShakhAbdulla TherapyPlan1Summary
+MRN:041152153Description:maleDOB:4/1/2001
+PatientDemographics
+#PatientName LegalDOB Address Phone
+Abdulla,Shakh Bex 4/1/2001425ShermanAve 865-395...3958(Home)
+male 865-395...0481Mobile)
+NashvilleTN37995
+Medication
+RituximabOrBiosimilarDays1,15LoadThenOnceEvery24Weeks
+AssociatedProblems
+Multiplesclerosisinpediatricpatient(CMS/HCC)(G35)
+
+--- Page 5 ---
+ufmriTUXimab-abbs(TRUXIMA)IVPB Every2weeks
+694mg(roundedfrom693,75mg=375mg/m2),intraVENOUS,Once
+
+--- Page 6 ---
+HaoHGu,MD(NPI:1154611523)
+BetterLifeMultipleSclerosisCenter
+614-936-0065
+
+--- Page 7 ---
+Addvess:425ShermanAveeAPTD Sex:malo
+PrimaryPhone:9865-839-7458
+MobilePhone:865-839-7458
+Payor: Pian;TCBLUECARENOCOPAY
+
+--- Page 8 ---
+BCTENNCARE TCBLUECARENO A35000 TENNCARE/BLUECARE
+PrimarySubscriber
+ID NameSBNAddress
+LAJIM14345116 ABDULLA,SHAKH KXKKK-O143 8327BROADWAYLN
+APTD
+KNOXVILLE,TN37923
+
+--- Page 9 ---
+PatlentName:ShakhAbdulla
+DOB;4/1/2001
+FirstdoseofRituximaborbiosimilarscheduledforMay22at9am
+Allergies:
+NoKnownAllergies
+
+ThisfacsimilecontainsConfidentialProtectedHealthInformation
+namedaboveastheRecipient.Ifyouarenottheintendedrecipient

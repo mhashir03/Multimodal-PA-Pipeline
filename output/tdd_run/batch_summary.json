@@ -1,0 +1,1067 @@
+{
+  "batch_metadata": {
+    "timestamp": "2026-08-21 00:43:11",
+    "total_processing_time": 135.7754409313202,
+    "pipeline_version": "1.0.0"
+  },
+  "statistics": {
+    "total_patients": 3,
+    "successful_patients": 3,
+    "failed_patients": 0,
+    "success_rate": 100.0
+  },
+  "patient_results": [
+    {
+      "patient_id": "Adbulla",
+      "success": true,
+      "processing_time": 56.39601397514343,
+      "extraction_results": {
+        "metadata": {
+          "extraction_method": "Enhanced OCR",
+          "extraction_timestamp": "2026-08-21T00:41:52.058665",
+          "confidence_scores": {
+            "last_name": 0.85,
+            "first_name": 0.85,
+            "patient_name": 0.95,
+            "dob": 0.95,
+            "mrn": 0.9,
+            "phone": 0.9,
+            "address": 0.75,
+            "city": 0.75,
+            "state": 0.75,
+            "zip": 0.75,
+            "allergies": 0.85,
+            "sex": 0.7,
+            "icd_codes": 0.9,
+            "icd_code": 0.9,
+            "diagnosis": 0.9,
+            "primary_diagnosis": 0.9,
+            "medication": 0.9,
+            "medication_key": 0.9,
+            "insurance_carrier": 0.9,
+            "member_id": 0.9,
+            "npi": 0.85,
+            "prescriber_npi": 0.85,
+            "prescriber_name": 0.85,
+            "credentials": 0.85
+          },
+          "quality_score": 0.856,
+          "source_file": "input_data/Adbulla/referral_package.pdf"
+        },
+        "patient_info": {
+          "last_name": "Abdulla",
+          "first_name": "Shakh",
+          "patient_name": "Abdulla, Shakh",
+          "dob": "04/01/2001",
+          "mrn": "041152153",
+          "phone": "(865) 839-7458",
+          "address": "425 Sherman Ave",
+          "city": "Nashville",
+          "state": "TN",
+          "zip": "37364",
+          "allergies": "No Known Allergies",
+          "sex": "male",
+          "member_id": "LAJM14345116"
+        },
+        "clinical_info": {
+          "icd_codes": [
+            "G35"
+          ],
+          "icd_code": "G35",
+          "diagnosis": "Multiple sclerosis in pediatric patient",
+          "primary_diagnosis": "Multiple sclerosis in pediatric patient",
+          "medication": "Truxima (rituximab-abbs)",
+          "medication_key": "rituximab"
+        },
+        "insurance_info": {
+          "insurance_carrier": "TENNCARE/BLUECARE",
+          "member_id": "LAJM14345116"
+        },
+        "prescriber_info": {
+          "npi": "1154611523",
+          "prescriber_npi": "1154611523",
+          "first_name": "Hao",
+          "last_name": "Gu",
+          "prescriber_name": "Hao H Gu, MD",
+          "credentials": "MD"
+        },
+        "raw_text": "--- Page 1 ---\n04/22/2024 WED 11:32 FAX KIVVL/ Ved\nFAX TRANSMISSION\nBetter Lie Multiple Sclerosis Center\n3320 Montgomery Dre Nashville, TN 37364\nBetterLife F 618-662-4820 P: 615-662-4848\nDr. Asriel Han | Dr. Aditya Shan\nTO: Golden Gate Infusion Center\nFax: ~G/4\u20142-7$-3 & SS Phone Craze F rc\nee _. From: Ertan Rostami, BSN, RN dias\nPages P: 618-343-1176\n(including cover sheet)\nF: 615-343-1219\nComments:\n\u20186 \u2014- Scuke ga - Wants\nAreb\u2019c \u2014 SPUKeRK To |S\n~ (i buxern (Trase: ma ) [9\n~ mere put\nHos y be | Dk Mahe\n- Dy ono heey\nTha documents accompanying this transmission may contain health information that Is legally protected. This information ia intanded only\nfor the use of the Individual or entity named above, The authonzed recipient of this information ts prohibited from disclasing this\nInformation to any other party unless permitted by law or requiation.\nlf you are not the intended recipient, you ar\u00e9 hereby notified that any use, diaclosure, copying or distribution of these documents is strictly\nAabepied If you have received this Information In error, please notify the sender Immediately and arrange for the return or destruction of\nese documents.\n--- Page 2 ---\n05/22/2024 WED 11:32 FAX euyweewe\u2019\n8/22/24, 11:10 AM\nMRN: 041152153\nAbdulla, Shakh\nCommunication 5/16/2024 Provider: Erfen Rostsmi, RN\nStatus: Open Reason for call: Truxima Second Initial Dose Needed Week of June 3\nBetter Life Multiple Sclerosis\nCenter\nAll Conversations: Truxima Second Initial Dose Needed Week of June 3 (Newest Message First)\nMay 21, 2024\nJha, Vedant to Erfan Rostarni, RN | |\nHi Erfan 5/21/24 4:44 PM\nThe only way Extraodinary Care could see his Medicaid plan would be at home :( I'm not sure\nif he is able to be seen at a hospital based infuslon center closer to home?\nWe will hold off on this one for now- let me know if you're not able to find a provider who can see |\nhim in the infusion suite and we will re-open the referral.\nVedant |\nErfan Rostami, RN routed this conversation to ina, Vedant \u00a7/21/24 2:32 PM |\nMay 20, 2024 |\nGu, Hao 4, MD to Erfan Rostami, RN\n4 Note 5/20/24 5:13 PM\nSecond dos 2 waeks from may 23 first\nErfan Rostami, RN routed this conversation te Gu, Hao H, MD 5/20/24 3:41 PM\nJha, Vedant to Erfan Rostamni, RN\nHi, 5/20/24 2:54 PM ,\nls Dr, Gu carmfortable with this patient being seen for home Infusion?\nThanks,\n1/3\n--- Page 3 ---\n05/22/2024 WED 11:33 FAX uvve/vee\n6/22/24, 10:33 AM Abdulla, Shakh (MR # 041162163) DOB: 04/01/2001\n1 Shakh Abdulla Therapy Plan 1 Summary\nMRN: 041152153 Description: male DOB: 4/1/2001 ,\nPatient Demographics :\nPatient Name Legal DOB Address Phone |\nAbdulla, Shakh Sex 4/1/2001 425 Sherman Ave 865-395...3958(Home) .\nmale 865-395... 0481Mobile) .\nNashville TN 37998 *Preferread* |\nMedication\n| Rituximab Or Biosimilar Days 1, 15 Load Then Once Every 24 Weeks 3\n\u00ae Associated Problems |\nProblem Selected Diagnosis | 3\nMultiple sclerosis in pediatric patient (CMS/HCC) [G35] Multiple sclerosis in pediatric patlent (CMS/HCC) [G35] ,\n:\na\n| Infusion Orders a\nla) All Current Orders ;\nInterval Duration Due : :\nNUTAING ORNOS ns acacia nie eh ene eine, = te eres I :\n7 de IV access Every visit Every visit | |\n| Care Instructions: Obtain IV access (PIV, PORT, ete.) and start NS 0.9% @ KVO ,\n. Until discontinued Starting when released Until Specified 3\n| Last released: Never Electronically Signed By: Gu, Hao KH, MD on 5/15/2024 .\nwm\u201d Monitor pt for hypersensitivity reaction Every visit Every visit }\nOnce Starting when released for 1 occurrence .\nIf allergi\u00a2 reaction or infusion related reaction occurs, initiate adult hypersensitivity reaction protacol or | 7\npediatric guideline and CALL MD for additional orders. ,\nLast released: Never Electronically Signed By: Gu, Hae H, MD on 5/15/2024 :\nwf @ NURSING COMMUNICATION Every visit Every visit .\nCare Instructions: Ensure that patient has not taken antihypertensive medications in the 12 hours prior to |\ninfusion : :\nUntil discontinued Starting when released Until Specified\n} Last released: Never Electronically Signed By: Gu, Hae H, MD on 5/15/2024 |\nof me NURSING COMMUNICATION Every visit Every visit 3\nCare Instructions: For Hypotension, place patient in Trendelenberg position, support with NS, and call MD :\nUntil discontinued Starting when released Until Specified 3\n1/4\n--- Page 4 ---\n05/22/2024 WED 11:33 FAX Kavves vee\n6/22/24, 10:33 AM Abdulla, Shakh (MR # 041152153) DOB; 04/01/2001\nOO ntorvall Duration Due Electronically |\nLast released: Never Signed By: Gu, hao MD on 5/15/2024 5:11 PM |\n'\nI ww tD IgG Every 24 weeks Week of 5/19/2024 |\nClinic Collect, Blood |\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 !\nw/ we CBC w/ Differential Every visi t Every visit |\nOnce Starting when released, Blood 3\nLast released; Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 :\n\u201c/ | Blow Lymphocytes Subsets (TBNK) Every visit Every visit !\nOnce Starting when released, Blood 7\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024\n5:11 PM |\nWw 7 Vital Signs | Every visit Every visit 7 ,\nCare Instructions: Obtain VS prior to start therapy, Q30 minutes with each dose increase and at the end of ! 1\ntreatment. !\nAs needed Starting when released Until Specifled :\nLast released: Never Elactronically Signed By: Gu, Hao H, MD on 5/15/2024 ; :\nw i heparin, porcine (PF) 100 unit/mL syringe \u00a7 PRN RIN |\nmL 3\n5 mL, intraVENOUS, As needed, For flushing Ports/ PICC lines/ Central Lines IF NEEDED, Starting when |\nreleased, Until Discontinued |\nLust released: Never Electronically Signed By: Gu, Hao H, MO on 5/15/2024 3\n3 )\nwf\u2019 wm acetaminophen (TYLENOL) tablet 650 mg \u2014 Every visit Every visit |\n650 mg, oral, Once, Starting when released , |\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 : :\nfm\u2019 diphenhydrAMINE (BENADRYL) $0 mg in $0 Every visi t Every visit 3\nmL NS 3\n50 mg, intraVENOUS, Once, Starting when released :\nAdminister 30 minutes before starting infusion. 3\nLast released; Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 |\nw mm methyIPREDNISolone sod succinate (SOLU- Every visit Every visit |\nMedral) (20 mg/mL) 125 mg in N$ 6.2 mL |\n2/4\n--- Page 5 ---\n0$/22/2024 WED 11:33 FAX KJVQI/ 028\n5/22/24, 10:33 AM Abdulnabl, Noor (MR # 048152163) DOB: 01/01/2008\na Interval =  \u2014s-Quration \u00ab=> Due a\n125 mg, intraVENOUS, Once, Starting when released\nAdminister 30 minutes before starting infusion. ,\nLast released: Never Elactronically Signed By: Gu, Hao H, MD on 5/15/2024 5:11 3\nPM\nwf\u201d de NURSING COMMUNICATION Every visit Every visit 3\nUntil discontinued Starting when released Until Specified 3 i\nInfusion rate (standard only) ! :\nist infusion - initiate at SOmg/hr and if no infusion toxicity reaction, may increase by 50mg/hr ever 30 : :\nminutes; Max Rate 400mg/hr |\nSubsequent infusions - initiate at 100mg/hr and if no infusion toxicity reaction, may increase by 100mg/hr : :\nevery 30 min; Max Rate 400mg/hr 7 |\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 3:11 |\nPM\nInfusion Therapy - Initial Dose | nie nee\nof am riTUXimab-abbs (TRUXIMA) IVPB Every 2 weeks 2/2remaining Week of 5/19/2024\n694 mg (rounded from 693,75 mg = 375 mg/m\u00e9 x 1.85 m2 - BSA might be out of date), intraVENOUS, Once,\nStarting 30 minutes after treatment start time\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 |\n5:17 PM |\nf Infusion Therapy - Maintenance Dose sy eepacactiohanmeenni\n} wo @ riTUXimab-abbs (TRUXIMA) IVPB Every 24 weeks Mon 11/4/2024 |\nDefer until; Mon 11/4/2024 3\n694 mg (rounded from 693.75 mg = 375 mg/m2 \u00ab 1.85 m2 - BSA might be out of date), intravVENOUS, Once,\nStarting when released }\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/13/2024 5:11 3 )\nPM\nPRN Medications eaciicaieeseemeemmmmibie adie ne nes\nwW wm diphenhydrAMINE (BENADRYL) injection 25 PRN PRN\nmg\n25 mg, intraVENOUS, As needed, chills, Starting when released, for 2 dases\nLast released: Never Electronically Signed By: Gu, Hao H, MD an $/15/2024\nvw mm meperidine (DEMEROL) injection 25 mg PRN PRN\n25 mg, intraVENOUS, As needed, rigors, Starting when released, for 2 doses\nLast released: Never Electronically Signed By: Gu, Hao KH, MD on 5/15/2024\n5:17 PM\nwv i ondansetron (ZOFRAN) injection 4 mg PRN PRN a\n4 mg, intraVENOUS, As needed, nausea, vomiting, Starting when released, for 2 doses\nDoses up to 4 mg may be administered undiluted. Inject over at least 30 seconds, but preferably over 2-5 |\nminutes, .\nLast released: Never Electronically Signed By: Gu, Hae H, MD on 5/15/2024 9:11 :\nPM 3\neSignature Information\n| All order signatures are valid for 1 (one) year fram the signature date.\nProvider Contact Information\n| ANGER | \u201cae sie =\n--- Page 6 ---\n05/22/2024 WED 11:34 FAX WVVO/ Vad\n6/22/24, 10:33 AM Abdulnabl, Noor (MR # 048182153) DOB: 01/01/2008\nHao H Gu, MD (NPI: 1154611523)\nBatter Life Multiple Sclerosis Center .\n3320 verameriary Dr NASHVILLE TN 37361 3\n614-936-0005 \u2014\u2014\nAld\n--- Page 7 ---\n06/22/2024 WED 11:3\u00a2 Fax KJOV7T/Y2Z8\nB ett e I\u2019 Li te Patient: Shakh Abdulla\nMultiple Sclerosis =\nCenter\nCareEverywhere (DA: VOJs7KR2-d84To1.GEA\nENCOUNTER\nPatiant Class: Admission Date/l'ime:\u00a7/1 7/2024 ,\nAdmission User: Roforring Physician:\nAdmitting Provider:\nAttending Provider:\nPATIENT\nName: = Shakh Abdulla DOB: 4/1/2001 (23 yrs)\nAddvess: 428 Sherman Avee APT D Sex: male\nCity:  Avashvitte TN 37923 Prof Lang: Arable\nPrimary Care Provider: dames David, PNP Primary Phone: \u00a765-839-7458\nMarital Status;  Singlo Mobile Phone: 865-839-7458\n\u2018EMERGENCY CONTACT a vetlbes: &2 a8 ee EP pane\n1, Sina, Amin Yes Father\n2. Mohammedreza, Musila = Yos Mother ,\nGUARANTOR |\nGuarantor: DOB: 10/29/1979\nAddress; Sex: Fomate\nRelation to Patient: Home Phone:\nGuarantor 1D: Mohils Phone:\nWork Phone:\nGUARANTOR EMPLOYER eres. ace eee : ai aa\nThere is no guarantor Information ontered for this encounter, staius;s NOT EMPLO*\nPayor: Pian; TC BLUE CARE NO COPAY\nGroup Number: Insurance Type:\nSubseribar Name; Subscriber DOB:\nStibseriber ID: Financial Class:\nPat. Rel, to Subserlber: )\nSBCONDARY INSURANCE = eye a ate Eth TER The HSE |\nPayor! Plan: |\nGroup Number: Inaurance Type:\nSubscriber Name: Subscriber DOB:\nSubscriber 11):\nPat. Rel. to Subseriber:\nMay 22, 2024 Hospital Face Sheet\n--- Page 8 ---\n05/22/2024 WED 11:34 Fax WIVVd/V29\n5/22/24, 10:37 AM Abdulnabi, Noor (MRN: 041162163) DOB: 4/1/2001\nBC TENNCARE TC BLUE CARE NO 435000 TENNCARE/BLUECARE\nCOPAY\nPrimary Subscriber EERE Ty HEE\nID Name SSN Address\nLAJM14345116 ABDULLA,SHAKH KXX=KK-O 143 8327 BROADWAY LN\nAPT D\nKNOXVILLE, TN 37923\n4/4\n--- Page 9 ---\n05/22/2024 WED 11:34 FAX KIYUS/ Vas\n6/22/24, 10:30 AM\nMRN; 04815215\nAbdulla, Shakh\nED to Hosp-Admission Last attending: Marry, Tom, MO + with Treatment\n\u00a7/14/2024 ~ 5/17/2024 (3 days) team Principal problem: Abnormal MRI |\nStatus; Discharged ?\nMonroe Carell Jr. Children's\nHospital\nDischarge Summary ww aine, Adam Ja$on, MD (Resident Physician) \u00ab Pediatric Neurology |\nGosigned by: Gu,JMao H, MD at 5/17/2024 1:56 PM\nAttestation signed by Gu, Hao H, MD at 5/17/2024 1:5@ PM (Updated)\n| saw the patient on: \u00a7/17/2024 with Dr Kaine, | discussed the care with Dr Kaine, patient and :\nhis father at bedside and agree with the findings and plan as documented in the attached\n\u2014 note.\n. [personally spent more than 30 minutes on the patient's care unit In the preparation and |\n| execution of the hospital discharge.\n_ S/p 4 days of high dose IVMP (1g/dose) today- | .\n\u2014 Discharge home with oral decadron 180mg (equivalent to 1000mg IVMP) x1 to round out \u00a7 :\ndays of high dose steroid treatment for active demyelinating lesion (family wishes to be |\n_ discharged today instead of Saturday) 7\n_ he will then start oral prednisone taper- Instructions provided +PPI }\nFirst dose of Rituximab or biosimilar scheduled for May 22 at gam; second dose of first course\nOf Rituximab within 2 weeks after, we are working with local infusion facility in Knoxville to |\n| get this set up for her moving forward to minimize travel |\nhe will follow up with ophthalmologist in Knoxville |\nSchool note for this week and next week |\n\u2014 PT/OT locally :\nContinue vitarnin D\n[will see her tentatively 3 months after completion of ist course of Rituxlmab -with same day\n| MRI (she does not need sedatlon)- looking at early or mid September. Will update family once\n| we have that arranged |\n~ Hao Gu MD i\nNeurology Discharge Summary\nPatient Name: Shakh Abdulla\nDOB; 4/1/2001\nService: Pediatric Neurology\nAttending: Harry, Tom, MD\nDate of Admission: 5/14/2024\n1/6\n--- Page 10 ---\n05/22/2024 WED 11:34 FAX KIVLY/V29\n5/22/24, 10:39 AM\nDate of Discharge: 5/17/2024\nDiagnosis:\nPrinclpal Problem:\nAbnormal MRI\nResolved Problems:\n* No resolved hospital problems. *\nProcedures: |\nBedside Procedures:\nNo orders of the defined types were placed in this encounter. |\nOR Procedures:\n* Cannot find OR case *\nSynopsis:\nShakh Abdulla is a 23 year old male who established care with VCH neurology ; with MRI brain and spine\ndemonstrating multiple lasions consistent with atypical pediatric MS.\nHospital Course:\nShakh Abdulla is a 23 year old male with history of optic neuritis and abnormal MRI brain concerning for\nMS who presented for admission following clinic visit and neuroimaging today, History from primary\nneurologist, clinic visit and patient and father at bedside, Patient referred to Dr. Gu by Dr. Fazal in East\nBay Confirms predominant symptoms since April of numbness in his right hand and urinary\nhesitaney/urgency. Additionally reporting right eye palin since time of clinie visit this morning. MRI brain and :\nspine obtained following clinic visit and muitipl\u00e9e lesions noted on brain and spine suggestive of pediatric |\nMS. Presents for admission for IVMP. |\nPer clinic visit earller today. with Or Gu.and confirmed with family at bedside,\nShakh Is a 23 years old male, previously healthy who has been referred to neurolmmunology clinie for\ndiagnosis of aptic neuritis and abnormal brain MRI concerning for MS. He is referred by Dr Fazal-pediatric\nneurology in East Bay\nhe /s here with dad; patient himself is an excellent historian and provided the following informatione | do\nnot have CSF results nor clinic note- 1 do have MRI report from Jan 21 2024 (no actual images)- with\nfather and his permission, | reached out to Dr Shane- Dr Fazal's colleague on service who can help assist\nwith quick access to Shakh\u2019s chart.\nToday, Shakh tells me that around early Oct 2023- he started to notice In right eye \"neon bright color\"\nfuzzy vision, and eye pain with movement and perhaps right side of his face in discomfort triggered by\nphysical activities . Symptoms improved once he rested. By end of Oct 2023, he brought this up to\nparents and was brought to local eye doctor and recalled being told that\"right eye being inflamed\" and he\nrecalled visual field deficits appreciated during exam.\nHe was referred to UT ophthalmology Dr Derrek in Jan this year, per report negative MOG and AQP4\n[While waiting on this appt, he thought some Improvement but not back to baseline entirely -\"not\ncompletely normal\")\nWhen he saw UT ophthalmology clinic, recommended brain and orbit and noted WM changes and MS\nwas mentioned. He was treated with 5 days of |\\VMP and referred to se6e Dr Kosentka ped neurology.\nMRI report from Jan 21 2024- \"Diffuse T2 hyperintensity and decreased volume throughout the right optic\nnerve Is similar to prior examination however assocaited abnormal enhancement seen on prior Study has\nrasoved, presumably secondary to interveal treatment.\nLeft optic nerve Is subtle but diffusely small in caliber without significant change from last exam,\nSeveral intracranial WM lesions, stable from last\"\nHe saw Or Fazal in Feb 2024-who obtained LP and had markers of MS and referred to MS clinic today\nBelow are information provided by Dr Shane. Per note recommended referral to our MS c\u00e9nter for\nPrinted by O'Rourke, Ovdrle B, RN at 5/22/2024 10:39 AM 2/9\n--- Page 11 ---\n05/22/2024 WED 11:35 FAX ee\n6/22/24, 10:39 AM\nfurther evaluation and treatment.\nCSF ?WBC, 837 rbc, IgG Index 0.87 (elavated), +OCB\nPrior to appt today May 14- he nated that in April of this year, started to have invalvament of LEFT eye -\nagain similar with \"neon colors appearance\", some eye discomfort; it happened several times during the\nday for a few days and has since resovied\nSince April he has had intermittent numbness In his right hand (dominant hand)+ along with muscle\ntwitch in his hands and shoulder like tics\nHe has noticed a change with urinary hesitancy- taking a long time to empty his bladder and in addition\nurinary urgency\nHe has not noticed weakness but noted intermittent drifting to right side, bumping in to things\nHe does note that at times when he laughs, bends his neck, does note electrical sensation\nAcademically doing very well, no difficulty\nSleeps well\nFamily history: parents and brothers are healthy\nFloor course (05/14 -\nPatient was admitted to the wards in a stable condition.\nPatient was initiated on high dose steroids for \u00a7 days and tolerated well. MRI consistent with lesions in\nthe brain and spinal cord consistent with atypical MS. ANA was positive as well as SSB so rheumatology\nwas consulted but felt she did not have evidence of another systemic autoimmune disease. PT/OT\nevaluated his and he will follow outpatient. He was de with Decadron and then steroid taper with Pepcid\nprophylaxis. Ha was arranged to have outpatient rituximab and Dr. Gu will follow his in clinic.\nPhysical Exam: :\nTemp: (36.5 \u00b0C (97.7 \u00b0F)-36.7 \u00b0C (98.1 \u00b0F)] 36.7 \u00b0C (98 \u00b0F)\nPulse: [81-99] 84\nResp: [16-18] 16\nBP: teh) 126/63\nSpO2: [98 %] 98 %\nPhysical Exam:\nTamp: [36.5 \u00b0C (97.7 \u00b0F)=36.7 \u00b0C (98.1 \u00b0F)] 36.7 \u00b0C (98 \u00b0F)\nPulse: [81-99] 84\nResp: [16-18] 16\nBP: (122-136)/(63-99) 126/63\nSpO2; (98 %] 98 %\n-Well appearing; NAD\nCV:\n-RRR\nHIGHER INTEGRATIVE FUNCTIONS:\n-Attentlon & concentration: Normal\n-Orlentation: Orlanted to person, place & tlme\n-Memory: Recent and remote memory Intact\n-Language: Normal\n\u00abFund of Knowledge: Normal\nCRANIAL NERVES:\n\u201cCN 2: Visual flelds full\n\u201cGN 2,3: PERRL; rAPD\n-CN 3,4,6: EOMI\n-CN 6: Faclal sensation intact\n-ON 7: Facial strangth/movement Intact bilaterally\nPrinted by O'Rourke. Cydnie B. RN at 5/22/2024 10:36 AM 3/9\n--- Page 12 ---\n05/22/2024 WED 11:35 FAX Vie / Vag\n5/22/24, 10:39 AM\n-CN 8; Hearing normal bilaterally\n\u201cGN 9,10: Palate elavates symmetrically\n\u201cCN 14: Normal shoulder shrug and head turn\n-CN 12: Tongue protrudes midiine\nMOTOR:\n-Muscla tone normal in upper and lower extremities\n-Muscle strength 5/6 In upper and lower extremities; RLE 4+ proximally\nSENSATION:\n-Intact to light touch in upper and lower extremities bilaterally\nCOORDINATION:\n-Finger/nose intact bilaterally |\nGAIT:\n\u00abNormal gait\nImmunizations/njections Administered far This Admission\nNo immunizations on file.\nAllergies:\nNo Known Allergies\nDiagnostic Studies:\nRecent Results (from the past 24 hour(s))\nCBC wi Differential\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Range\nWhite Blood Cells 7.7 3.4- 10,2\n%10(3)/meL\nRed Blood Calis 4,63 3.80 - 5.50\nx10(6)/meL\nHemoglobin 13,0 12.0 \u00bb 16.0\ngm/dl\nHematocrit 40 35-49 %\nMean Cell Volume 86 76 - 96 fL\nMean Cell 28.1 29.0 = 35.0\nHemoglobin Pg\nMean Cell 32.7 32.0 \u00ab 37.0\nHemoglobin gm/dL.\nConcentration\nRDW SD 38,4 37.4 = $2.4\nfL\nRDW CV 12.3 11.1 - 14.3\n%\nPlatelet 300 150 \u00ab 400\nx10(3)/mel.\nPrintad by O'Rourk\u00e9. Cvdrle B, RN at 5/22/2024 10:39 AM 4/9\n--- Page 13 ---\n05/22/2024 WED 11:35 FAX KVII/Y29\n5/22/24, 10:30 AM\nMean Platelet 10,0 9.3 = 12.8 fL.\nVolume\nNucleated RBC 0 0-0/100\nWBC\nNucleated RBC 0.00 0.00 - 0.00\nAbs x10(3VmeoL\nAuto Neutrophil 4,52 1.80 \u00ab7.70\nAbsolute X\u00a510(3)/mel.\nCMP\nCallaction Time: 05/14/24 10:47 AM\nRasult Value Ref Range\nSodium Level 139 138 - 146 !\nmmol/L\nPotassium Level 3.8 3,3 - 4.8\nmmol/L\nChloride Level 101 98 - 107\nmmol/L.\nCarbon Dioxide 22 17 - 28\nmmol/L\nAnion Gap 16 mmol/L\nGlucose Level 95 60 - 99\nmg/dL.\nBlood Urea 13 7 - 18\nNitrogen mg/dl.\nCreatinine Level 0.67 0.50 - 0.90 |\nmg/dl :\nCalclum Level 9.9 8.4 + 10,2\nTotal mg/dL 3\nBillrubin Total 0.4 0.0 - 0,7\nmg/dL\nAlbumin Level 4.7 4.0+5.3\ngm/dt.\nProtain Total 8.4 (Hf) 6.3-7,8\ngm/dL.\nAlkaline 5\u00a7 50 - 117\nPhosphatase unit/L\nAspartate 25 21-34\nAminotransferase unit/L\nAlanine <6 0-17 unit/L\nAminotransferase\nHopatitis B Pn\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Range\nHepatitis B Surface Negative Negative\nAntigen\nHep B Core Ab Negative Negative\nTotal\nHepatitis B Surface 44.7 (H) <=10.0\nAb Unit mlU/me\nHep Bs Ab Interp Positive (A) Negative\nigG\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Ranga\nlgG Quantitative 1,355(H) 600-1,310\nmg/dL\n6/9\n--- Page 14 ---\n05/22/2024 WED 11:35 FAX KIVLe/ 2g\n6/22/24, 10:38 AM\nIgA\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Range\nIgA Quantitative 279 40 - 290\nmg/dl.\nAuto Diff\nCollection Time: 05/14/24 10:47 AM\nResuit Value Ref Range\nNeutrophils 58.3 %\nAbsolute 4.52 1.80 - 7.70\nNeutrophils x10(3)/mel.\nLymphs 33.6 %\nAbsolute 2.60 1.70 - 4.50\nLymphocytes x10(3)/melL.\nMonocytes 6.5 %\nAbsolute 0,50 0.20 - 1.00\nMonocytes %10(3)/meL\nEosinophils 0.5 %\nAbsolute 0.04 0.00 - 0.50\nEosinophils x10(3)/melL.\nBasophils 0.8 %\nAbsolute Basaphils 0.06 0,01 - 0,08\nx10(3)/meL\nImm Gran 0.3 %\nAutomated\nAbsolute Imm 0.02 0.00 - 0.03 |\nGran Automated x10(3)/meL\nConsultations Obtained:\nOrdars Plated This Encounter\nProceduras\n* Inpatient Consult to Pediatric Ophthalmolagy\n* Inpatient Consult to Pediatric Rheumatology\n* Inpatient consult to Case Management :\nCondition at Discharge:\nStable\nDisposition:\nHome or Self Care\nPatient Instructions:\nDischarge Medications\nNew Medications\ndexamethasone 4 mg/mL CONCENTRATED Take 45 mL (180 mg total) by mouth daily for 1\nsolution dose, See comment\nfamotidine 40 mg tablet Take 1 tablet (40 mg total) by mouth daily.\nCommonly known 48: PEPCID\n6/9\n--- Page 15 ---\n05/22/2024 WED 11:35 FAX KYLI/QVL9\n\u00a7/22/24, 10:39 AM\npredniSONE 20 mg table Take 3 tablets (60 mg total) by mouth daily for 7\nCommonly known as: DELTASONE days, THEN 2 tablets (40 mg total) daily for 7\nStart taking on: May\u2019 16, 2024 days, THEN 1 tablet (20 mg total) daily for 7\ndays, THEN 0,5 tablets (10 mg total) daily for 7\ndays. Then stop.\nActivity Instructions\nDischarge activity - Normal Activity\nSome medications such as for example pain medications and sleeping or antl-anxlety agents may affect your\nabllity to operate heavy machinery including driving. Please always carefully read the labels on the medications\nthat you take, If you have experlanced confusion, seizures, lightheadedness or blackouts then it may not be safa\nor even jegal for you to operate heavy machinery (including driving). Please act in the Interest of your own safety\nand that of others. Speak to a physician If you ara not sure whether it Is safe or legal for you to drive,\nCare Instructions: You should engage In exercise as tolerated to improve your health. You may go to the website\nof the American Heart Association for additional information and tips an how to exercise right\n(WWW. americanheart.org).\nScheduled Appointments 3\nMay 22, 2024 10:30 AM 2211 Bread Way\nPads Infusion (Leantaas) with PEDS INF UMBRELLA, Tower 4th FL, Suite 6102\nPEDS 241+ MIN INFUSION Nashville TN 37232 |\nChildren\u2019s Hematology - Oncology (Peds DOT 6) 615-936-1762\n7/9",
+        "processed_text": "--- Page 1 ---\n04/22/2024 WED 11:32 FAX KIVVL/ Ved\nFAX TRANSMISSION\nBetter Lie Multiple Sclerosis Center\n3320 Montgomery Dre Nashville, TN 37364\nBetter Life F 618-662-4820 P: 615-662-4848\nDr. Asriel Han I Dr. Aditya Shan\nTO: Golden Gate Infusion Center\nFax: ~G/4\u20142-7$-3 & SS Phone Craze F rc\nee _. From: Ertan Rostami, BSN, RN dias\nPages P: 618-343-1176\n(including cover sheet)\nF: 615-343-1219\nComments:\n\u20186 \u2014- Scuke ga - Wants\nAreb\u2019c \u2014 SPUKe RK To IS\n~ (i buxern (Trase: ma ) [9\n~ mere put\nHos y be I Dk Mahe\n- Dy ono heey\nTha documents accompanying this transmission may contain health information that Is legally protected. This information ia intanded only\nfor the use of the Individual or entity named above, The authonzed recipient of this information ts prohibited from disclasing this\nInformation to any other party unless permitted by law or requiation.\nlf you are not the intended recipient, you ar\u00e9 hereby notified that any use, diaclosure, copying or distribution of these documents is strictly\nAabepied If you have received this Information In error, please notify the sender Immediately and arrange for the return or destruction of\nese documents.\n--- Page 2 ---\n05/22/2024 WED 11:32 FAX euyweewe\u2019\n8/22/24, 11:10 AM\nMRN: 041152153\nAbdulla, Shakh\nCommunication 5/16/2024 Provider: Erfen Rostsmi, RN\nStatus: Open Reason for call: Truxima Second Initial Dose Needed Week of June 3\nBetter Life Multiple Sclerosis\nCenter\nAll Conversations: Truxima Second Initial Dose Needed Week of June 3 (Newest Message First)\nMay 21, 2024\nJha, Vedant to Erfan Rostarni, RN I I\nHi Erfan 5/21/24 4:44 PM\nThe only way Extraodinary Care could see his Medicaid plan would be at home :( I'm not sure\nif he is able to be seen at a hospital based infuslon center closer to home?\nWe will hold off on this one for now- let me know if you're not able to find a provider who can see I\nhim in the infusion suite and we will re-open the referral.\nVedant I\nErfan Rostami, RN routed this conversation to ina, Vedant \u00a7/21/24 2:32 PM I\nMay 20, 2024 I\nGu, Hao 4, MD to Erfan Rostami, RN\n4 Note 5/20/24 5:13 PM\nSecond dos 2 waeks from may 23 first\nErfan Rostami, RN routed this conversation te Gu, Hao H, MD 5/20/24 3:41 PM\nJha, Vedant to Erfan Rostamni, RN\nHi, 5/20/24 2:54 PM ,\nls Dr, Gu carmfortable with this patient being seen for home Infusion?\nThanks,\n1/3\n--- Page 3 ---\n05/22/2024 WED 11:33 FAX uvve/vee\n6/22/24, 10:33 AM Abdulla, Shakh (MR # 041162163) DOB: 04/01/2001\n1 Shakh Abdulla Therapy Plan 1 Summary\nMRN: 041152153 Description: male DOB: 4/1/2001 ,\nPatient Demographics :\nPatient Name Legal DOB Address Phone I\nAbdulla, Shakh Sex 4/1/2001 425 Sherman Ave 865-395...3958(Home) .\nmale 865-395... 0481Mobile) .\nNashville TN 37998 *Preferread* I\nMedication\nI Rituximab Or Biosimilar Days 1, 15 Load Then Once Every 24 Weeks 3\n\u00ae Associated Problems I\nProblem Selected Diagnosis I 3\nMultiple sclerosis in pediatric patient (CMS/HCC) [G35] Multiple sclerosis in pediatric patlent (CMS/HCC) [G35] ,\n:\na\nI Infusion Orders a\nla) All Current Orders ;\nInterval Duration Due : :\nNUTAING ORNOS ns acacia nie eh ene eine, = te eres I :\n7 de IV access Every visit Every visit I I\nI Care Instructions: Obtain IV access (PIV, PORT, ete.) and start NS 0.9% @ KVO ,\n. Until discontinued Starting when released Until Specified 3\nI Last released: Never Electronically Signed By: Gu, Hao KH, MD on 5/15/2024 .\nwm\u201d Monitor pt for hypersensitivity reaction Every visit Every visit }\nOnce Starting when released for 1 occurrence .\nIf allergi\u00a2 reaction or infusion related reaction occurs, initiate adult hypersensitivity reaction protacol or I 7\npediatric guideline and CALL MD for additional orders. ,\nLast released: Never Electronically Signed By: Gu, Hae H, MD on 5/15/2024 :\nwf @ NURSING COMMUNICATION Every visit Every visit .\nCare Instructions: Ensure that patient has not taken antihypertensive medications in the 12 hours prior to I\ninfusion : :\nUntil discontinued Starting when released Until Specified\n} Last released: Never Electronically Signed By: Gu, Hae H, MD on 5/15/2024 I\nof me NURSING COMMUNICATION Every visit Every visit 3\nCare Instructions: For Hypotension, place patient in Trendelenberg position, support with NS, and call MD :\nUntil discontinued Starting when released Until Specified 3\n1/4\n--- Page 4 ---\n05/22/2024 WED 11:33 FAX Kavves vee\n6/22/24, 10:33 AM Abdulla, Shakh (MR # 041152153) DOB; 04/01/2001\nOO ntorvall Duration Due Electronically I\nLast released: Never Signed By: Gu, hao MD on 5/15/2024 5:11 PM I\n'\nI ww t D Ig G Every 24 weeks Week of 5/19/2024 I\nClinic Collect, Blood I\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 !\nw/ we CBC w/ Differential Every visi t Every visit I\nOnce Starting when released, Blood 3\nLast released; Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 :\n\u201c/ I Blow Lymphocytes Subsets (TBNK) Every visit Every visit !\nOnce Starting when released, Blood 7\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024\n5:11 PM I\nWw 7 Vital Signs I Every visit Every visit 7 ,\nCare Instructions: Obtain VS prior to start therapy, Q30 minutes with each dose increase and at the end of ! 1\ntreatment. !\nAs needed Starting when released Until Specifled :\nLast released: Never Elactronically Signed By: Gu, Hao H, MD on 5/15/2024 ; :\nw i heparin, porcine (PF) 100 unit/m L syringe \u00a7 PRN RIN I\nm L 3\n5 m L, intra VENOUS, As needed, For flushing Ports/ PICC lines/ Central Lines IF NEEDED, Starting when I\nreleased, Until Discontinued I\nLust released: Never Electronically Signed By: Gu, Hao H, MO on 5/15/2024 3\n3 )\nwf\u2019 wm acetaminophen (TYLENOL) tablet 650 mg \u2014 Every visit Every visit I\n650 mg, oral, Once, Starting when released , I\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 : :\nfm\u2019 diphenhydr AMINE (BENADRYL) $0 mg in $0 Every visi t Every visit 3\nm L NS 3\n50 mg, intra VENOUS, Once, Starting when released :\nAdminister 30 minutes before starting infusion. 3\nLast released; Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 I\nw mm methy IPREDNISolone sod succinate (SOLU- Every visit Every visit I\nMedral) (20 mg/m L) 125 mg in N$ 6.2 m L I\n2/4\n--- Page 5 ---\n0$/22/2024 WED 11:33 FAX KJVQI/ 028\n5/22/24, 10:33 AM Abdulnabl, Noor (MR # 048152163) DOB: 01/01/2008\na Interval = \u2014s-Quration \u00ab=> Due a\n125 mg, intra VENOUS, Once, Starting when released\nAdminister 30 minutes before starting infusion. ,\nLast released: Never Elactronically Signed By: Gu, Hao H, MD on 5/15/2024 5:11 3\nPM\nwf\u201d de NURSING COMMUNICATION Every visit Every visit 3\nUntil discontinued Starting when released Until Specified 3 i\nInfusion rate (standard only) ! :\nist infusion - initiate at SOmg/hr and if no infusion toxicity reaction, may increase by 50mg/hr ever 30 : :\nminutes; Max Rate 400mg/hr I\nSubsequent infusions - initiate at 100mg/hr and if no infusion toxicity reaction, may increase by 100mg/hr : :\nevery 30 min; Max Rate 400mg/hr 7 I\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 3:11 I\nPM\nInfusion Therapy - Initial Dose I nie nee\nof am ri TUXimab-abbs (TRUXIMA) IVPB Every 2 weeks 2/2remaining Week of 5/19/2024\n694 mg (rounded from 693,75 mg = 375 mg/m\u00e9 x 1.85 m2 - BSA might be out of date), intra VENOUS, Once,\nStarting 30 minutes after treatment start time\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/15/2024 I\n5:17 PM I\nf Infusion Therapy - Maintenance Dose sy eepacactiohanmeenni\n} wo @ ri TUXimab-abbs (TRUXIMA) IVPB Every 24 weeks Mon 11/4/2024 I\nDefer until; Mon 11/4/2024 3\n694 mg (rounded from 693.75 mg = 375 mg/m2 \u00ab 1.85 m2 - BSA might be out of date), intrav VENOUS, Once,\nStarting when released }\nLast released: Never Electronically Signed By: Gu, Hao H, MD on 5/13/2024 5:11 3 )\nPM\nPRN Medications eaciicaieeseemeemmmmibie adie ne nes\nw W wm diphenhydr AMINE (BENADRYL) injection 25 PRN PRN\nmg\n25 mg, intra VENOUS, As needed, chills, Starting when released, for 2 dases\nLast released: Never Electronically Signed By: Gu, Hao H, MD an $/15/2024\nvw mm meperidine (DEMEROL) injection 25 mg PRN PRN\n25 mg, intra VENOUS, As needed, rigors, Starting when released, for 2 doses\nLast released: Never Electronically Signed By: Gu, Hao KH, MD on 5/15/2024\n5:17 PM\nwv i ondansetron (ZOFRAN) injection 4 mg PRN PRN a\n4 mg, intra VENOUS, As needed, nausea, vomiting, Starting when released, for 2 doses\nDoses up to 4 mg may be administered undiluted. Inject over at least 30 seconds, but preferably over 2-5 I\nminutes, .\nLast released: Never Electronically Signed By: Gu, Hae H, MD on 5/15/2024 9:11 :\nPM 3\ne Signature Information\nI All order signatures are valid for 1 (one) year fram the signature date.\nProvider Contact Information\nI ANGER I \u201cae sie =\n--- Page 6 ---\n05/22/2024 WED 11:34 FAX WVVO/ Vad\n6/22/24, 10:33 AM Abdulnabl, Noor (MR # 048182153) DOB: 01/01/2008\nHao H Gu, MD (NPI: 1154611523)\nBatter Life Multiple Sclerosis Center .\n3320 verameriary Dr NASHVILLE TN 37361 3\n614-936-0005 \u2014\u2014\nAld\n--- Page 7 ---\n06/22/2024 WED 11:3\u00a2 Fax KJOV7T/Y2Z8\nB ett e I\u2019 Li te Patient: Shakh Abdulla\nMultiple Sclerosis =\nCenter\nCare Everywhere (DA: VOJs7KR2-d84To1.GEA\nENCOUNTER\nPatiant Class: Admission Date/l'ime:\u00a7/1 7/2024 ,\nAdmission User: Roforring Physician:\nAdmitting Provider:\nAttending Provider:\nPATIENT\nName: = Shakh Abdulla DOB: 4/1/2001 (23 yrs)\nAddvess: 428 Sherman Avee APT D Sex: male\nCity: Avashvitte TN 37923 Prof Lang: Arable\nPrimary Care Provider: dames David, PNP Primary Phone: \u00a765-839-7458\nMarital Status; Singlo Mobile Phone: 865-839-7458\n\u2018EMERGENCY CONTACT a vetlbes: &2 a8 ee EP pane\n1, Sina, Amin Yes Father\n2. Mohammedreza, Musila = Yos Mother ,\nGUARANTOR I\nGuarantor: DOB: 10/29/1979\nAddress; Sex: Fomate\nRelation to Patient: Home Phone:\nGuarantor 1D: Mohils Phone:\nWork Phone:\nGUARANTOR EMPLOYER eres. ace eee : ai aa\nThere is no guarantor Information ontered for this encounter, staius;s NOT EMPLO*\nPayor: Pian; TC BLUE CARE NO COPAY\nGroup Number: Insurance Type:\nSubseribar Name; Subscriber DOB:\nStibseriber ID: Financial Class:\nPat. Rel, to Subserlber: )\nSBCONDARY INSURANCE = eye a ate Eth TER The HSE I\nPayor! Plan: I\nGroup Number: Inaurance Type:\nSubscriber Name: Subscriber DOB:\nSubscriber 11):\nPat. Rel. to Subseriber:\nMay 22, 2024 Hospital Face Sheet\n--- Page 8 ---\n05/22/2024 WED 11:34 Fax WIVVd/V29\n5/22/24, 10:37 AM Abdulnabi, Noor (MRN: 041162163) DOB: 4/1/2001\nBC TENNCARE TC BLUE CARE NO 435000 TENNCARE/BLUECARE\nCOPAY\nPrimary Subscriber EERE Ty HEE\nID Name SSN Address\nLAJM14345116 ABDULLA, SHAKH KXX=KK-O 143 8327 BROADWAY LN\nAPT D\nKNOXVILLE, TN 37923\n4/4\n--- Page 9 ---\n05/22/2024 WED 11:34 FAX KIYUS/ Vas\n6/22/24, 10:30 AM\nMRN; 04815215\nAbdulla, Shakh\nED to Hosp-Admission Last attending: Marry, Tom, MO + with Treatment\n\u00a7/14/2024 ~ 5/17/2024 (3 days) team Principal problem: Abnormal MRI I\nStatus; Discharged ?\nMonroe Carell Jr. Children's\nHospital\nDischarge Summary ww aine, Adam Ja$on, MD (Resident Physician) \u00ab Pediatric Neurology I\nGosigned by: Gu,JMao H, MD at 5/17/2024 1:56 PM\nAttestation signed by Gu, Hao H, MD at 5/17/2024 1:5@ PM (Updated)\nI saw the patient on: \u00a7/17/2024 with Dr Kaine, I discussed the care with Dr Kaine, patient and :\nhis father at bedside and agree with the findings and plan as documented in the attached\n\u2014 note.\n. [personally spent more than 30 minutes on the patient's care unit In the preparation and I\nI execution of the hospital discharge.\n_ S/p 4 days of high dose IVMP (1g/dose) today- I .\n\u2014 Discharge home with oral decadron 180mg (equivalent to 1000mg IVMP) x1 to round out \u00a7 :\ndays of high dose steroid treatment for active demyelinating lesion (family wishes to be I\n_ discharged today instead of Saturday) 7\n_ he will then start oral prednisone taper- Instructions provided +PPI }\nFirst dose of Rituximab or biosimilar scheduled for May 22 at gam; second dose of first course\nOf Rituximab within 2 weeks after, we are working with local infusion facility in Knoxville to I\nI get this set up for her moving forward to minimize travel I\nhe will follow up with ophthalmologist in Knoxville I\nSchool note for this week and next week I\n\u2014 PT/OT locally :\nContinue vitarnin D\n[will see her tentatively 3 months after completion of ist course of Rituxlmab -with same day\nI MRI (she does not need sedatlon)- looking at early or mid September. Will update family once\nI we have that arranged I\n~ Hao Gu MD i\nNeurology Discharge Summary\nPatient Name: Shakh Abdulla\nDOB; 4/1/2001\nService: Pediatric Neurology\nAttending: Harry, Tom, MD\nDate of Admission: 5/14/2024\n1/6\n--- Page 10 ---\n05/22/2024 WED 11:34 FAX KIVLY/V29\n5/22/24, 10:39 AM\nDate of Discharge: 5/17/2024\nDiagnosis:\nPrinclpal Problem:\nAbnormal MRI\nResolved Problems:\n* No resolved hospital problems. *\nProcedures: I\nBedside Procedures:\nNo orders of the defined types were placed in this encounter. I\nOR Procedures:\n* Cannot find OR case *\nSynopsis:\nShakh Abdulla is a 23 year old male who established care with VCH neurology ; with MRI brain and spine\ndemonstrating multiple lasions consistent with atypical pediatric MS.\nHospital Course:\nShakh Abdulla is a 23 year old male with history of optic neuritis and abnormal MRI brain concerning for\nMS who presented for admission following clinic visit and neuroimaging today, History from primary\nneurologist, clinic visit and patient and father at bedside, Patient referred to Dr. Gu by Dr. Fazal in East\nBay Confirms predominant symptoms since April of numbness in his right hand and urinary\nhesitaney/urgency. Additionally reporting right eye palin since time of clinie visit this morning. MRI brain and :\nspine obtained following clinic visit and muitipl\u00e9e lesions noted on brain and spine suggestive of pediatric I\nMS. Presents for admission for IVMP. I\nPer clinic visit earller today. with Or Gu.and confirmed with family at bedside,\nShakh Is a 23 years old male, previously healthy who has been referred to neurolmmunology clinie for\ndiagnosis of aptic neuritis and abnormal brain MRI concerning for MS. He is referred by Dr Fazal-pediatric\nneurology in East Bay\nhe /s here with dad; patient himself is an excellent historian and provided the following informatione I do\nnot have CSF results nor clinic note- 1 do have MRI report from Jan 21 2024 (no actual images)- with\nfather and his permission, I reached out to Dr Shane- Dr Fazal's colleague on service who can help assist\nwith quick access to Shakh\u2019s chart.\nToday, Shakh tells me that around early Oct 2023- he started to notice In right eye \"neon bright color\"\nfuzzy vision, and eye pain with movement and perhaps right side of his face in discomfort triggered by\nphysical activities . Symptoms improved once he rested. By end of Oct 2023, he brought this up to\nparents and was brought to local eye doctor and recalled being told that\"right eye being inflamed\" and he\nrecalled visual field deficits appreciated during exam.\nHe was referred to UT ophthalmology Dr Derrek in Jan this year, per report negative MOG and AQP4\n[While waiting on this appt, he thought some Improvement but not back to baseline entirely -\"not\ncompletely normal\")\nWhen he saw UT ophthalmology clinic, recommended brain and orbit and noted WM changes and MS\nwas mentioned. He was treated with 5 days of I\\VMP and referred to se6e Dr Kosentka ped neurology.\nMRI report from Jan 21 2024- \"Diffuse T2 hyperintensity and decreased volume throughout the right optic\nnerve Is similar to prior examination however assocaited abnormal enhancement seen on prior Study has\nrasoved, presumably secondary to interveal treatment.\nLeft optic nerve Is subtle but diffusely small in caliber without significant change from last exam,\nSeveral intracranial WM lesions, stable from last\"\nHe saw Or Fazal in Feb 2024-who obtained LP and had markers of MS and referred to MS clinic today\nBelow are information provided by Dr Shane. Per note recommended referral to our MS c\u00e9nter for\nPrinted by O'Rourke, Ovdrle B, RN at 5/22/2024 10:39 AM 2/9\n--- Page 11 ---\n05/22/2024 WED 11:35 FAX ee\n6/22/24, 10:39 AM\nfurther evaluation and treatment.\nCSF ?WBC, 837 rbc, Ig G Index 0.87 (elavated), +OCB\nPrior to appt today May 14- he nated that in April of this year, started to have invalvament of LEFT eye -\nagain similar with \"neon colors appearance\", some eye discomfort; it happened several times during the\nday for a few days and has since resovied\nSince April he has had intermittent numbness In his right hand (dominant hand)+ along with muscle\ntwitch in his hands and shoulder like tics\nHe has noticed a change with urinary hesitancy- taking a long time to empty his bladder and in addition\nurinary urgency\nHe has not noticed weakness but noted intermittent drifting to right side, bumping in to things\nHe does note that at times when he laughs, bends his neck, does note electrical sensation\nAcademically doing very well, no difficulty\nSleeps well\nFamily history: parents and brothers are healthy\nFloor course (05/14 -\nPatient was admitted to the wards in a stable condition.\nPatient was initiated on high dose steroids for \u00a7 days and tolerated well. MRI consistent with lesions in\nthe brain and spinal cord consistent with atypical MS. ANA was positive as well as SSB so rheumatology\nwas consulted but felt she did not have evidence of another systemic autoimmune disease. PT/OT\nevaluated his and he will follow outpatient. He was de with Decadron and then steroid taper with Pepcid\nprophylaxis. Ha was arranged to have outpatient rituximab and Dr. Gu will follow his in clinic.\nPhysical Exam: :\nTemp: (36.5 \u00b0C (97.7 \u00b0F)-36.7 \u00b0C (98.1 \u00b0F)] 36.7 \u00b0C (98 \u00b0F)\nPulse: [81-99] 84\nResp: [16-18] 16\nBP: teh) 126/63\nSp O2: [98 %] 98 %\nPhysical Exam:\nTamp: [36.5 \u00b0C (97.7 \u00b0F)=36.7 \u00b0C (98.1 \u00b0F)] 36.7 \u00b0C (98 \u00b0F)\nPulse: [81-99] 84\nResp: [16-18] 16\nBP: (122-136)/(63-99) 126/63\nSp O2; (98 %] 98 %\n-Well appearing; NAD\nCV:\n-RRR\nHIGHER INTEGRATIVE FUNCTIONS:\n-Attentlon & concentration: Normal\n-Orlentation: Orlanted to person, place & tlme\n-Memory: Recent and remote memory Intact\n-Language: Normal\n\u00abFund of Knowledge: Normal\nCRANIAL NERVES:\n\u201cCN 2: Visual flelds full\n\u201cGN 2,3: PERRL; r APD\n-CN 3,4,6: EOMI\n-CN 6: Faclal sensation intact\n-ON 7: Facial strangth/movement Intact bilaterally\nPrinted by O'Rourke. Cydnie B. RN at 5/22/2024 10:36 AM 3/9\n--- Page 12 ---\n05/22/2024 WED 11:35 FAX Vie / Vag\n5/22/24, 10:39 AM\n-CN 8; Hearing normal bilaterally\n\u201cGN 9,10: Palate elavates symmetrically\n\u201cCN 14: Normal shoulder shrug and head turn\n-CN 12: Tongue protrudes midiine\nMOTOR:\n-Muscla tone normal in upper and lower extremities\n-Muscle strength 5/6 In upper and lower extremities; RLE 4+ proximally\nSENSATION:\n-Intact to light touch in upper and lower extremities bilaterally\nCOORDINATION:\n-Finger/nose intact bilaterally I\nGAIT:\n\u00abNormal gait\nImmunizations/njections Administered far This Admission\nNo immunizations on file.\nAllergies:\nNo Known Allergies\nDiagnostic Studies:\nRecent Results (from the past 24 hour (s))\nCBC wi Differential\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Range\nWhite Blood Cells 7.7 3.4- 10,2\n%10(3)/me L\nRed Blood Calis 4,63 3.80 - 5.50\nx10(6)/me L\nHemoglobin 13,0 12.0 \u00bb 16.0\ngm/dl\nHematocrit 40 35-49 %\nMean Cell Volume 86 76 - 96 f L\nMean Cell 28.1 29.0 = 35.0\nHemoglobin Pg\nMean Cell 32.7 32.0 \u00ab 37.0\nHemoglobin gm/d L.\nConcentration\nRDW SD 38,4 37.4 = $2.4\nf L\nRDW CV 12.3 11.1 - 14.3\n%\nPlatelet 300 150 \u00ab 400\nx10(3)/mel.\nPrintad by O'Rourk\u00e9. Cvdrle B, RN at 5/22/2024 10:39 AM 4/9\n--- Page 13 ---\n05/22/2024 WED 11:35 FAX KVII/Y29\n5/22/24, 10:30 AM\nMean Platelet 10,0 9.3 = 12.8 f L.\nVolume\nNucleated RBC 0 0-0/100\nWBC\nNucleated RBC 0.00 0.00 - 0.00\nAbs x10(3Vmeo L\nAuto Neutrophil 4,52 1.80 \u00ab7.70\nAbsolute X\u00a510(3)/mel.\nCMP\nCallaction Time: 05/14/24 10:47 AM\nRasult Value Ref Range\nSodium Level 139 138 - 146 !\nmmol/L\nPotassium Level 3.8 3,3 - 4.8\nmmol/L\nChloride Level 101 98 - 107\nmmol/L.\nCarbon Dioxide 22 17 - 28\nmmol/L\nAnion Gap 16 mmol/L\nGlucose Level 95 60 - 99\nmg/d L.\nBlood Urea 13 7 - 18\nNitrogen mg/dl.\nCreatinine Level 0.67 0.50 - 0.90 I\nmg/dl :\nCalclum Level 9.9 8.4 + 10,2\nTotal mg/d L 3\nBillrubin Total 0.4 0.0 - 0,7\nmg/d L\nAlbumin Level 4.7 4.0+5.3\ngm/dt.\nProtain Total 8.4 (Hf) 6.3-7,8\ngm/d L.\nAlkaline 5\u00a7 50 - 117\nPhosphatase unit/L\nAspartate 25 21-34\nAminotransferase unit/L\nAlanine <6 0-17 unit/L\nAminotransferase\nHopatitis B Pn\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Range\nHepatitis B Surface Negative Negative\nAntigen\nHep B Core Ab Negative Negative\nTotal\nHepatitis B Surface 44.7 (H) <=10.0\nAb Unit ml U/me\nHep Bs Ab Interp Positive (A) Negative\nig G\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Ranga\nlg G Quantitative 1,355(H) 600-1,310\nmg/d L\n6/9\n--- Page 14 ---\n05/22/2024 WED 11:35 FAX KIVLe/ 2g\n6/22/24, 10:38 AM\nIg A\nCollection Time: 05/14/24 10:47 AM\nResult Value Ref Range\nIg A Quantitative 279 40 - 290\nmg/dl.\nAuto Diff\nCollection Time: 05/14/24 10:47 AM\nResuit Value Ref Range\nNeutrophils 58.3 %\nAbsolute 4.52 1.80 - 7.70\nNeutrophils x10(3)/mel.\nLymphs 33.6 %\nAbsolute 2.60 1.70 - 4.50\nLymphocytes x10(3)/mel L.\nMonocytes 6.5 %\nAbsolute 0,50 0.20 - 1.00\nMonocytes %10(3)/me L\nEosinophils 0.5 %\nAbsolute 0.04 0.00 - 0.50\nEosinophils x10(3)/mel L.\nBasophils 0.8 %\nAbsolute Basaphils 0.06 0,01 - 0,08\nx10(3)/me L\nImm Gran 0.3 %\nAutomated\nAbsolute Imm 0.02 0.00 - 0.03 I\nGran Automated x10(3)/me L\nConsultations Obtained:\nOrdars Plated This Encounter\nProceduras\n* Inpatient Consult to Pediatric Ophthalmolagy\n* Inpatient Consult to Pediatric Rheumatology\n* Inpatient consult to Case Management :\nCondition at Discharge:\nStable\nDisposition:\nHome or Self Care\nPatient Instructions:\nDischarge Medications\nNew Medications\ndexamethasone 4 mg/m L CONCENTRATED Take 45 m L (180 mg total) by mouth daily for 1\nsolution dose, See comment\nfamotidine 40 mg tablet Take 1 tablet (40 mg total) by mouth daily.\nCommonly known 48: PEPCID\n6/9\n--- Page 15 ---\n05/22/2024 WED 11:35 FAX KYLI/QVL9\n\u00a7/22/24, 10:39 AM\npredni SONE 20 mg table Take 3 tablets (60 mg total) by mouth daily for 7\nCommonly known as: DELTASONE days, THEN 2 tablets (40 mg total) daily for 7\nStart taking on: May\u2019 16, 2024 days, THEN 1 tablet (20 mg total) daily for 7\ndays, THEN 0,5 tablets (10 mg total) daily for 7\ndays. Then stop.\nActivity Instructions\nDischarge activity - Normal Activity\nSome medications such as for example pain medications and sleeping or antl-anxlety agents may affect your\nabllity to operate heavy machinery including driving. Please always carefully read the labels on the medications\nthat you take, If you have experlanced confusion, seizures, lightheadedness or blackouts then it may not be safa\nor even jegal for you to operate heavy machinery (including driving). Please act in the Interest of your own safety\nand that of others. Speak to a physician If you ara not sure whether it Is safe or legal for you to drive,\nCare Instructions: You should engage In exercise as tolerated to improve your health. You may go to the website\nof the American Heart Association for additional information and tips an how to exercise right\n(WWW. americanheart.org).\nScheduled Appointments 3\nMay 22, 2024 10:30 AM 2211 Bread Way\nPads Infusion (Leantaas) with PEDS INF UMBRELLA, Tower 4th FL, Suite 6102\nPEDS 241+ MIN INFUSION Nashville TN 37232 I\nChildren\u2019s Hematology - Oncology (Peds DOT 6) 615-936-1762\n7/9",
+        "extraction_errors": []
+      },
+      "filling_results": {
+        "status": "completed",
+        "form_type": "widget_based",
+        "filled_count": 82,
+        "filled_fields": 82,
+        "total_fields": 82,
+        "fill_rate": 1.0,
+        "fill_percentage": 100.0,
+        "filled_field_details": [
+          {
+            "field_name": "CB1",
+            "tooltip": "Start of treatment",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "T10",
+            "tooltip": "Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T12",
+            "tooltip": "Patient First Name",
+            "value": "Shakh",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T13",
+            "tooltip": "Patient Last Name",
+            "value": "Abdulla",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T14",
+            "tooltip": "Patient DOB (MM/DD/YYYY)",
+            "value": "04/01/2001",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T15",
+            "tooltip": "Address:",
+            "value": "425 Sherman Ave",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T16",
+            "tooltip": "City:",
+            "value": "Nashville",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T17",
+            "tooltip": "State:",
+            "value": "TN",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T18",
+            "tooltip": "ZIP:",
+            "value": "37364",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T19",
+            "tooltip": "Patient Phone",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T21",
+            "tooltip": "Cell Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T23",
+            "tooltip": "Allergies:",
+            "value": "No Known Allergies",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T28",
+            "tooltip": "Member ID #:",
+            "value": "LAJM14345116",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T30",
+            "tooltip": "Insured:",
+            "value": "Abdulla, Shakh",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T34",
+            "tooltip": "Carrier Name:",
+            "value": "Tenncare/bluecare",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T35",
+            "tooltip": "Insured:",
+            "value": "Abdulla, Shakh",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T42",
+            "tooltip": "First Name:",
+            "value": "Hao",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "T43",
+            "tooltip": "Last Name:",
+            "value": "Gu",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "CB44",
+            "tooltip": "M.D.",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "T48",
+            "tooltip": "Address:",
+            "value": "425 Sherman Ave",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T49",
+            "tooltip": "City:",
+            "value": "Nashville",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T50",
+            "tooltip": "State:",
+            "value": "TN",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T51",
+            "tooltip": "ZIP:",
+            "value": "37364",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T52",
+            "tooltip": "Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T55",
+            "tooltip": "NPI #:",
+            "value": "1154611523",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T59",
+            "tooltip": "Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.5",
+            "tooltip": "Name:",
+            "value": "Abdulla, Shakh",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.6",
+            "tooltip": "Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.11A",
+            "tooltip": "Address:",
+            "value": "425 Sherman Ave",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.13",
+            "tooltip": "City:",
+            "value": "Nashville",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.14",
+            "tooltip": "State:",
+            "value": "TN",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.15",
+            "tooltip": "ZIP:",
+            "value": "37364",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.16",
+            "tooltip": "Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.20",
+            "tooltip": "NPI:",
+            "value": "1154611523",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.28",
+            "tooltip": "Name:",
+            "value": "Abdulla, Shakh",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.29a",
+            "tooltip": "Address:",
+            "value": "425 Sherman Ave",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.30a",
+            "tooltip": "City:",
+            "value": "Nashville",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.31",
+            "tooltip": "State:",
+            "value": "TN",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.32",
+            "tooltip": "ZIP:",
+            "value": "37364",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.33",
+            "tooltip": "Phone:",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "Provider Admin T.37",
+            "tooltip": "NPI:",
+            "value": "1154611523",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "CB60",
+            "tooltip": "Riabni (rituximab-arrx)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "CB61",
+            "tooltip": "Rituxan (rituximab)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "CB62",
+            "tooltip": "Ruxience (rituximab-pvvr)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "CB63",
+            "tooltip": "Truxima (rituximab-abbs)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "T67",
+            "tooltip": "Primary ICD Code:",
+            "value": "G35",
+            "confidence": 0.9,
+            "page": 1
+          },
+          {
+            "field_name": "T69",
+            "tooltip": "Other ICD Code:",
+            "value": "G35",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "CB73",
+            "tooltip": "Ruxience (rituximab-pvvr)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "CB74",
+            "tooltip": "Truxima (rituximab-abbs)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "T75",
+            "tooltip": "When was the member\u2019s trial and failure of the preferred drug?",
+            "value": "Lajm14345116",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "T76",
+            "tooltip": "Please describe the nature of the failure of the preferred drug",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "CB78",
+            "tooltip": "Ruxience (rituximab-pvvr)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "CB79",
+            "tooltip": "Truxima (rituximab-abbs)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "T80",
+            "tooltip": "When was the member\u2019s adverse reaction to the preferred drug?",
+            "value": "Lajm14345116",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "T81",
+            "tooltip": "Please describe the nature of the adverse reaction to the preferred drug",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.8,
+            "page": 1
+          },
+          {
+            "field_name": "CB82",
+            "tooltip": "Ruxience (rituximab-pvvr)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "CB83",
+            "tooltip": "Truxima (rituximab-abbs)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "T12",
+            "tooltip": "Patient First Name",
+            "value": "Shakh",
+            "confidence": 0.9,
+            "page": 2
+          },
+          {
+            "field_name": "T13",
+            "tooltip": "Patient Last Name",
+            "value": "Abdulla",
+            "confidence": 0.9,
+            "page": 2
+          },
+          {
+            "field_name": "T19",
+            "tooltip": "Patient Phone",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 2
+          },
+          {
+            "field_name": "T14",
+            "tooltip": "Patient DOB (MM/DD/YYYY)",
+            "value": "04/01/2001",
+            "confidence": 0.9,
+            "page": 2
+          },
+          {
+            "field_name": "T89",
+            "tooltip": "When was the member\u2019s trial and failure of the preferred drug?",
+            "value": "Lajm14345116",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T90",
+            "tooltip": "Please describe the nature of the failure of the preferred drug",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T95",
+            "tooltip": "When was the member\u2019s adverse reaction to the preferred drug?",
+            "value": "Lajm14345116",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T96a",
+            "tooltip": "Please describe the nature of the adverse reaction to the preferred drug",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T104",
+            "tooltip": "When was the member\u2019s trial and failure of the preferred drug?",
+            "value": "Lajm14345116",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T105",
+            "tooltip": "Please describe the nature of the failure of the preferred drug",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T113",
+            "tooltip": "When was the member\u2019s adverse reaction to the preferred drug?",
+            "value": "Lajm14345116",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T114",
+            "tooltip": "Please describe the nature of the adverse reaction to the preferred drug",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.8,
+            "page": 2
+          },
+          {
+            "field_name": "T12",
+            "tooltip": "Patient First Name",
+            "value": "Shakh",
+            "confidence": 0.9,
+            "page": 3
+          },
+          {
+            "field_name": "T13",
+            "tooltip": "Patient Last Name",
+            "value": "Abdulla",
+            "confidence": 0.9,
+            "page": 3
+          },
+          {
+            "field_name": "T19",
+            "tooltip": "Patient Phone",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 3
+          },
+          {
+            "field_name": "T14",
+            "tooltip": "Patient DOB (MM/DD/YYYY)",
+            "value": "04/01/2001",
+            "confidence": 0.9,
+            "page": 3
+          },
+          {
+            "field_name": "CB164",
+            "tooltip": "Relapsing-remitting MS (RRMS)",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 3
+          },
+          {
+            "field_name": "T189",
+            "tooltip": "Medication:",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.9,
+            "page": 3
+          },
+          {
+            "field_name": "T196",
+            "tooltip": "Medication:",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.9,
+            "page": 3
+          },
+          {
+            "field_name": "T12",
+            "tooltip": "Patient First Name",
+            "value": "Shakh",
+            "confidence": 0.9,
+            "page": 4
+          },
+          {
+            "field_name": "T13",
+            "tooltip": "Patient Last Name",
+            "value": "Abdulla",
+            "confidence": 0.9,
+            "page": 4
+          },
+          {
+            "field_name": "T19",
+            "tooltip": "Patient Phone",
+            "value": "(865) 839-7458",
+            "confidence": 0.9,
+            "page": 4
+          },
+          {
+            "field_name": "T14",
+            "tooltip": "Patient DOB (MM/DD/YYYY)",
+            "value": "04/01/2001",
+            "confidence": 0.9,
+            "page": 4
+          },
+          {
+            "field_name": "T285",
+            "tooltip": "Medication:",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.9,
+            "page": 4
+          },
+          {
+            "field_name": "T292",
+            "tooltip": "Medication:",
+            "value": "Truxima (rituximab-abbs)",
+            "confidence": 0.9,
+            "page": 4
+          }
+        ],
+        "missing_fields": [],
+        "processing_errors": [],
+        "data_validation": {
+          "is_valid": true,
+          "errors": [],
+          "warnings": [
+            "Suspicious OCR result in extraction_timestamp: 2026-08-21T00:41:52.058665...",
+            "Suspicious OCR result in phone: (865) 839-7458..."
+          ],
+          "suggestions": []
+        }
+      },
+      "reports_generated": [
+        "processing_report.md",
+        "missing_fields.txt",
+        "extracted_referral_data.json"
+      ],
+      "errors": []
+    },
+    {
+      "patient_id": "Akshay",
+      "success": true,
+      "processing_time": 47.364737033843994,
+      "extraction_results": {
+        "metadata": {
+          "extraction_method": "Enhanced OCR",
+          "extraction_timestamp": "2026-08-21T00:42:39.779851",
+          "confidence_scores": {
+            "first_name": 0.95,
+            "last_name": 0.95,
+            "patient_name": 0.95,
+            "dob": 0.95,
+            "phone": 0.9,
+            "sex": 0.7,
+            "diagnosis": 0.9,
+            "primary_diagnosis": 0.9,
+            "medication": 0.9,
+            "medication_key": 0.9,
+            "insurance_carrier": 0.9
+          },
+          "quality_score": 0.9,
+          "source_file": "input_data/Akshay/referral_package.pdf"
+        },
+        "patient_info": {
+          "first_name": "Akshay",
+          "last_name": "Chauchari",
+          "patient_name": "Chauchari, Akshay",
+          "dob": "02/17/1981",
+          "phone": "(570) 599-6973",
+          "sex": "male"
+        },
+        "clinical_info": {
+          "diagnosis": "Crohn's disease",
+          "primary_diagnosis": "Crohn's disease",
+          "medication": "Skyrizi (risankizumab)",
+          "medication_key": "skyrizi"
+        },
+        "insurance_info": {
+          "insurance_carrier": "Aetna Better Health of Virginia"
+        },
+        "prescriber_info": {},
+        "raw_text": "--- Page 1 ---\n2023-05-30 11:01 EGAS Fax 2038183061 >> 16153783455 P 1/10\nOne Health Partners\n) Fax Referral To: (800) 223-4063 be\nEmail: intake@ thealth.com ()ne ;\nDirect Phone: (615) 378-3450 HEALTH PARTNERS uo\nToll Free: (844) 993-0112\nhe cdbeca ali Sy bret eens rate amine 2 SIRYRIZEORDER FORMS. ho nies Bk ae et Se\nDate:_O5 [4%O727693_  ic0-10 code: $l : > Therapy Status\nPatient Name: Akshay H. chauchari _Alleraies: our OPEN , ACSA Nophen $2 New Star\nContinuing Therapy:\nety eG epee ated tte PROMIDERUNFORMATION 2 hae) ee RES Lh .\nOrdering Provider sl imorhy Adam, ZAG Provides. Fax 203 S18 t6\u2014e+ \u2014\u2014 ounces\nProvider ner ASAA4 te% Provider Addrass:_2 / olle e Ave ale. 400\nProvider Phone:203~ ] K- 4 O20 | ers, buy Ta LLIiple\nMW Crohn's Disease Induction Phase: Please include the following lab results\n\u2018a ; required for infusion. lf no results are\nAdminister Skyrizi GO0mg IV at week 0, week 4 available, the following Jabs will be drawn\n- and week 8 per protocol. prior to first infusion:\nRefills x one year from\ndate of signature unless | ~ Negative TB Quantiferon Gold, or\n.\u00bb | }& Crohn's Disease Maintenance Phase: indicated below, TB Skin Test within the last 12 months.\nSkyrizi Administer Skyrizi\n4 a Y ALT/AST at baseline (within the past 60\nO 180mg SQ at week 12 and every 8 weeks x NR Refills days).\nthereafter.\na s \u2018 a\n4 360mg SQ at week 12 and every 8 weeks Bilirubin at baseline (within 60 days),\nthereafter.\nOral ia\nfl Acataminophen:__ 325mg ___ 500mg _____. 650mg DQ Dexamethasone:____.4mg \u2014___8mg\nt] Loratadine: 10mq  Diphenhydramine:_ 25mg s0mg\n\u00a9 Cetirizine: 10ma O Famotidine:__  _ 20mg \u2014__ 40mg\n\u00a9 Diphenhydramine: 25mg \u2014___ 50mg Cl Methylprednisolone; 125mg\nO Famotidine: _ 20mg _ 40mg QO Hydrocortisone: 100mg\nCO) ibuprofen: __ 200mg \u2014___400mg_____ 600mg O Ondansetron; _.__4mg \u2014____ Bing\n[ Ondansetron: __._4mg__ ss 8 mg GO) OMIVOU sissies cme\nLAB ORDERS (please Indicateiany.labs to be drawn and frequency): fio ice i eS ee ata\n(Please fax this signed order form, along with the following documents\nto 800-223-4063)\n* History & Physical, Last Office Visit Note\n\u00a2 Patient Demographics and Insurance Information\n+ Medication List\n\u2018Surveillance lab ordering and monitoring Is the responsibility of the prescriber\u201d) *\u00ab Racent Lab Work\nol By Slanind below: cartify.that the above therapy: is'medicallv:necessarv'\u2019: Prescriber\u2019s Signature (SIGN'BELOW); .\nJispense as Written; Substitution Allowed:\n*rascriber Name Date Presce\u00ae YL Date\nV 4.05.24 The Information cantzined in thia tacaimitea may be cantidantial and ls intanded solely for tha use of the named rocipient(s). Access, capying or re-use of the facsimile or any information\ncontained therain by any othar person ie not puthodzad, | you are not the intended recipioni, plaoce natify ue invmadiately by calling 615-895-0186 or faxing back to the orginalor.\n--- Page 2 ---\n2023-05-30 11:02 EGAS Fax 2038183061 >> 16153783455 P 2/10\nAkshay, chaudhari H DOB: 62/17/1987 (36 yo M) Acc No. D775152 DOS:\n85/29/2023\nAkshay, chaudhari H\n36 Y old Male, DOB: 02/17/1981\n| ) \u2018: Account Number: Dvvs152\n: (460 EE} Camino Real, Arlington, VA-22407\nsi , Home: 570-599-6973\n] Guarantor: Akshay, Chaudhari Hl Insurance: Aetma\n| | : Better Health of Virginia Payer TD: 25VA\nPCP: DOCTOR UNKNOWN\nAppointment Facility: Extraodinary Gastroenterology\nProgress Notes: Timothy Adam, MD\nReason for Appointment\n1. Discussion ~ in person\nHistory of Present iiness\nHistory of Present Iilness: ol\n4/12/2023: Symptoms worsened with increasing abdominal pain and multiple mouth sores,\nHe visited clinics in pba eer and subsequently Fairfax, A CT scan revealed right-sided colitis,\nconsistent with previous findings, Markedly elevated ESR was noted at Inova, Recently\ndischarged on a regimen of budesonide and antibiotics.\n3/8/2023: He was started on Stelara, resulting in significant improvement in abdominal\npain and reduced stool frequency, However, he continues to experience bothersome anal skin\ntags and recurrent ottbreaks of genital herpes, confirmed by lab tests. Mouth ulcers have\nbecome less severe but remain present, Diarrhea has decreased, Valacyclovir has provided\npartial relief for the herpes ottbreak but has not fully resolved it. Additionally, he reported\nswelling and discomfort in the right index finger.\n12/4/2022: This 37-year-old male presented secking 4 second opinion regarding rectal\nbleeding and anal issues, His symptoms began three years ago following a diagnosis of\nperforated appendicitis, Since then, he has experienced frequent bloody stools, severe perianal\npain, and external protrusions, He also reports recurrent painful mouth ulcers, Previous\nevaluations indicated anal disease consistent with Crohn's and mild inflammatory changes in the\nsigmoid and descending colon. No deep ulcers or skip lesions were noted. Pathology showed\nmild focally active colitis. Serologic testing revealed elevated ASCA (145), ACCA (102), and ALCA\n(76), supporting a diagnosis of Crohn's disease. CRP was mildly elevated at 1.6. Prior trials with\nmesalamine and oral corticosteroids offered minimal benefit. Following negative QuantiFERON\ntesting, he underwent induction therapy.\n10/15/2022: Initial onset of worsening abdominal pain and rectal bleeding exacerbated by\ndietary triggers. Evaluation noted anal fissures and skin tags with mild tenderness. A trial of\ntopical steroids and dietary adjustments was initiated, with partial symptomatic relief but no\nsignificant change in stool frequency or bleeding. His main\nProgress Note: Timothy Adarn, MD @5/29/2023\nNote generated by eClinicalWorks EMR/PM Soltwaie (www. eCinicalWorks. com)\n--- Page 3 ---\n3/10\nP\nS\nHe ha\nrs. er\nlee th He\no @ b\nem d see pro\nll as a a logic\nwe Vv Imo hone\n\u20ac $ 0 8\ng ith previous oF nt to ea as\na rr \u2018erin . by ov vin ome, p atien\nint i stra enie <a raed at d by\npla fru Hed pro bta tform inia ente : -\u00a7\nmM COM very W, dical a$ 0 la 'Virg um. C:\nea een no me nt we ine p eof doc x, W\noe \u2018 ce de hire e, ed ithi :2\nwe eis se a medic locati is wi F, BMI did\neat pete is Cache Patient oe 97.7 distress,\nee sa sitet a rovide ke acute\nae a \u201c| ry No. S 5 me} 18 in no\na oe Baby [ : ringed reke: 86. alert, aa\nOg Fi gallon FS i Sonn ess ita t Q, la\nMe eae rata fe ra ieee Pe 1 lbs, B ation EARAN c nd dep and pe\n7: eee 7 om : asin Se ipa vey lie ; Mamin aba hm, a place,\n| \u2018 fe ote H GS: son. alert a tal blee mmr for\nah ae 3 NEN? som ie gia ote - colon wi ently a8 him ing a day, 7\noe i Sa om eae ; ore NE smen ase of app sa ang m5 ~~ ve re\nfads UCHR 2 NGG COu i CK \u2018ily 7 ral ee ise iifw tal \u00a5) \u20ac\nset ae se ae eet pS ga \u2014 os tic Skytiz i th oe t, Oral ish the int wh\nee ia = a ss ee ro a oer , inis oe ae\n: a seats ara Nom ems ie ye si C lem Wi ta Fi ha Q,\nih ye aoe isto eee mnable to 20 MG, oF he \u2014\nse ers ah Sete ie rn s c 0\nWe oo i eine Rea =a a severe an\nsaa ne Tig | Nee ey ae ont Be an \"4 N ls in e he\niy a Rone: ss ab stents Sry meld rea hn S iSO fil nt} } a t Ito\nie fa ag tf ae aaa 3 faa 7 \u2018creck Re co nce ven pa e\nan oe Benes Pe Cr re let, e to co d gi sa Th\nHees oe ee Refill 14 Tab \u2014 fam nan ssary r the vel\nite oe Pe) ie 8, 14 aS0 ell. tio ece nde this this m\nee vine days, : Re ow ly op ben ble ion at al sah de\neet \u2018 wh ree eas eae il: dt FA oe tes ICs ony ly na tion a ns Oo 20\n: NS os oa situa an ; ou n ah iri\nnr oe 3 chee Bai su ctio pri rtic risks bs te ve\nele ae Na ee Othe count he Oe the limite ated on th to th\nx ! ahs oe Notes fete =i be tre Sa\neee ici ee te raat RGR By rl aan Wet is pa es a m J\n7 ee a: ee This coeee plates\ni oat | BE haa ircu ha (in ha \u2018\niN oe : pie ae 2 veatent \u00b0 Wa made rep\nve a\" on the d all ol \u201cie . m)\nil \u2014- rai te to ht iWarks\npe ata sen: * tied caret es et ie @ nica\noe sae a eras oa /PM\ncca s EMR\nOe i\nmee\n--- Page 4 ---\n~ 0\n2\nal r , 4.8\nnl faint are ; rf 2)\nbet \u00e9 Ee 1\n[T' << a\u2019 ess Pr) rc\n- = : 5 ot, rs >\" ce\neT ' te { ky { 4 \u201cyy : T Sead Sieg 4 ae\n, ol was he '* * *\" \"% : \u2018 : e st \u201cLt |\neu , a whet Page om 2 ad Bat : Tells Pb ett \u00b0\nar * : , 2 . \u00b0 sd a he ; , ght eee *9, .*e\nRi Pe oe eran i eg wer\u2019 wa Be an eae hay od hay a)\n: ga . oo a we mag \u2018 oe of Ll\" * te ' x, a ae . + A it n* . Pa\n\u2018 s we ' \u201c odes e ; cy etwas >a Hh ppl\ntye ae\" ets te te Wd, oot ae Vote rag eae hyste - \u00ae\nalge 5 at's eat \u201cabe i? oe ye a. 9.8, 4 ! 8\u2019, eye . I at ror has \" pati .\nq.\u00b0 yy ' , \u201c,* ! .. ,* es \u00ab \u00b0 . Ue \u201d \u00ae A hy a, . as a ited tha, +. Lad\n! e* ~ 4 _ \u2018 , \u2018 @ \u00ae oh i* S ace t PP it hd \" beeegl s\nSEAS ENE pose enti Be er conditi a\noar ; * 4 . ~ | : \u2018 J ,* A: .e ep = oe) id o\u00b0 we, este \\. Q e\npote \"ho. * ih \u00b0 jt cu * Ay . ays et Te he ? a : aa 4 oe \u201c0 Hy \" i 7 Dro VIS\n\u2018 \u2018 \u00b0 - \u00b0 3 \u00b0 ' o \u2018* \u2019\nape 38 ic joer *, : P \u2018 .: Sek a ,\u00b0 * , | \u00bb tet i ifs \u201c< > j e OX | to\nafstty 40\u00b0 a Bete tl his, . _ t, Ve ae s tela a ry $\nad s\u00a2, \u2018 ote 1 : ' : ; Ro , a\u201d o* 8 . Te re my!\ntae Se way Ses ae ;- \u00b0 \u201d ue\" f nee CEN, e f e\n\u2018 \\ * ' Us Fee nan \u2018 ly . = s if wl + ou be had: oh eC\nSal Pa ate ley \u00bb3 ye ' a ie \u201ca\u201d : \"4 Ah a it toate > . sd sil me\n~ oh tr ree o; *s + a ; 3 ; | oe : : aa \u00b0 age in a ' Tt i\u00a2 je\" a\nape el es a a ts } ie a :* pol aoe ie on Pee \u2018{ 8 | tees i \u00b0\n\u2014 eats? a ad Pal ee me rot : Ps \u2018kek : oe \"Sag pie At oy\"\nork \u201cb oy\u2019. 7? \u00bb a ef. gt viet \u2018 ve, De Phd ' 3 Spear . i ae\nat 4 ye Oe in 5 pee . ore\u2019 . . A | CTY, i\u2019, ' 1? wert rae .\n: pete vis, ot! ech ot whe J dattge Sy Ps of ea ae H poy. ved ees \" : sate si\nseit 4 ay 4, oa. aos sows te ony ee *e veal, \u00b0 pv +? lever sit Ms ot pe\nave! a 5 08 fe ty aut) ? He\" ! _ ee 4 teat re oye . | . \u2018 i re s .\u00b00) +, tot .* wgerytet\na joe, oe a? fee petene\u201d ae sain,\u201d \u20187 Bs i eS pues Su Par\net. ;* nae 8 ome Bawee \u2018 off,\" \u201cVie 1 t | age \u2018. ' eeegee* >\n; nha _ , \u2018 < fae \u00a2 6\u00b0 it e- ' - oe tof O\u00b0 e oe in ' i 0\ntae ey 3\u00b0 Oe sy bis one, \u00ae K ane eo ae [uu \u2018 | eee a \u201c4 ,\" |\nA org! ae glee. etinrle\u2019s \u2018\u00bb Lie cathy! ie ' - = 3 ieee oe : ea\n\u00ab| oof on 0g? \u00ab! Re t re \u00b0 f\u00b0 eee ee \u2019 \u00bb\u2019 \u201c8.\u00a2 \u2018. qe .\" gol yee bd wosedtts e\nqf te f+ *. pie! \u2018 + ES. ape e ht Pi ch ie My a * qe am 1 ee | : oe \u2018\n, ' i \u2018 ' \u00bb i,** ' rf t .\nteats fe ig.. oh Br eee ! Fi, pet, hae i+ veal ee ee r Poa. 14!) at se.t\nih tee | + Pal } \u2014 eS be cs ae oyna? EC a fe uae eo H \u00bb\nait ae net ae : 4 . \u00a5 1 ee - fy \"1 x we yl! in oS ow oye ce otatel eed }\na a os! , , ** \u00b0 \u00b0 = 7 . we fl a \u2018. \u00bb \u00abtof ne aw? \u2019\n4\" 08 , te li\" y re at . vat a *,\u00b0 \u2122 oc \u20ac a aa : . at A ve figalt\naleosa ee, ',*,\u00b0 on | gti a St yt oa *. #4. 4 ae. sahy oe tee uohet Ms\ni Abe ty Asa o i \u2018 od 4 hs pore cel: est \u00b0 ae A Fl. \u2018 ar | ey ap ! Pale 0 \"| bs othe\u201d\nM4 4 _* \u00b0 cho te? : \u00b0 ; rt \u00bb.\u00a2 a\u201c 3 \u00b0 : * | \u00abhe\nte. 8 tee 3 4 aa = te \u2018 oy\" + Phy Here thy \u2018 alte\u201d Ay a ge\" \u00b0 \u2018 \u2018 : e se \u00b0\n; P AY ee tos i 4? . seta gt Oe os aut hy Ae ae ? \u2019 e, af as Pie i4 A . a . - \u2018 \u201d\n. 4 Th \u201c-\u2014 \u2018 i. _*' 2 iy | | +f! At 4 a Oy ota. *2 4\u00b0 Ming ) \u00b0 we 6\naot | 8 So\" I + alee log a ey lke \"yale Py saat batting\u2019 after * Ss.\u201d li tey S 2: . . \u201c* . \u2018 mA \u2019 .\n$4.8 1 at : Bt et We Da a oo\" oeata:\u2019 1% i. ott ve ay oe & hy ey yeh gee My ae 3 \u2018 rath \u00ae * 9t oat .? \u2018\n\u201cae e, _ 5 at . Ss Aa gee 3 ' - ve, we octet ot % she ' Y aah tertecey i \u00b0 .~ 2 '- \u2018 . \u00b0 \u2018i 4\nh salt ge! as ai #8 Scan ve BR et of os oe | . : ae je a\" ! jet: ** oe O i te J! . P . \u2018 .\ni aihche| \u2018 u<?- \u2018i ye \u201cof . o,! _ ae 1a\" > ff afl a ty spate Ie . . . s en \u00b0 _ ' Pp\n\" \u2018 hae i i} : ety tere \u201cA J! 3? ote! a a - _' Ln teeta shh ye Pi ae hs eee 4 ee - ts. \u00b0 s ' : :\nfe | \u2018 de iM \u201c4 + . ef ae *8 \u00a2 7 ft\" \u2019 te oe \u2018 oo att fs 5 ;\n\u2018 \u2018 ; 48 : Ae P i ~~ \u2019 j a ge \u2018 \u2018 : \\* ah thy . . :\nets i! . 8 E 4 \u2018| As \u2018 y* | Lm! ce gto es a %e- 8 of he ped la . ; +. Fe\nis ae 4 sO a es o \u201cs 4 he | \u201cae. \u00b0 aoe teh : al oS 0. 8 te \u20184% \u00ae . 8\n\"! \u2018 i . \u00b0 ; ah : oa! \u2019 A oe hy *_* : set, cd eas ab oe \u2018* . ; > t -\n\u2018ty\u2019 ow r \u2018hy \u2018. &\u201d : tae | ve ; \u2018 76 a} \u2018 - buheeriss ' 9 as 1 \u2018 =, \u00bb! . 8 -\n< Phi \u2018 a%.% \u00bb* te \u00ab* Tr a Le its ie ' Cas ie rt bs \u2018\"s a. , . oe iy! e*es\n\u2019 \u00b0 \u2018 ' oe mt \u00b0 ote oda aA fe *s ,* 2% 9* fs \u2018une ee beaty \u2014 ' . \u00b0\npt hoe te { KF , ef . \u2018, 7h 4 \u2018 : . A! tf Tr \u2018it a we . .\n' Tee ? pine\u2019 twee 6 ' \u2018 Wei ' at Re ee ee il ny ,re*.\u00a2 , 1\nred ey a oe * id ; | *. ot & . +I \u2018 a Sy \u00bb Diente \u00a7 /. a a 4% \u2018\nvee \u2018 ' \u201c me PAs . t. \u2019 . \u2018 47408 oa\u201d ie | 7 ne s 7\nAM alae ae : a > re a \u2018 \u2018h owe - _ tu . Ss \u2018 * ade P10 x a oy / ae ot \" i, aay \u2018 2.\ncrite k* .! a8 - ert \u201ca \u2018 is + Bose aa ere s eceet 4) of \u201ces of. r \"Be sie Weekes\nae Par et ***, bay. vo wig \u2018 si \u2019 \u2018 7 . ay . : 2 | ; \u2018 . 7 ae Teas [dhe wi}\nbees rt. : aa I 4 . ea . ee ape : on \u2018 ae ee . \u201c . ee tacts let Pe af opel\n\u00a5e \"4\" hE aie be \u2014 ; | : go's \u2018. # Ge er Fo Nan he pyre : 7 \u2018 artes\nu jel a, %@ \u00b09 \u2018id ie . , %e Tee 2 ty \u2018oe ont Se th lie He eo tate\n*s bs a ete Ke a) ee ahce ' ; .S \u00a2 sella! Sol: ue al a P08 ater \" As\n. ae - ' . al oe, . 5 . . \u00bb- \u2019 * - \u2018e > 3 set > \" . 7 \u2018. 1v\na . : vt \u2018 os Fn sus | wm 8 08 ie ' *. stat a Wt feu baa SS \u201cfe\n2 e@ pa bd 5% . aa ie , ee a \u2018 \u2018 \u00bb a , * \u2018 | : fate Ye l\u00ab 5, ' ts bet\n4 \u2019 a ba vgn 0 ge c o ite .8 eo ' | \u2018 Sn ; Pe \u00b0 . * yea! A or . A oe if\n\u201c4 a. Ps a0 cope ae * lt. +e 0 <'** aS hdd, \u2018 a fe, 5 \u2019 Seren s * geely 3\u00b0 \u2018 \"|\n*4 , Se a s i . P * \u201cpe: . Na 1 ae + tg te oe fant ore hte, Bit yee pre * ;\nSs \u00bb 3 . .? ,? . a! ' #4 zn \u2018 j _ a \u00a9 phe ys? a.* \u00b0 }\n' ' wt 5 i ' ;. : Re i. | Poway Nias Pe a vf Naa ', tote \u2019\nhe 4, \u2018 gm 7 eee s ' pre o\u201d. et i - i oe Hath | if \" AK} P .\n, ete ~ . \u2018 \u2018 f P \u2018 . ' . Pir hy 3); \"\nP ca. Baan Py 08 ae a LS 5 ay ' ad i Mawes o'.*}-. hd\nlie *. oe ' fy A | ae . we g\u00b0 \"e a i? ; Gy\u201d ott tes @ : 4 gu: \u00a2 Od ot 202\nje ft o0 ve e *t : Re ba me ov ' 4 ete aeoterle 29 Seat etl +? * tat m\ni br A os thy _\u00b0 eB cn gee tl \"ere * we a its\u201d \u00b0 0 00 oO\" Le. 1} 4\ntt, te cab cae a ,f oft ; a, \u00b0 sat eae . 5! \" e*, , re + | Md. 1 \u00ae\nA A R \u00a2 +++ * Me \u00ab sah wea tu i *eytl t yi \u2018 a. oes * wate ites Lee i : .\nha i? ; % \u2018org te SPT het i, o* Antares var iby a jet a * oo? : poet's ' \u00a5. ~ + |\na a ee See a 1\" : ee \u201chaar bce ee a \u2019 et st wet D 1} : he. ee :\nr nO \u2018| *\u00bb ded es aa\u2122 am. ae-5: 3 a 7 atl : Sa , ? Th ace u % \u2018\nBet og + a YE . tal .\u00a2? a, om! ya Aens che tet pay te they\" ? a\ncriewtas wy . . \u2018 \u00b0. he S a . \u201cfe a ~ er >\" i ' \u2018 a paths ' i | \u2018 t\nater > rr) Pa mT 8 its bh ot es \u2018 . | \u2019 a of a wtp 1) ? 4 9 1\nhe re \u00bb Fe \u201ca @* Crh g.\u00b0*\u00a2 P ie. ee - +8 i! babel\u2019 e ba\nstall. hae \u2018, tj ' j \u2018 46% % 5 . eet A a*s Pye 5 | oe 40\u00b0 \u2018. bit in\n7) hs }\u00ab' \u00a5 Wr P ' he \u2018' 4 : 2\u00b0 \u2019 * ! S of ag \u00ab i \u2018th \u2019 : =\" ye et \u2018\nae A na ly a oe ae sr Os . oy : E 4 + \u2018 * + s\"\u00b0 4 oe a \u2018 - at s ee4\ntae 1 2 68 Ste yes 4d oo I ae. bees \\ os Fe as ihe * ye\" ot q'' i \u00bb\nty \u2018 pute \u201cip lita y \u2018yt a \u00ab' tt ee. atl \"ee * state\u201d : i! sed i fe :\n- 2. a 4 dated Ae: ott wn 8 ae atc 4) a i be \u2018 ved 3 ae | aS tehy rte \u2018\n. e , \u00b0 \u2018 \u2019 \u201c,; * . \u2019 . , \u00b0 - - ' el ats '\na RD a ie pees > ' , | Rigi\u201d ere, J \u2018 ' \" . \u2018, ! 34 . \u201c% apa! + i \u2018y | ed J inte \u00abf\niv . ; ' a. ' \", \u2018 Je , @ = wn yal bri ,! \u2018 '\u2019 i? 3 : \u00bb 4 F} ar ef af!\n. * +} =i ol, \u201cfee? \u2018  \u00b0 sale * % ove 8 ' 4 . hy ge 5 8 i\u2019 \u00bb%\neee iba viel ie tis feds att ' a ; Rv ob gen teed\n; gata\u2019 oN \u2018ers \u00ablh 7 govt ty: whe a \u2018ate\u2019 * \u00e9 yi re , ee . \u2018ss +*.. \u2018 sae . Pins 5\n: t 0% ye ! \u2018 \u2018 \u2018 \u00e9 pe 8% i \u00a2 \u2018, in\u201d [ | | \u00b0 vy\nav '\u00a2 aan ou ; \u2018 7% : , a Fl Pe s%, 8 hae te PA Lt ole es}\n_\"t vee l \u2018 sf . ' 7 '* -, a : Bot, iB ' . laa diet \u2018 a. \"56 per igt,s ? \u201cA\nat 3 @\u00b0 * A oe \u2018 os ' ,* @ age o* ge ty\u201d od ban ot i<\u2019s * 7 - >a hl e9 7\n\\ 6 Day Se , oe \u2018 t af aden\" ' ah eo I. a> dike V\n4 \u2018 ae \u2018 *. a \u2018 are >\u2019 a \u2018 .,* e\u2019 a id ye Le? b : : 1 4 . v\nae he . whe! . | \u2014 as w : i,\" of ai one 3. =\u201d \" Ogg 0 \\\" w Ig) st\nry a\u201d \u00a9 vce \u2018e ' v\u00bb =pe \u201cse : see <* . a\u00b0at r 9\u00b0 b \u2018a \u00bb tle rae\n\" fi\u2019 j \u00abs * og ts yh at ' . 1; Je 4 gevee : , hited ' , 28, ,! Pyrat ha\n\u2018te Pee aoa aeee e Tih re. o o \u2018+ \u201c4 el ber | ay) Oe ' ly as\n\u2018 genes a ,* 8 _ 7 Pe : st \u00a7 . s, \u00ab6 is a 4* set ef he shy \u2018 2at * 4\u201d 4\u00b0\nyl \\ aie ot x 33 Ie ; i} oat a : i.e. { \u2018s hi, V4\" gat pi A '\ny Pa Lact of \u2014 4 \" pte see a ene %e's ot \u201caie \u2018 f Eis AF fat. Moet mae + tay 2 at\nAe gee | ,t a % aT oooge le \u2018 a \" | y, eet ef et ts Cee 1 Batt.\n% oy i? \u00bb le 7 * \\\" \u201ca . \u2018 = wy \u2019 + od FL . a . \u201cpj? \u2018,! rh\n- ' Scare | , 4 7 . \u201c i \u00e9 he 4 ee ss s * of * e\n; 44% \"ae Magtshd Bnd ae \u2018 Th hy \u2014\u2014 ! \u2019 panera\nir, ts . ' \u20184 \u201ceh . : eo Me Pa\u201d +9 a! Fs ee ' a hig + 1\n, ccm nt ee AD bap oo 4\" eo 4s ata 2\n. ghees' 7h | a lse\u00ae ay f.t pet bee bh Pha\n\u2018toe { ye ts tpy ie? s | _4 can Vy Me\n2/8 vat r a3 4 el +? \u2018|: ee\nat on be | ae Ran:\nAi taf\nPa Th\nHe\n=\n--- Page 5 ---\nLipid Panel 303756\nCOLLECTION DATE 04/02/2024\nOrder Date _ 0402/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nTriglycerides \"Ne\n0-149 mo/dL\nHDL Cholestero! S7L\n| >39 mg/dL\nCholesterol, Total 176\n100-199 mo/db\nVLDL Cholestarol Cat si\n| | | 5-40 mo/dl.\nLDL Chal Calc (NIH) 19H\n| 0-99 mg/dl\nComment: NP\nSedimentation Rate-Westergren 005215\nCOLLECTION DATE nANoreNDA\nOrder Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nSedimentation Rate-Westergren on\n) 0-15 mm/hr\n--- Page 6 ---\nP O/ 10\n*CBC With Differential/Platelet 005009\nCOLLECTION DATE 04/02/2024\nOrder Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nHamoglobin aad\n13.0-17.7 g/dL\nHematocrit a\n37,5-51.0 %\nPlatelets on\n150-450 xf0E3/uL\nWee 6.1\n3.410.868 x19E3/ul\nRBC 5,54\n4.14-5.80 xtOE6/uL\nHematology Comments: NP\nImmature Grans (Abs) 0.0.0 oO ey .\n: Ae, 7 X U\nNRB&C NP\nImmature Granulocytes -\nNot Estab. %\nBaso (Absolute) 93.0.0 baal st.\nUV. %\n13\nMonocytes\noy Nat Estab. %\nView 24.71\n26,6-33.0 pa\nBasos 0\nNet Estab. %\nMCV sa\n78-97 {Ll\nEos (Absolute) 0.0.9 Oe fat\nMCHC 31,5\n31,5-35,7 g/dL\nate: 14.9\n11.6-15.4 %\nMonocytes(Absolute) 0.440 hone ee.\nUL X u\nNeutrophils a\n--- Page 7 ---\nP 7/10\n\u201cCBC With Differential/Platelet 005009\nCOLLECTION DATE 04/02/2024\nLymphs 2\nNot Estab, %\nEos L\nNot Estab. %\nImmatura Calls NP\nNeutrophils (Absolute) <0\n| 4.47.0 xF0ES/uL\nLymphs (Absolute) 0.7\n0.7-3.1 x10E3/u\nC-Reactive Protein, Quant 006627\nCOLLECTION DATE 04/02/2024\nOrder\u2019 Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nC-Reactive Protein, Quant \u00e9or\n| 0-40 mg/L.\n--- Page 8 ---\nPrP O/ IU\n2023-05-30 11:04\n*Comp. Metabolic Panel (14) 322000\nCOLLECTION DATE 04/02/2024\nOrder Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nCaicium, Serum 5 en \u2019\n: 7\u00b010.2 mg/d\nFroteln, Total, Serum ; ae\n0-8,5 gid.\nALT (SGPT) alk\nAST (SGOT) an\nAlkaline Phosphatasa, $ 120\n; 44-424 Ul\nBillrubin, Total *\n0-4.2 mo/ak.\nAIG Ratio ae\nGlobulin, Total ..\n1.544,5 g/dL\nAlbumin, Serum ; on\n4, bat * 7) |\nCarbon Dioxide, Total o ao '\n\u2018 -29 mmol/L\nGlucose, Serum ieee\nChioride, Serum sa'06\nmmal/.\nPotassium, Serum 3.5 ee oli.\n.\u00a7-5,2 mmol\nSodium, Serum saute volt\nm\n19\nBUN/Creatinine Ratio F\n\u201c2\nCreatinine, Sarum _ var eat\nBUN 46\n\u00a7-24 mg/dl.\naGFR. 115\n+59 mbL/min/1.73\nAkshay . Chaudhari 02/17/1987\n--- Page 9 ---\nP 9s\n2038 ok rare pie\nFa eee eee | ae\ni ; aan hp i H \u201cth * A, ; ut eel A\nAS cau AY i i 1) Ri mg ae free 4\nvt \u2018 \u2019 Ni i Nite *. pre rie ae :\nin nah mid ike sion i a ae HE\n05 ah | . ak ee ag\n{ 5 \u2018 \u201cth 4 H \u2018 c $ yy , Pret at i as te ft ti\n95 ee a ee : Me a, - Cs oes\n( \u00a5 Bs . \u2018 foo : wae rm mM i i t 4 \u201c- sry . hm} \u2014 rf nt nh i ! \u201c4 \u2018eh \u00a5 it nf Near ck\nae ia one ce ni KF | tr A sa oe Me \u2018 faite i ae i ite a\nr ue aw + ED te ey Hh { i i} i i on Cah =e ey | if spit os , 4 esi uh -\nae ee o. \u2018, wy.\" \u00bb eed Le v Tite) +6 ry a a iG \"Aaah ve 8y a! wwe eo : ' ' ith \u2018 4 i\u201d LURE fh a ih Ait i eats rie ti\n\u201c! iu hy em PAS sal of\" ee ets pie ley eit i ri th WAS Wal A i Nei ti Bit ata Hi \u2018 Hil iH At ) svi pi,\u201d -\n7 \u2018 ne nom \u201c inte { areca Oy MD jest) > hae res (se Aiiats ve wt ; hei Wish il ye. Bal, \u201c3 rh \\ a me at i I i i thy f NK ont Sa -\nte sn ai ef ae? Sta ei bie ln = ro aha Hit Gy Gist Mad ae ann it ; Ii, es fy But a Mi ate 7\nMy vn yt a; es ly, ers han Ts ow \u2018* phe 4 aie Stary \u201d Wit , Ki pie th Fe ine Hh \\ i \u2019 ih I, A ity Hy wh ee ae , hs\n| ele ah we ee ier ii A ya nit ii retis fers nth Ma Aaah RAB \u201cag wel A si! Ky i Wa ean |\nae NRC i pes on fan os if i net Reo bathe ne wit nile \u00ab{ a sett Hit i ye vans che: ~ Nee ot tee ae HH: ES ; 4 i i bee. ot }\n\u2018tee Zitat ye ei a maa a af AN ine ae i t sa Sag acne \"Spee \u2018aih ay at art ri eh :\nah : \u2018i eo \u2018Mat fe cy BOE ao be HG ae Higa tory al\u201d eee ee 1 i ane i Natt Nh\nSi wie inks say \u2014 ae aa oe cr eo \"\nag oe ee it a cae i366? ea ae \u2018ah i Hye em iy \"i oa\neet ia sols rie \u2014 ie an ae \u2018 es i Hit Be i rin y hi ets pee\nae : mise oo ea ee a a \u2018 es aes a ae \u2014\nmre . Sek eer tt i ING si cy oat sae naa hi aM th Seis ri\n2 gestae a ie ve : \" Hag eon VN > : i oe\na \u201c3 ni) ck : : ' ae al : i\" i. : : | i 4 oe one w -@ Ae Ly * 4 cia , His rn\n- PHT via ti a re pei iar i Hi i nt HN UNS i 1} thd foveen Pa Y bt Hitiat He eh\ney \u201c1 \u201c| at re ae ey \u00bb\\ rz ond pe \u2018s sf ery if \u2019 ib \u2019 ait i | ties AA ~e ) fa Lehr ihe hi t Hey | :\nae at ce viesie Ni sie i Mt at tH iN ae :\n7 ih \u2018 hig aa vi th a4 Pat \\ i a Ki ti | } Wn\n\u2018yes RIA Ay Ht. ; i hit \u2018a Seite * .? ? fol uy) WA Matt r vt\n7 A tea 14 2 ae aN ah) k i i\nS \u201c Me _\u2014 nie oe \u2019 . Ate rye \u201cat i +h ote\n--- Page 10 ---\n2024-05-30 11:07 LGAS Fax 7038583061 >> 16152783355 P 10/10\nPatient Insurance:\nPrimary Insurance: Aetna Better Health of Virginia\nTelephone #: 866-827-2710\nPolicy #: 350410732018\nRelationship: Self - patient is the insured",
+        "processed_text": "--- Page 1 ---\n2023-05-30 11:01 EGAS Fax 2038183061 >> 16153783455 P 1/10\nOne Health Partners\n) Fax Referral To: (800) 223-4063 be\nEmail: intake@ thealth.com ()ne ;\nDirect Phone: (615) 378-3450 HEALTH PARTNERS uo\nToll Free: (844) 993-0112\nhe cdbeca ali Sy bret eens rate amine 2 SIRYRIZEORDER FORMS. ho nies Bk ae et Se\nDate:_O5 [4%O727693_ ic0-10 code: $l : > Therapy Status\nPatient Name: Akshay H. chauchari _Alleraies: our OPEN , ACSA Nophen $2 New Star\nContinuing Therapy:\nety e G epee ated tte PROMIDERUNFORMATION 2 hae) ee RES Lh .\nOrdering Provider sl imorhy Adam, ZAG Provides. Fax 203 S18 t6\u2014e+ \u2014\u2014 ounces\nProvider ner ASAA4 te% Provider Addrass:_2 / olle e Ave ale. 400\nProvider Phone: 203~ ] K- 4 O20 I ers, buy Ta LLIiple\nMW Crohn's Disease Induction Phase: Please include the following lab results\n\u2018a ; required for infusion. lf no results are\nAdminister Skyrizi GO0mg IV at week 0, week 4 available, the following Jabs will be drawn\n- and week 8 per protocol. prior to first infusion:\nRefills x one year from\ndate of signature unless I ~ Negative TB Quantiferon Gold, or\n.\u00bb I }& Crohn's Disease Maintenance Phase: indicated below, TB Skin Test within the last 12 months.\nSkyrizi Administer Skyrizi\n4 a Y ALT/AST at baseline (within the past 60\nO 180mg SQ at week 12 and every 8 weeks x NR Refills days).\nthereafter.\na s \u2018 a\n4 360mg SQ at week 12 and every 8 weeks Bilirubin at baseline (within 60 days),\nthereafter.\nOral ia\nfl Acataminophen:__ 325mg ___ 500mg _____. 650mg DQ Dexamethasone:____.4mg \u2014___8mg\nt] Loratadine: 10mq Diphenhydramine:_ 25mg s0mg\n\u00a9 Cetirizine: 10ma O Famotidine:__ _ 20mg \u2014__ 40mg\n\u00a9 Diphenhydramine: 25mg \u2014___ 50mg Cl Methylprednisolone; 125mg\nO Famotidine: _ 20mg _ 40mg QO Hydrocortisone: 100mg\nCO) ibuprofen: __ 200mg \u2014___400mg_____ 600mg O Ondansetron; _.__4mg \u2014____ Bing\n[ Ondansetron: __._4mg__ ss 8 mg GO) OMIVOU sissies cme\nLAB ORDERS (please Indicateiany.labs to be drawn and frequency): fio ice i e S ee ata\n(Please fax this signed order form, along with the following documents\nto 800-223-4063)\n* History & Physical, Last Office Visit Note\n\u00a2 Patient Demographics and Insurance Information\n+ Medication List\n\u2018Surveillance lab ordering and monitoring Is the responsibility of the prescriber\u201d) *\u00ab Racent Lab Work\nol By Slanind below: cartify.that the above therapy: is'medicallv:necessarv'\u2019: Prescriber\u2019s Signature (SIGN'BELOW); .\nJispense as Written; Substitution Allowed:\n*rascriber Name Date Presce\u00ae YL Date\nV 4.05.24 The Information cantzined in thia tacaimitea may be cantidantial and ls intanded solely for tha use of the named rocipient (s). Access, capying or re-use of the facsimile or any information\ncontained therain by any othar person ie not puthodzad, I you are not the intended recipioni, plaoce natify ue invmadiately by calling 615-895-0186 or faxing back to the orginalor.\n--- Page 2 ---\n2023-05-30 11:02 EGAS Fax 2038183061 >> 16153783455 P 2/10\nAkshay, chaudhari H DOB: 62/17/1987 (36 yo M) Acc No. D775152 DOS:\n85/29/2023\nAkshay, chaudhari H\n36 Y old Male, DOB: 02/17/1981\nI ) \u2018: Account Number: Dvvs152\n: (460 EE} Camino Real, Arlington, VA-22407\nsi , Home: 570-599-6973\n] Guarantor: Akshay, Chaudhari Hl Insurance: Aetma\nI I : Better Health of Virginia Payer TD: 25VA\nPCP: DOCTOR UNKNOWN\nAppointment Facility: Extraodinary Gastroenterology\nProgress Notes: Timothy Adam, MD\nReason for Appointment\n1. Discussion ~ in person\nHistory of Present iiness\nHistory of Present Iilness: ol\n4/12/2023: Symptoms worsened with increasing abdominal pain and multiple mouth sores,\nHe visited clinics in pba eer and subsequently Fairfax, A CT scan revealed right-sided colitis,\nconsistent with previous findings, Markedly elevated ESR was noted at Inova, Recently\ndischarged on a regimen of budesonide and antibiotics.\n3/8/2023: He was started on Stelara, resulting in significant improvement in abdominal\npain and reduced stool frequency, However, he continues to experience bothersome anal skin\ntags and recurrent ottbreaks of genital herpes, confirmed by lab tests. Mouth ulcers have\nbecome less severe but remain present, Diarrhea has decreased, Valacyclovir has provided\npartial relief for the herpes ottbreak but has not fully resolved it. Additionally, he reported\nswelling and discomfort in the right index finger.\n12/4/2022: This 37-year-old male presented secking 4 second opinion regarding rectal\nbleeding and anal issues, His symptoms began three years ago following a diagnosis of\nperforated appendicitis, Since then, he has experienced frequent bloody stools, severe perianal\npain, and external protrusions, He also reports recurrent painful mouth ulcers, Previous\nevaluations indicated anal disease consistent with Crohn's and mild inflammatory changes in the\nsigmoid and descending colon. No deep ulcers or skip lesions were noted. Pathology showed\nmild focally active colitis. Serologic testing revealed elevated ASCA (145), ACCA (102), and ALCA\n(76), supporting a diagnosis of Crohn's disease. CRP was mildly elevated at 1.6. Prior trials with\nmesalamine and oral corticosteroids offered minimal benefit. Following negative Quanti FERON\ntesting, he underwent induction therapy.\n10/15/2022: Initial onset of worsening abdominal pain and rectal bleeding exacerbated by\ndietary triggers. Evaluation noted anal fissures and skin tags with mild tenderness. A trial of\ntopical steroids and dietary adjustments was initiated, with partial symptomatic relief but no\nsignificant change in stool frequency or bleeding. His main\nProgress Note: Timothy Adarn, MD @5/29/2023\nNote generated by e Clinical Works EMR/PM Soltwaie (www. e Cinical Works. com)\n--- Page 3 ---\n3/10\nP\nS\nHe ha\nrs. er\nlee th He\no @ b\nem d see pro\nll as a a logic\nwe Vv Imo hone\n\u20ac $ 0 8\ng ith previous o F nt to ea as\na rr \u2018erin . by ov vin ome, p atien\nint i stra enie <a raed at d by\npla fru Hed pro bta tform inia ente : -\u00a7\nm M COM very W, dical a$ 0 la 'Virg um. C:\nea een no me nt we ine p eof doc x, W\noe \u2018 ce de hire e, ed ithi :2\nwe eis se a medic locati is wi F, BMI did\neat pete is Cache Patient oe 97.7 distress,\nee sa sitet a rovide ke acute\nae a \u201cI ry No. S 5 me} 18 in no\na oe Baby [ : ringed reke: 86. alert, aa\nOg Fi gallon FS i Sonn ess ita t Q, la\nMe eae rata fe ra ieee Pe 1 lbs, B ation EARAN c nd dep and pe\n7: eee 7 om : asin Se ipa vey lie ; Mamin aba hm, a place,\nI \u2018 fe ote H GS: son. alert a tal blee mmr for\nah ae 3 NEN? som ie gia ote - colon wi ently a8 him ing a day, 7\noe i Sa om eae ; ore NE smen ase of app sa ang m5 ~~ ve re\nfads UCHR 2 NGG COu i CK \u2018ily 7 ral ee ise iifw tal \u00a5) \u20ac\nset ae se ae eet p S ga \u2014 os tic Skytiz i th oe t, Oral ish the int wh\nee ia = a ss ee ro a oer , inis oe ae\n: a seats ara Nom ems ie ye si C lem Wi ta Fi ha Q,\nih ye aoe isto eee mnable to 20 MG, o F he \u2014\nse ers ah Sete ie rn s c 0\nWe oo i eine Rea =a a severe an\nsaa ne Tig I Nee ey ae ont Be an \"4 N ls in e he\niy a Rone: ss ab stents Sry meld rea hn S i SO fil nt} } a t Ito\nie fa ag tf ae aaa 3 faa 7 \u2018creck Re co nce ven pa e\nan oe Benes Pe Cr re let, e to co d gi sa Th\nHees oe ee Refill 14 Tab \u2014 fam nan ssary r the vel\nite oe Pe) ie 8, 14 a S0 ell. tio ece nde this this m\nee vine days, : Re ow ly op ben ble ion at al sah de\neet \u2018 wh ree eas eae il: dt FA oe tes ICs ony ly na tion a ns Oo 20\n: NS os oa situa an ; ou n ah iri\nnr oe 3 chee Bai su ctio pri rtic risks bs te ve\nele ae Na ee Othe count he Oe the limite ated on th to th\nx ! ahs oe Notes fete =i be tre Sa\neee ici ee te raat RGR By rl aan Wet is pa es a m J\n7 ee a: ee This coeee plates\ni oat I BE haa ircu ha (in ha \u2018\ni N oe : pie ae 2 veatent \u00b0 Wa made rep\nve a\" on the d all ol \u201cie . m)\nil \u2014- rai te to ht i Warks\npe ata sen: * tied caret es et ie @ nica\noe sae a eras oa /PM\ncca s EMR\nOe i\nmee\n--- Page 4 ---\n~ 0\n2\nal r , 4.8\nnl faint are ; rf 2)\nbet \u00e9 Ee 1\n[T' << a\u2019 ess Pr) rc\n- = : 5 ot, rs >\" ce\ne T ' te { ky { 4 \u201cyy : T Sead Sieg 4 ae\n, ol was he '* * *\" \"% : \u2018 : e st \u201cLt I\neu , a whet Page om 2 ad Bat : Tells Pb ett \u00b0\nar * : , 2 . \u00b0 sd a he ; , ght eee *9, .*e\nRi Pe oe eran i eg wer\u2019 wa Be an eae hay od hay a)\n: ga . oo a we mag \u2018 oe of Ll\" * te ' x, a ae . + A it n* . Pa\n\u2018 s we ' \u201c odes e ; cy etwas >a Hh ppl\ntye ae\" ets te te Wd, oot ae Vote rag eae hyste - \u00ae\nalge 5 at's eat \u201cabe i? oe ye a. 9.8, 4 ! 8\u2019, eye . I at ror has \" pati .\nq.\u00b0 yy ' , \u201c,* ! .. ,* es \u00ab \u00b0 . Ue \u201d \u00ae A hy a, . as a ited tha, +. Lad\n! e* ~ 4 _ \u2018 , \u2018 @ \u00ae oh i* S ace t PP it hd \" beeegl s\nSEAS ENE pose enti Be er conditi a\noar ; * 4 . ~ I : \u2018 J ,* A: .e ep = oe) id o\u00b0 we, este \\. Q e\npote \"ho. * ih \u00b0 jt cu * Ay . ays et Te he ? a : aa 4 oe \u201c0 Hy \" i 7 Dro VIS\n\u2018 \u2018 \u00b0 - \u00b0 3 \u00b0 ' o \u2018* \u2019\nape 38 ic joer *, : P \u2018 .: Sek a ,\u00b0 * , I \u00bb tet i ifs \u201c< > j e OX I to\nafstty 40\u00b0 a Bete tl his, . _ t, Ve ae s tela a ry $\nad s\u00a2, \u2018 ote 1 : ' : ; Ro , a\u201d o* 8 . Te re my!\ntae Se way Ses ae ;- \u00b0 \u201d ue\" f nee CEN, e f e\n\u2018 \\ * ' Us Fee nan \u2018 ly . = s if wl + ou be had: oh e C\nSal Pa ate ley \u00bb3 ye ' a ie \u201ca\u201d : \"4 Ah a it toate > . sd sil me\n~ oh tr ree o; *s + a ; 3 ; I oe : : aa \u00b0 age in a ' Tt i\u00a2 je\" a\nape el es a a ts } ie a :* pol aoe ie on Pee \u2018{ 8 I tees i \u00b0\n\u2014 eats? a ad Pal ee me rot : Ps \u2018kek : oe \"Sag pie At oy\"\nork \u201cb oy\u2019. 7? \u00bb a ef. gt viet \u2018 ve, De Phd ' 3 Spear . i ae\nat 4 ye Oe in 5 pee . ore\u2019 . . A I CTY, i\u2019, ' 1? wert rae .\n: pete vis, ot! ech ot whe J dattge Sy Ps of ea ae H poy. ved ees \" : sate si\nseit 4 ay 4, oa. aos sows te ony ee *e veal, \u00b0 pv +? lever sit Ms ot pe\nave! a 5 08 fe ty aut) ? He\" ! _ ee 4 teat re oye . I . \u2018 i re s .\u00b00) +, tot .* wgerytet\na joe, oe a? fee petene\u201d ae sain,\u201d \u20187 Bs i e S pues Su Par\net. ;* nae 8 ome Bawee \u2018 off,\" \u201cVie 1 t I age \u2018. ' eeegee* >\n; nha _ , \u2018 < fae \u00a2 6\u00b0 it e- ' - oe tof O\u00b0 e oe in ' i 0\ntae ey 3\u00b0 Oe sy bis one, \u00ae K ane eo ae [uu \u2018 I eee a \u201c4 ,\" I\nA org! ae glee. etinrle\u2019s \u2018\u00bb Lie cathy! ie ' - = 3 ieee oe : ea\n\u00abI oof on 0g? \u00ab! Re t re \u00b0 f\u00b0 eee ee \u2019 \u00bb\u2019 \u201c8.\u00a2 \u2018. qe .\" gol yee bd wosedtts e\nqf te f+ *. pie! \u2018 + ES. ape e ht Pi ch ie My a * qe am 1 ee I : oe \u2018\n, ' i \u2018 ' \u00bb i,** ' rf t .\nteats fe ig.. oh Br eee ! Fi, pet, hae i+ veal ee ee r Poa. 14!) at se.t\nih tee I + Pal } \u2014 e S be cs ae oyna? EC a fe uae eo H \u00bb\nait ae net ae : 4 . \u00a5 1 ee - fy \"1 x we yl! in o S ow oye ce otatel eed }\na a os! , , ** \u00b0 \u00b0 = 7 . we fl a \u2018. \u00bb \u00abtof ne aw? \u2019\n4\" 08 , te li\" y re at . vat a *,\u00b0 \u2122 oc \u20ac a aa : . at A ve figalt\naleosa ee, ',*,\u00b0 on I gti a St yt oa *. # 4. 4 ae. sahy oe tee uohet Ms\ni Abe ty Asa o i \u2018 od 4 hs pore cel: est \u00b0 ae A Fl. \u2018 ar I ey ap ! Pale 0 \"I bs othe\u201d\nM4 4 _* \u00b0 cho te? : \u00b0 ; rt \u00bb.\u00a2 a\u201c 3 \u00b0 : * I \u00abhe\nte. 8 tee 3 4 aa = te \u2018 oy\" + Phy Here thy \u2018 alte\u201d Ay a ge\" \u00b0 \u2018 \u2018 : e se \u00b0\n; P AY ee tos i 4? . seta gt Oe os aut hy Ae ae ? \u2019 e, af as Pie i4 A . a . - \u2018 \u201d\n. 4 Th \u201c-\u2014 \u2018 i. _*' 2 iy I I +f! At 4 a Oy ota. *2 4\u00b0 Ming ) \u00b0 we 6\naot I 8 So\" I + alee log a ey lke \"yale Py saat batting\u2019 after * Ss.\u201d li tey S 2: . . \u201c* . \u2018 m A \u2019 .\n$4.8 1 at : Bt et We Da a oo\" oeata:\u2019 1% i. ott ve ay oe & hy ey yeh gee My ae 3 \u2018 rath \u00ae * 9t oat .? \u2018\n\u201cae e, _ 5 at . Ss Aa gee 3 ' - ve, we octet ot % she ' Y aah tertecey i \u00b0 .~ 2 '- \u2018 . \u00b0 \u2018i 4\nh salt ge! as ai # 8 Scan ve BR et of os oe I . : ae je a\" ! jet: ** oe O i te J! . P . \u2018 .\ni aihche I \u2018 u<?- \u2018i ye \u201cof . o,! _ ae 1a\" > ff afl a ty spate Ie . . . s en \u00b0 _ ' Pp\n\" \u2018 hae i i} : ety tere \u201cA J! 3? ote! a a - _' Ln teeta shh ye Pi ae hs eee 4 ee - ts. \u00b0 s ' : :\nfe I \u2018 de i M \u201c4 + . ef ae *8 \u00a2 7 ft\" \u2019 te oe \u2018 oo att fs 5 ;\n\u2018 \u2018 ; 48 : Ae P i ~~ \u2019 j a ge \u2018 \u2018 : \\* ah thy . . :\nets i! . 8 E 4 \u2018I As \u2018 y* I Lm! ce gto es a %e- 8 of he ped la . ; +. Fe\nis ae 4 s O a es o \u201cs 4 he I \u201cae. \u00b0 aoe teh : al o S 0. 8 te \u20184% \u00ae . 8\n\"! \u2018 i . \u00b0 ; ah : oa! \u2019 A oe hy *_* : set, cd eas ab oe \u2018* . ; > t -\n\u2018ty\u2019 ow r \u2018hy \u2018. &\u201d : tae I ve ; \u2018 76 a} \u2018 - buheeriss ' 9 as 1 \u2018 =, \u00bb! . 8 -\n< Phi \u2018 a%.% \u00bb* te \u00ab* Tr a Le its ie ' Cas ie rt bs \u2018\"s a. , . oe iy! e*es\n\u2019 \u00b0 \u2018 ' oe mt \u00b0 ote oda a A fe *s ,* 2% 9* fs \u2018une ee beaty \u2014 ' . \u00b0\npt hoe te { KF , ef . \u2018, 7h 4 \u2018 : . A! tf Tr \u2018it a we . .\n' Tee ? pine\u2019 twee 6 ' \u2018 Wei ' at Re ee ee il ny ,re*.\u00a2 , 1\nred ey a oe * id ; I *. ot & . +I \u2018 a Sy \u00bb Diente \u00a7 /. a a 4% \u2018\nvee \u2018 ' \u201c me PAs . t. \u2019 . \u2018 47408 oa\u201d ie I 7 ne s 7\nAM alae ae : a > re a \u2018 \u2018h owe - _ tu . Ss \u2018 * ade P10 x a oy / ae ot \" i, aay \u2018 2.\ncrite k* .! a8 - ert \u201ca \u2018 is + Bose aa ere s eceet 4) of \u201ces of. r \"Be sie Weekes\nae Par et ***, bay. vo wig \u2018 si \u2019 \u2018 7 . ay . : 2 I ; \u2018 . 7 ae Teas [dhe wi}\nbees rt. : aa I 4 . ea . ee ape : on \u2018 ae ee . \u201c . ee tacts let Pe af opel\n\u00a5e \"4\" h E aie be \u2014 ; I : go's \u2018. # Ge er Fo Nan he pyre : 7 \u2018 artes\nu jel a, %@ \u00b09 \u2018id ie . , %e Tee 2 ty \u2018oe ont Se th lie He eo tate\n*s bs a ete Ke a) ee ahce ' ; .S \u00a2 sella! Sol: ue al a P08 ater \" As\n. ae - ' . al oe, . 5 . . \u00bb- \u2019 * - \u2018e > 3 set > \" . 7 \u2018. 1v\na . : vt \u2018 os Fn sus I wm 8 08 ie ' *. stat a Wt feu baa SS \u201cfe\n2 e@ pa bd 5% . aa ie , ee a \u2018 \u2018 \u00bb a , * \u2018 I : fate Ye l\u00ab 5, ' ts bet\n4 \u2019 a ba vgn 0 ge c o ite .8 eo ' I \u2018 Sn ; Pe \u00b0 . * yea! A or . A oe if\n\u201c4 a. Ps a0 cope ae * lt. +e 0 <'** a S hdd, \u2018 a fe, 5 \u2019 Seren s * geely 3\u00b0 \u2018 \"I\n*4 , Se a s i . P * \u201cpe: . Na 1 ae + tg te oe fant ore hte, Bit yee pre * ;\nSs \u00bb 3 . .? ,? . a! ' # 4 zn \u2018 j _ a \u00a9 phe ys? a.* \u00b0 }\n' ' wt 5 i ' ;. : Re i. I Poway Nias Pe a vf Naa ', tote \u2019\nhe 4, \u2018 gm 7 eee s ' pre o\u201d. et i - i oe Hath I if \" AK} P .\n, ete ~ . \u2018 \u2018 f P \u2018 . ' . Pir hy 3); \"\nP ca. Baan Py 08 ae a LS 5 ay ' ad i Mawes o'.*}-. hd\nlie *. oe ' fy A I ae . we g\u00b0 \"e a i? ; Gy\u201d ott tes @ : 4 gu: \u00a2 Od ot 202\nje ft o0 ve e *t : Re ba me ov ' 4 ete aeoterle 29 Seat etl +? * tat m\ni br A os thy _\u00b0 e B cn gee tl \"ere * we a its\u201d \u00b0 0 00 o O\" Le. 1} 4\ntt, te cab cae a ,f oft ; a, \u00b0 sat eae . 5! \" e*, , re + I Md. 1 \u00ae\nA A R \u00a2 +++ * Me \u00ab sah wea tu i *eytl t yi \u2018 a. oes * wate ites Lee i : .\nha i? ; % \u2018org te SPT het i, o* Antares var iby a jet a * oo? : poet's ' \u00a5. ~ + I\na a ee See a 1\" : ee \u201chaar bce ee a \u2019 et st wet D 1} : he. ee :\nr n O \u2018I *\u00bb ded es aa\u2122 am. ae-5: 3 a 7 atl : Sa , ? Th ace u % \u2018\nBet og + a YE . tal .\u00a2? a, om! ya Aens che tet pay te they\" ? a\ncriewtas wy . . \u2018 \u00b0. he S a . \u201cfe a ~ er >\" i ' \u2018 a paths ' i I \u2018 t\nater > rr) Pa m T 8 its bh ot es \u2018 . I \u2019 a of a wtp 1) ? 4 9 1\nhe re \u00bb Fe \u201ca @* Crh g.\u00b0*\u00a2 P ie. ee - +8 i! babel\u2019 e ba\nstall. hae \u2018, tj ' j \u2018 46% % 5 . eet A a*s Pye 5 I oe 40\u00b0 \u2018. bit in\n7) hs }\u00ab' \u00a5 Wr P ' he \u2018' 4 : 2\u00b0 \u2019 * ! S of ag \u00ab i \u2018th \u2019 : =\" ye et \u2018\nae A na ly a oe ae sr Os . oy : E 4 + \u2018 * + s\"\u00b0 4 oe a \u2018 - at s ee4\ntae 1 2 68 Ste yes 4d oo I ae. bees \\ os Fe as ihe * ye\" ot q'' i \u00bb\nty \u2018 pute \u201cip lita y \u2018yt a \u00ab' tt ee. atl \"ee * state\u201d : i! sed i fe :\n- 2. a 4 dated Ae: ott wn 8 ae atc 4) a i be \u2018 ved 3 ae I a S tehy rte \u2018\n. e , \u00b0 \u2018 \u2019 \u201c,; * . \u2019 . , \u00b0 - - ' el ats '\na RD a ie pees > ' , I Rigi\u201d ere, J \u2018 ' \" . \u2018, ! 34 . \u201c% apa! + i \u2018y I ed J inte \u00abf\niv . ; ' a. ' \", \u2018 Je , @ = wn yal bri ,! \u2018 '\u2019 i? 3 : \u00bb 4 F} ar ef af!\n. * +} =i ol, \u201cfee? \u2018 \u00b0 sale * % ove 8 ' 4 . hy ge 5 8 i\u2019 \u00bb%\neee iba viel ie tis feds att ' a ; Rv ob gen teed\n; gata\u2019 o N \u2018ers \u00ablh 7 govt ty: whe a \u2018ate\u2019 * \u00e9 yi re , ee . \u2018ss +*.. \u2018 sae . Pins 5\n: t 0% ye ! \u2018 \u2018 \u2018 \u00e9 pe 8% i \u00a2 \u2018, in\u201d [ I I \u00b0 vy\nav '\u00a2 aan ou ; \u2018 7% : , a Fl Pe s%, 8 hae te PA Lt ole es}\n_\"t vee l \u2018 sf . ' 7 '* -, a : Bot, i B ' . laa diet \u2018 a. \"56 per igt,s ? \u201cA\nat 3 @\u00b0 * A oe \u2018 os ' ,* @ age o* ge ty\u201d od ban ot i<\u2019s * 7 - >a hl e9 7\n\\ 6 Day Se , oe \u2018 t af aden\" ' ah eo I. a> dike V\n4 \u2018 ae \u2018 *. a \u2018 are >\u2019 a \u2018 .,* e\u2019 a id ye Le? b : : 1 4 . v\nae he . whe! . I \u2014 as w : i,\" of ai one 3. =\u201d \" Ogg 0 \\\" w Ig) st\nry a\u201d \u00a9 vce \u2018e ' v\u00bb =pe \u201cse : see <* . a\u00b0at r 9\u00b0 b \u2018a \u00bb tle rae\n\" fi\u2019 j \u00abs * og ts yh at ' . 1; Je 4 gevee : , hited ' , 28, ,! Pyrat ha\n\u2018te Pee aoa aeee e Tih re. o o \u2018+ \u201c4 el ber I ay) Oe ' ly as\n\u2018 genes a ,* 8 _ 7 Pe : st \u00a7 . s, \u00ab6 is a 4* set ef he shy \u2018 2at * 4\u201d 4\u00b0\nyl \\ aie ot x 33 Ie ; i} oat a : i.e. { \u2018s hi, V4\" gat pi A '\ny Pa Lact of \u2014 4 \" pte see a ene %e's ot \u201caie \u2018 f Eis AF fat. Moet mae + tay 2 at\nAe gee I ,t a % a T oooge le \u2018 a \" I y, eet ef et ts Cee 1 Batt.\n% oy i? \u00bb le 7 * \\\" \u201ca . \u2018 = wy \u2019 + od FL . a . \u201cpj? \u2018,! rh\n- ' Scare I , 4 7 . \u201c i \u00e9 he 4 ee ss s * of * e\n; 44% \"ae Magtshd Bnd ae \u2018 Th hy \u2014\u2014 ! \u2019 panera\nir, ts . ' \u20184 \u201ceh . : eo Me Pa\u201d +9 a! Fs ee ' a hig + 1\n, ccm nt ee AD bap oo 4\" eo 4s ata 2\n. ghees' 7h I a lse\u00ae ay f.t pet bee bh Pha\n\u2018toe { ye ts tpy ie? s I _4 can Vy Me\n2/8 vat r a3 4 el +? \u2018I: ee\nat on be I ae Ran:\nAi taf\nPa Th\nHe\n=\n--- Page 5 ---\nLipid Panel 303756\nCOLLECTION DATE 04/02/2024\nOrder Date _ 0402/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nTriglycerides \"Ne\n0-149 mo/d L\nHDL Cholestero! S7L\nI >39 mg/d L\nCholesterol, Total 176\n100-199 mo/db\nVLDL Cholestarol Cat si\nI I I 5-40 mo/dl.\nLDL Chal Calc (NIH) 19H\nI 0-99 mg/dl\nComment: NP\nSedimentation Rate-Westergren 005215\nCOLLECTION DATE n ANore NDA\nOrder Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nSedimentation Rate-Westergren on\n) 0-15 mm/hr\n--- Page 6 ---\nP O/ 10\n*CBC With Differential/Platelet 005009\nCOLLECTION DATE 04/02/2024\nOrder Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nHamoglobin aad\n13.0-17.7 g/d L\nHematocrit a\n37,5-51.0 %\nPlatelets on\n150-450 xf0E3/u L\nWee 6.1\n3.410.868 x19E3/ul\nRBC 5,54\n4.14-5.80 xt OE6/u L\nHematology Comments: NP\nImmature Grans (Abs) 0.0.0 o O ey .\n: Ae, 7 X U\nNRB&C NP\nImmature Granulocytes -\nNot Estab. %\nBaso (Absolute) 93.0.0 baal st.\nUV. %\n13\nMonocytes\noy Nat Estab. %\nView 24.71\n26,6-33.0 pa\nBasos 0\nNet Estab. %\nMCV sa\n78-97 {Ll\nEos (Absolute) 0.0.9 Oe fat\nMCHC 31,5\n31,5-35,7 g/d L\nate: 14.9\n11.6-15.4 %\nMonocytes (Absolute) 0.440 hone ee.\nUL X u\nNeutrophils a\n--- Page 7 ---\nP 7/10\n\u201cCBC With Differential/Platelet 005009\nCOLLECTION DATE 04/02/2024\nLymphs 2\nNot Estab, %\nEos L\nNot Estab. %\nImmatura Calls NP\nNeutrophils (Absolute) <0\nI 4.47.0 x F0ES/u L\nLymphs (Absolute) 0.7\n0.7-3.1 x10E3/u\nC-Reactive Protein, Quant 006627\nCOLLECTION DATE 04/02/2024\nOrder\u2019 Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nC-Reactive Protein, Quant \u00e9or\nI 0-40 mg/L.\n--- Page 8 ---\nPr P O/ IU\n2023-05-30 11:04\n*Comp. Metabolic Panel (14) 322000\nCOLLECTION DATE 04/02/2024\nOrder Date 04/02/2024\nResult Date 04/03/2024\nOrdering Physician Lafsky, Robert\nCaicium, Serum 5 en \u2019\n: 7\u00b010.2 mg/d\nFroteln, Total, Serum ; ae\n0-8,5 gid.\nALT (SGPT) alk\nAST (SGOT) an\nAlkaline Phosphatasa, $ 120\n; 44-424 Ul\nBillrubin, Total *\n0-4.2 mo/ak.\nAIG Ratio ae\nGlobulin, Total ..\n1.544,5 g/d L\nAlbumin, Serum ; on\n4, bat * 7) I\nCarbon Dioxide, Total o ao '\n\u2018 -29 mmol/L\nGlucose, Serum ieee\nChioride, Serum sa'06\nmmal/.\nPotassium, Serum 3.5 ee oli.\n.\u00a7-5,2 mmol\nSodium, Serum saute volt\nm\n19\nBUN/Creatinine Ratio F\n\u201c2\nCreatinine, Sarum _ var eat\nBUN 46\n\u00a7-24 mg/dl.\na GFR. 115\n+59 mb L/min/1.73\nAkshay . Chaudhari 02/17/1987\n--- Page 9 ---\nP 9s\n2038 ok rare pie\nFa eee eee I ae\ni ; aan hp i H \u201cth * A, ; ut eel A\nAS cau AY i i 1) Ri mg ae free 4\nvt \u2018 \u2019 Ni i Nite *. pre rie ae :\nin nah mid ike sion i a ae HE\n05 ah I . ak ee ag\n{ 5 \u2018 \u201cth 4 H \u2018 c $ yy , Pret at i as te ft ti\n95 ee a ee : Me a, - Cs oes\n( \u00a5 Bs . \u2018 foo : wae rm m M i i t 4 \u201c- sry . hm} \u2014 rf nt nh i ! \u201c4 \u2018eh \u00a5 it nf Near ck\nae ia one ce ni KF I tr A sa oe Me \u2018 faite i ae i ite a\nr ue aw + ED te ey Hh { i i} i i on Cah =e ey I if spit os , 4 esi uh -\nae ee o. \u2018, wy.\" \u00bb eed Le v Tite) +6 ry a a i G \"Aaah ve 8y a! wwe eo : ' ' ith \u2018 4 i\u201d LURE fh a ih Ait i eats rie ti\n\u201c! iu hy em PAS sal of\" ee ets pie ley eit i ri th WAS Wal A i Nei ti Bit ata Hi \u2018 Hil i H At ) svi pi,\u201d -\n7 \u2018 ne nom \u201c inte { areca Oy MD jest) > hae res (se Aiiats ve wt ; hei Wish il ye. Bal, \u201c3 rh \\ a me at i I i i thy f NK ont Sa -\nte sn ai ef ae? Sta ei bie ln = ro aha Hit Gy Gist Mad ae ann it ; Ii, es fy But a Mi ate 7\nMy vn yt a; es ly, ers han Ts ow \u2018* phe 4 aie Stary \u201d Wit , Ki pie th Fe ine Hh \\ i \u2019 ih I, A ity Hy wh ee ae , hs\nI ele ah we ee ier ii A ya nit ii retis fers nth Ma Aaah RAB \u201cag wel A si! Ky i Wa ean I\nae NRC i pes on fan os if i net Reo bathe ne wit nile \u00ab{ a sett Hit i ye vans che: ~ Nee ot tee ae HH: ES ; 4 i i bee. ot }\n\u2018tee Zitat ye ei a maa a af AN ine ae i t sa Sag acne \"Spee \u2018aih ay at art ri eh :\nah : \u2018i eo \u2018Mat fe cy BOE ao be HG ae Higa tory al\u201d eee ee 1 i ane i Natt Nh\nSi wie inks say \u2014 ae aa oe cr eo \"\nag oe ee it a cae i366? ea ae \u2018ah i Hye em iy \"i oa\neet ia sols rie \u2014 ie an ae \u2018 es i Hit Be i rin y hi ets pee\nae : mise oo ea ee a a \u2018 es aes a ae \u2014\nmre . Sek eer tt i ING si cy oat sae naa hi a M th Seis ri\n2 gestae a ie ve : \" Hag eon VN > : i oe\na \u201c3 ni) ck : : ' ae al : i\" i. : : I i 4 oe one w -@ Ae Ly * 4 cia , His rn\n- PHT via ti a re pei iar i Hi i nt HN UNS i 1} thd foveen Pa Y bt Hitiat He eh\ney \u201c1 \u201cI at re ae ey \u00bb\\ rz ond pe \u2018s sf ery if \u2019 ib \u2019 ait i I ties AA ~e ) fa Lehr ihe hi t Hey I :\nae at ce viesie Ni sie i Mt at t H i N ae :\n7 ih \u2018 hig aa vi th a4 Pat \\ i a Ki ti I } Wn\n\u2018yes RIA Ay Ht. ; i hit \u2018a Seite * .? ? fol uy) WA Matt r vt\n7 A tea 14 2 ae a N ah) k i i\nS \u201c Me _\u2014 nie oe \u2019 . Ate rye \u201cat i +h ote\n--- Page 10 ---\n2024-05-30 11:07 LGAS Fax 7038583061 >> 16152783355 P 10/10\nPatient Insurance:\nPrimary Insurance: Aetna Better Health of Virginia\nTelephone #: 866-827-2710\nPolicy #: 350410732018\nRelationship: Self - patient is the insured",
+        "extraction_errors": []
+      },
+      "filling_results": {
+        "status": "completed",
+        "form_type": "widget_based",
+        "filled_count": 14,
+        "filled_fields": 14,
+        "total_fields": 14,
+        "fill_rate": 1.0,
+        "fill_percentage": 100.0,
+        "filled_field_details": [
+          {
+            "field_name": "Indicate CB.1",
+            "tooltip": "Start of treatment:",
+            "value": "Yes",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "Phone T",
+            "tooltip": "Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "T20",
+            "tooltip": "Cell Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Insurance Info T.7",
+            "tooltip": "Carrier Name:",
+            "value": "Aetna Better Health Of Virginia",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Insurance Info T.3",
+            "tooltip": "Insured:",
+            "value": "Chauchari, Akshay",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Insurance Info T.8",
+            "tooltip": "Insured:",
+            "value": "Chauchari, Akshay",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Presc Info T.1",
+            "tooltip": "First Name:",
+            "value": "Akshay",
+            "confidence": 0.8,
+            "page": 0
+          },
+          {
+            "field_name": "Presc Info T.11",
+            "tooltip": "Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Presc Info T.2",
+            "tooltip": "Last Name:",
+            "value": "Chauchari",
+            "confidence": 0.8,
+            "page": 0
+          },
+          {
+            "field_name": "Presc Info T.19",
+            "tooltip": "Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Provider Admin T.4",
+            "tooltip": "Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Provider Admin T.7",
+            "tooltip": "Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Provider Admin T.17.0",
+            "tooltip": "Name:",
+            "value": "Chauchari, Akshay",
+            "confidence": 0.9,
+            "page": 0
+          },
+          {
+            "field_name": "Provider Admin T.18",
+            "tooltip": "Phone:",
+            "value": "(570) 599-6973",
+            "confidence": 0.9,
+            "page": 0
+          }
+        ],
+        "missing_fields": [],
+        "processing_errors": [],
+        "data_validation": {
+          "is_valid": true,
+          "errors": [],
+          "warnings": [
+            "Suspicious OCR result in extraction_timestamp: 2026-08-21T00:42:39.779851...",
+            "Suspicious OCR result in phone: (570) 599-6973..."
+          ],
+          "suggestions": []
+        }
+      },
+      "reports_generated": [
+        "processing_report.md",
+        "missing_fields.txt",
+        "extracted_referral_data.json"
+      ],
+      "errors": []
+    },
+    {
+      "patient_id": "Amy",
+      "success": true,
+      "processing_time": 32.01430892944336,
+      "extraction_results": {
+        "metadata": {
+          "extraction_method": "Enhanced OCR",
+          "extraction_timestamp": "2026-08-21T00:43:11.856363",
+          "confidence_scores": {
+            "last_name": 0.85,
+            "first_name": 0.85,
+            "patient_name": 0.95,
+            "dob": 0.95,
+            "mrn": 0.9,
+            "phone": 0.9,
+            "address": 0.75,
+            "city": 0.75,
+            "state": 0.75,
+            "zip": 0.75,
+            "sex": 0.7,
+            "weight_kg": 0.85,
+            "icd_codes": 0.9,
+            "icd_code": 0.9,
+            "diagnosis": 0.9,
+            "primary_diagnosis": 0.9,
+            "medication": 0.9,
+            "medication_key": 0.9,
+            "prescriber_name": 0.85,
+            "credentials": 0.85
+          },
+          "quality_score": 0.853,
+          "source_file": "input_data/Amy/referral_package.pdf"
+        },
+        "patient_info": {
+          "last_name": "Chen",
+          "first_name": "Amy",
+          "patient_name": "Chen, Amy",
+          "dob": "05/23/1983",
+          "mrn": "01051001",
+          "phone": "(615) 593-1048",
+          "address": "1233 Fremont Road",
+          "city": "Chattanooga",
+          "state": "TN",
+          "zip": "37321",
+          "sex": "female",
+          "weight_kg": "50.9"
+        },
+        "clinical_info": {
+          "icd_codes": [
+            "G43.711",
+            "F51.01",
+            "M54.2"
+          ],
+          "icd_code": "G43.711",
+          "diagnosis": "Intractable chronic migraine without aura and with Status migrainosus",
+          "primary_diagnosis": "Intractable chronic migraine without aura and with Status migrainosus",
+          "medication": "Vyepti (eptinezumab)",
+          "medication_key": "vyepti"
+        },
+        "insurance_info": {},
+        "prescriber_info": {
+          "first_name": "Angela",
+          "last_name": "Nicole",
+          "prescriber_name": "Angela Nicole, NP",
+          "credentials": "NP"
+        },
+        "raw_text": "--- Page 1 ---\nFrom-:EverGrande orthopaedics 421 771 9084 iiiatiieiiniiaiaeael aii arian cE laa\nUT Neurology\n1233 Fremont Road Suite 200\nChattanooga, TN 37321\nPhone: 421-771-9001 Fax: 421-771-843\nDate: Attention:\n4-8-23\nTo: . From: UT Neurology Angela\nForesight Health Nicole NPC /Catherine CMA\nPhone: Fax:\n1-244-345-8459\nI\nRe: # of pages(including cover)\nAmy Chen\nUrgent Please Reply Please Review Referral \u2014\u00a7 For Your Records\nConfidentiality Notice\nThis facsimile contains Confidential Protected Health Information that is legally privileged and protected. This information is intended\nonly for the use of the individual or entity named above as the Recipient. If you are not the intended recipient of this information or\nthe employee or agent responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying,\ndistribution, or action taken in reliance on the contents of these documents is strictly prohibited. If you have received this information\nin error, please immediately notify Erlanger Health Systems at ne: 421-771-9084 and arrange for the return or destruction of\nthese documents.\nEverGrande Health System-Confidential Information |\n1233 Fremont Road, Chattanooga, TN 37321 (ATTN: Health Information Management) 3 |\n--- Page 2 ---\nFrom:EverGrande orthopaedics 421 771 939084 04/09/2023 17:38 #O02 P.00S/012\nee in Tet .\nPatient information\nPatient Name Date of Birth Age Social Security\nChen, Amy 05/23/1983 39 y.o. Number\nsi x \u2014 | i ire \u2014 -XXx-xx-8110 ; |\nSex Language\nFemale English | |\nAdmitting Provider Admission Expected Length of Length of Stay\nDate/Time Stay Oh\nNE NST. 2 a a\nDischarge Provider Discharge Date Discharge Discharge\nDisposition Destination\nAttending Provider: isolation: None Ht: -- Admission Cmt: None\n(none) Infection: None Wt: 50.9 kg Principaj Problem: None\nAllergies: No Known Code Status: Not on file\nAllergies\nDemographics\nAddress Phone Numbers Social Security Insurance Religion\n2751 Hm: 615-593-1048 Number information Unknown\nMarket DR Cell: xxx-xx-8 110 ABS OF TN\nHILLDALE TN 615-593-1048\nLES; Tn ee\nDate of Birth\n05/23/1983\nBasic information\nDate Of Gender Identity Race Ethnic Group Preferred Preferred Written\nBirth Female Asian Not Hispanic, Language Language\n5/23/1983 Latino/a, or English, Mandarin English,\nSpanish origin Mandarin\nHospital Account\nNot on file\nMedical Problems\nGee a Noted ee\nMigraines | \u2014 - a 2/15/2016\nDifficulty falling or stayingasleep 2/23/2018\nAltitude sickness preventative measures _ ee a es\nNeck pain 3/1/2023\nEND OF REPORT\n--- Page 3 ---\nFrom:EverGrande orthopaedics 421 771 9084 04/09/2023 17:38 #O02 P.O0OO6/O12\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nMRN: 01051001\nChen, Amy\nProcedure visit Provider: Angela Nicole, NP (Neurology)\n4/1/2023 EMG Neurology Primary diagnosis: Intractable chronic migraine without aura and with\nStatus migrainosus\nReason for Visit: Botulinum Toxin Injection\nProgress Notes 7 ae | Angela Nicole, NP (Nurse Practitioner) + Neurology\nChronic Migraine Botox {Injection Procedure\nName: Amy Chen\nMRN: 01057001\nDOB: 5/23/1983\nPROCEDURE:\nBotox for chronic migraine\nHISTORY:\nThe patient presents with a history of chronic migraines for Botox injections. Prior to the\nprocedure, the consent process was completed, including a discussion of the overall\nbenefits and addressing any questions. The patient confirmed their understanding and\nexpressed readiness to proceed with the injections.\nPROCEDURE:\nEach vial of botulinum toxin type A (BOTOX) was diluted with 1.5 cc of preservative-free\nsaline, and a 32-gauge, 0.5-inch needle was used for the injections. The patient was\npositioned comfortably in an upright seated posture. Each injection site was cleansed\nwith alcohol, and a topical numbing spray was applied to anesthetize the area.\n10 units into the right frontalis (administered as two 5-unit injections)\n10 units into the left frontalis (administered as two 5-unit injections)\n5 units into the right corrugator\n5 units into the left corrugator\n10 units into the right occipitalis (in 3 5 unit injections)\n10 units into the left occipitalis (in 3 5 units injections)\n5 units into the right cervical paraspina! muscles (in 2 5 unit injections)\n5 units into the Jeft cervical paraspinal muscles (in 2 5 unit injections)\nPage | of 7\n--- Page 4 ---\nFrom:EverGrande orthopaedics 421 771 9084 04/09/2023 17:39 #OO0O2 P.007/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\n30 units into the right trapezius (in 3 10 unit injections)\n30 units into the left trapezius (in 3 10 unit injections)\nSAMPLE\nA total of 190 units were drawn up and utilized and there was a total wastage of 10 units.\nLot #:01801AC1\nExpiration Date: 04/2025\nPatient tolerated the procedure well and was discharged from Clinic.\nAngela Nicole, NP\nProgress Notes _ Amy Rains, NP (Nurse Practitioner) \u2018 Neurology\nSubjective:\nPatient ID: Amy Chen is a 39 y.o. female.\nINTERVAL HISTORY\nPatient was last seen 2/24/2023 via telemedicine with Dr. Fazal at which time she was to\ncontinue Zomig PRN and Nurtec every other day. She is here today to restart Botox for\nprevention.\nToday she reports she had been off Aimovig since December. She had some improvement with\nBotox/cosmetic. The last few month have been difficult: back to chronic daily HA.\nNurtec: every other day (preventive)\nZomig: stopped keeping track: increased frequency/severity\nVyepti: she would like to do this vs. Botox\nShe continues klonopin for sleep.\nINITIAL HPI\nThe patient has a longstanding history of migraine headaches. Under my care in the general\nneurology clinic, she has been managing chronic migraines, experiencing more than 15\nheadache days per month prior to initiating Botox therapy. Her headaches are predominantly\nunilateral, typically occurring on the left side, and are sometimes accompanied by a burning\nsensation in the face. She also experiences intermittent nausea, along with sensitivity to light,\nsound, and occasionally certain smells.\nHer medical history includes a brain MRI from 2010, which was reportedly normal. A follow-up\nbrain MRI conducted in early 2017 revealed mild white matter changes consistent with\nmigraine.\nShe is tried multiple medications as outlined below:\nPropranolol\nVerapamil\nTopiramate (Topamax)\nNortriptyline\nVenlafaxine (Effexor)\nGabapentin\nPrinted by Victoria Benn, MAC at 5/9/2023 11:57 AM Page 2 of 7\n--- Page 5 ---\nFrom:EverGrande orthopaedics 421771 9084 04/09/2023 17:39 #002 P.008/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nSkelaxin with indomethacin\nNerve blocks\nOral contraceptives\nMagnesium\nFeverfew\nButterburr\nAbortives:\nZomig\nFrova\nImitrex\nFioricet\nZofran\nThe following portions of the patient's history were reviewed and updated as appropriate:\nallergies, current medications, past family history, past medical history, past social history, past\nsurgical history, and problem list.\nReview of Systems\nMusculoskeletal: Positive for arthralgias.\nNeurological: Positive for headaches.\nPsychiatric/Behavioral: Positive for agitation.\nAll other systems reviewed and are negative.\nROS reviewed. See pertinent positives and negatives above.\nObjective:\nNeurologic Exam\nMental Status\nOriented to person, place, and time.\nOriented to person.\nOriented to place.\nAttention: normal. Concentration: normal.\nSpeech: speech is normal\nLevel of consciousness: alert\nKnowledge: good.\nNormal comprehension.\nCranial Nerves\nCranial nerves || through XII intact.\nCN fil, IV, VI\nPupils are equal, round, and reactive to light.\nMotor Exam\nMuscle bulk: normalMoves alli extremities symmetrically\nGait, Coordination, and Reflexes\nPage 3 of 7\n--- Page 6 ---\nFrom:EverGrande orthopaedics 421 771 9084 04/09/2023 17:39 #OO2 P.OO0O9/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nGait\nGait: normal\nCoordination\nFinger to nose coordination: normal\nPhysical Exam\nVitals reviewed.\nnstitutional:\nAppearance: Normal appearance. She is well-developed.\nHENT:\nHead: Normocephalic and atraumatic.\nEyes:\nPupils: Pupils are equal, round, and reactive to light.\nPulmonary:\nEffort: Pulmonary effort is normal.\nMusculoskeletal:\nGeneral: Normal range of motion.\nSkin:\nGeneral: Skin is warm and dry.\nNeurological:\nGeneral: No focal deficit present.\nMental Status: She is alert and oriented to person, place, and time. Mental status is at\nbaseline.\nCranial Nerves: Cranial nerves 2-12 are intact.\nCoordination: Finger-Nose-Finger Test normal.\nGait: Gait is intact.\nPsychiatric:\nMood and Affect: Mood normal.\nSpeech: Speech normal.\nBehavior: Behavior normal.\nThought Content: Thought content normal.\nAssessment/Plan:\nAssessment\nDiagnoses and all orders for this visit:\nIntractable chronic migraine without aura and with status migrainosus\n- ketorolac (TORADOL) injection 30 mg\nPrimary insomnia\nCervicalgia\nShe has been using Nutrec more for prevention with some improvement along with cosmetic\nbotox. She has had more migraines the last few weeks. She is taking Zomig PRN.\nShe would like to consider adding Vyepti (over Botox) if the insurance will approve.\nPage 4 of 7\n--- Page 7 ---\nFrom-:-EverGrande orthopaedics 421 771 9084 04/09/2023 17:40 #OO2] P.010/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nBotox today: SAMPLE Used\nFor prevention:\n--nutrec 75 mg every other day\nFuture: consider restart of Aimovig\nWork on Vyepti infusion approval: prefers close to home\nFor acute headaches:\nHeadache stoplight:\n--Green light (can go with headache): alleve, caffeine, sugar\n--Yeliow light (Slowing down with headache): Nutrec 75 mg at onset. Can repeat in 24\nhours. if she has already taken Nutrec, she could use Naproxen at this phase.\n--Red light (stopped): zomig 2.5-5 mg at onset. Can repeat in 4 hours if needed.\nShe can continue medrol dosepack if in status migrainosus; can consider depakote bridge\nContinue Naproxen 550 mg prn for neck pain.\nFor insomnia, continue kionopin 0.25 mg at bedtime.\nRTC in August\nTotal time: 35 minutes\nInstructions\n(el Return in about 5 months (around 9/1/2023).\nWe will call you regarding the Vyepti infusion\nBotox: will peak in 2 weeks\nReturn in S months\nAfter Visit Summary\nAdditional Documentation |\nVitals: BP 107/50 $ (Abnormal) (BP Location: Right arm, Patient Position: Sitting, BP Cuff Size: Adult) |\nPulse 73 Temp 37.4\u00b0C (Forehead) Wt 50.9 kg BMI 21.85 kg/m* BSA 1.63 m*Pain Sc O-No pain\nCommunications \u2014 |\n[2% Chart Routed to Ellen Valadez, MD\nAdministrations This Visit |\nPace S af 7\n--- Page 8 ---\nFrom:EverGrande orthopaedics 421 774 9084 04/09/2023 17:40 #OO2 P.O11/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nketorolac (TORADOL) injection 30 mg . \u2014 |\nAdmin Date Action Dose Route Administered By\n04/01/2023 Given 30 mg intramuscular Cynthia Cagle, LPN\nBilling Information\nExpiration Admin Waste Pack a\nMedication = NDC Lot# Date Manufacturer Qty Qty Size Billing Code\nketorolac 30 0358- 10000181 10/30/2024 BAXTER 1\nmg/mL (1 mL) 23072-65 HEALTHCA mL\nsolution\nOrders Placed\nNone\nMedication Changes\nAs of 4/1/2023 9:22 AM\nRefills Start Date End Date\nAdded: eptinezumab-jjmr (VYEPTI) 100 mg/mL =O 4/1/2023 4/1/2023\nsolution\nInfuse 1 mL (100 mg total) into a venous catheter once for 1 dose. - intravenous\nPrior authorization: Approved\nMedication List at End of Visit\nAs of 4/1/2023 9:22 AM\nRefills Start Date End Date\nclonazePAM (KlonoPIiN) 0.5 mg tablet 5 09/23/2022\nTAKE 1 TABLET(0.5 MG) BY MOUTH EVERY NIGHT |\neptinezumab-jjmr (VYEPT!) 100 mg/mL solution 0 5/1/2023 ~\u2014S\u2014 5/1/2023\nInfuse 71 mL (100 mg tota!) into a venous catheter once for 1 dose. - intravenous\nPrior authorization: Approved | |\nmethylPRED N!Solone (MEDROL DOSEPACK) 4 0 6/15/2022\nmg tablet\nFOLLOW PACKAGE DIRECTIONS |\nnaproxen sodium\nnaproxen sodium (ANAPROX) 550 mg tablet 11 12/9/2021\nTAKE 1 TABLET BY MOUTH TWICE DAILY AS NEEDED a | | \u2014\nnaproxen sodium (ANAPROX) 550 mg tablet 11 12/9/2021\nTAKE 1 TABLET BY MOUTH TWICE DAILY AS NEEDED\nrimegepant (Nurtec ODT) 75 mg 11 10/20/2022\ntablet,disintegrating\nTake 75 mg by mouth as needed (migraine. Max 1 in 24 hours). - oral\nNo prior authorization was found for this prescription.\n) Found prior authorization for another prescription for the same medication: Closed - Prior\nAuthorization not required for patient/medication\nPage 6 of 7\n--- Page 9 ---\nFrom:EverGrande orthopaedics 421 771 9084 o0/09/2023 17:40 #502 P.012/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nRefills Start Date End Date\nZOLMitriptan (ZOMIG) 5 mg tablet 11 3/18/2023\nTAKE 1 TABLET BY MOUTH AT ONSET OF MIGRAINE. MAY REPEAT 1 TIME IN 4 HOURS IF NO RELIEF\nMedications Administered\nketorolac tromethamine 30 mg\nVisit Diagnoses ; ; |\nPrimary: intractable chronic migraine without aura and with status migrainosus G43.711\nPrimary insomnia F51.01\nCervicalgia M54.2\nPage 7 of 7",
+        "processed_text": "--- Page 1 ---\nFrom-:Ever Grande orthopaedics 421 771 9084 iiiatiieiiniiaiaeael aii arian c E laa\nUT Neurology\n1233 Fremont Road Suite 200\nChattanooga, TN 37321\nPhone: 421-771-9001 Fax: 421-771-843\nDate: Attention:\n4-8-23\nTo: . From: UT Neurology Angela\nForesight Health Nicole NPC /Catherine CMA\nPhone: Fax:\n1-244-345-8459\nI\nRe: # of pages (including cover)\nAmy Chen\nUrgent Please Reply Please Review Referral \u2014\u00a7 For Your Records\nConfidentiality Notice\nThis facsimile contains Confidential Protected Health Information that is legally privileged and protected. This information is intended\nonly for the use of the individual or entity named above as the Recipient. If you are not the intended recipient of this information or\nthe employee or agent responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying,\ndistribution, or action taken in reliance on the contents of these documents is strictly prohibited. If you have received this information\nin error, please immediately notify Erlanger Health Systems at ne: 421-771-9084 and arrange for the return or destruction of\nthese documents.\nEver Grande Health System-Confidential Information I\n1233 Fremont Road, Chattanooga, TN 37321 (ATTN: Health Information Management) 3 I\n--- Page 2 ---\nFrom:Ever Grande orthopaedics 421 771 939084 04/09/2023 17:38 #O02 P.00S/012\nee in Tet .\nPatient information\nPatient Name Date of Birth Age Social Security\nChen, Amy 05/23/1983 39 y.o. Number\nsi x \u2014 I i ire \u2014 -XXx-xx-8110 ; I\nSex Language\nFemale English I I\nAdmitting Provider Admission Expected Length of Length of Stay\nDate/Time Stay Oh\nNE NST. 2 a a\nDischarge Provider Discharge Date Discharge Discharge\nDisposition Destination\nAttending Provider: isolation: None Ht: -- Admission Cmt: None\n(none) Infection: None Wt: 50.9 kg Principaj Problem: None\nAllergies: No Known Code Status: Not on file\nAllergies\nDemographics\nAddress Phone Numbers Social Security Insurance Religion\n2751 Hm: 615-593-1048 Number information Unknown\nMarket DR Cell: xxx-xx-8 110 ABS OF TN\nHILLDALE TN 615-593-1048\nLES; Tn ee\nDate of Birth\n05/23/1983\nBasic information\nDate Of Gender Identity Race Ethnic Group Preferred Preferred Written\nBirth Female Asian Not Hispanic, Language Language\n5/23/1983 Latino/a, or English, Mandarin English,\nSpanish origin Mandarin\nHospital Account\nNot on file\nMedical Problems\nGee a Noted ee\nMigraines I \u2014 - a 2/15/2016\nDifficulty falling or stayingasleep 2/23/2018\nAltitude sickness preventative measures _ ee a es\nNeck pain 3/1/2023\nEND OF REPORT\n--- Page 3 ---\nFrom:Ever Grande orthopaedics 421 771 9084 04/09/2023 17:38 #O02 P.O0OO6/O12\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nMRN: 01051001\nChen, Amy\nProcedure visit Provider: Angela Nicole, NP (Neurology)\n4/1/2023 EMG Neurology Primary diagnosis: Intractable chronic migraine without aura and with\nStatus migrainosus\nReason for Visit: Botulinum Toxin Injection\nProgress Notes 7 ae I Angela Nicole, NP (Nurse Practitioner) + Neurology\nChronic Migraine Botox {Injection Procedure\nName: Amy Chen\nMRN: 01057001\nDOB: 5/23/1983\nPROCEDURE:\nBotox for chronic migraine\nHISTORY:\nThe patient presents with a history of chronic migraines for Botox injections. Prior to the\nprocedure, the consent process was completed, including a discussion of the overall\nbenefits and addressing any questions. The patient confirmed their understanding and\nexpressed readiness to proceed with the injections.\nPROCEDURE:\nEach vial of botulinum toxin type A (BOTOX) was diluted with 1.5 cc of preservative-free\nsaline, and a 32-gauge, 0.5-inch needle was used for the injections. The patient was\npositioned comfortably in an upright seated posture. Each injection site was cleansed\nwith alcohol, and a topical numbing spray was applied to anesthetize the area.\n10 units into the right frontalis (administered as two 5-unit injections)\n10 units into the left frontalis (administered as two 5-unit injections)\n5 units into the right corrugator\n5 units into the left corrugator\n10 units into the right occipitalis (in 3 5 unit injections)\n10 units into the left occipitalis (in 3 5 units injections)\n5 units into the right cervical paraspina! muscles (in 2 5 unit injections)\n5 units into the Jeft cervical paraspinal muscles (in 2 5 unit injections)\nPage I of 7\n--- Page 4 ---\nFrom:Ever Grande orthopaedics 421 771 9084 04/09/2023 17:39 #OO0O2 P.007/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\n30 units into the right trapezius (in 3 10 unit injections)\n30 units into the left trapezius (in 3 10 unit injections)\nSAMPLE\nA total of 190 units were drawn up and utilized and there was a total wastage of 10 units.\nLot #:01801AC1\nExpiration Date: 04/2025\nPatient tolerated the procedure well and was discharged from Clinic.\nAngela Nicole, NP\nProgress Notes _ Amy Rains, NP (Nurse Practitioner) \u2018 Neurology\nSubjective:\nPatient ID: Amy Chen is a 39 y.o. female.\nINTERVAL HISTORY\nPatient was last seen 2/24/2023 via telemedicine with Dr. Fazal at which time she was to\ncontinue Zomig PRN and Nurtec every other day. She is here today to restart Botox for\nprevention.\nToday she reports she had been off Aimovig since December. She had some improvement with\nBotox/cosmetic. The last few month have been difficult: back to chronic daily HA.\nNurtec: every other day (preventive)\nZomig: stopped keeping track: increased frequency/severity\nVyepti: she would like to do this vs. Botox\nShe continues klonopin for sleep.\nINITIAL HPI\nThe patient has a longstanding history of migraine headaches. Under my care in the general\nneurology clinic, she has been managing chronic migraines, experiencing more than 15\nheadache days per month prior to initiating Botox therapy. Her headaches are predominantly\nunilateral, typically occurring on the left side, and are sometimes accompanied by a burning\nsensation in the face. She also experiences intermittent nausea, along with sensitivity to light,\nsound, and occasionally certain smells.\nHer medical history includes a brain MRI from 2010, which was reportedly normal. A follow-up\nbrain MRI conducted in early 2017 revealed mild white matter changes consistent with\nmigraine.\nShe is tried multiple medications as outlined below:\nPropranolol\nVerapamil\nTopiramate (Topamax)\nNortriptyline\nVenlafaxine (Effexor)\nGabapentin\nPrinted by Victoria Benn, MAC at 5/9/2023 11:57 AM Page 2 of 7\n--- Page 5 ---\nFrom:Ever Grande orthopaedics 421771 9084 04/09/2023 17:39 # 002 P.008/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nSkelaxin with indomethacin\nNerve blocks\nOral contraceptives\nMagnesium\nFeverfew\nButterburr\nAbortives:\nZomig\nFrova\nImitrex\nFioricet\nZofran\nThe following portions of the patient's history were reviewed and updated as appropriate:\nallergies, current medications, past family history, past medical history, past social history, past\nsurgical history, and problem list.\nReview of Systems\nMusculoskeletal: Positive for arthralgias.\nNeurological: Positive for headaches.\nPsychiatric/Behavioral: Positive for agitation.\nAll other systems reviewed and are negative.\nROS reviewed. See pertinent positives and negatives above.\nObjective:\nNeurologic Exam\nMental Status\nOriented to person, place, and time.\nOriented to person.\nOriented to place.\nAttention: normal. Concentration: normal.\nSpeech: speech is normal\nLevel of consciousness: alert\nKnowledge: good.\nNormal comprehension.\nCranial Nerves\nCranial nerves II through XII intact.\nCN fil, IV, VI\nPupils are equal, round, and reactive to light.\nMotor Exam\nMuscle bulk: normal Moves alli extremities symmetrically\nGait, Coordination, and Reflexes\nPage 3 of 7\n--- Page 6 ---\nFrom:Ever Grande orthopaedics 421 771 9084 04/09/2023 17:39 #OO2 P.OO0O9/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nGait\nGait: normal\nCoordination\nFinger to nose coordination: normal\nPhysical Exam\nVitals reviewed.\nnstitutional:\nAppearance: Normal appearance. She is well-developed.\nHENT:\nHead: Normocephalic and atraumatic.\nEyes:\nPupils: Pupils are equal, round, and reactive to light.\nPulmonary:\nEffort: Pulmonary effort is normal.\nMusculoskeletal:\nGeneral: Normal range of motion.\nSkin:\nGeneral: Skin is warm and dry.\nNeurological:\nGeneral: No focal deficit present.\nMental Status: She is alert and oriented to person, place, and time. Mental status is at\nbaseline.\nCranial Nerves: Cranial nerves 2-12 are intact.\nCoordination: Finger-Nose-Finger Test normal.\nGait: Gait is intact.\nPsychiatric:\nMood and Affect: Mood normal.\nSpeech: Speech normal.\nBehavior: Behavior normal.\nThought Content: Thought content normal.\nAssessment/Plan:\nAssessment\nDiagnoses and all orders for this visit:\nIntractable chronic migraine without aura and with status migrainosus\n- ketorolac (TORADOL) injection 30 mg\nPrimary insomnia\nCervicalgia\nShe has been using Nutrec more for prevention with some improvement along with cosmetic\nbotox. She has had more migraines the last few weeks. She is taking Zomig PRN.\nShe would like to consider adding Vyepti (over Botox) if the insurance will approve.\nPage 4 of 7\n--- Page 7 ---\nFrom-:-Ever Grande orthopaedics 421 771 9084 04/09/2023 17:40 #OO2] P.010/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nBotox today: SAMPLE Used\nFor prevention:\n--nutrec 75 mg every other day\nFuture: consider restart of Aimovig\nWork on Vyepti infusion approval: prefers close to home\nFor acute headaches:\nHeadache stoplight:\n--Green light (can go with headache): alleve, caffeine, sugar\n--Yeliow light (Slowing down with headache): Nutrec 75 mg at onset. Can repeat in 24\nhours. if she has already taken Nutrec, she could use Naproxen at this phase.\n--Red light (stopped): zomig 2.5-5 mg at onset. Can repeat in 4 hours if needed.\nShe can continue medrol dosepack if in status migrainosus; can consider depakote bridge\nContinue Naproxen 550 mg prn for neck pain.\nFor insomnia, continue kionopin 0.25 mg at bedtime.\nRTC in August\nTotal time: 35 minutes\nInstructions\n(el Return in about 5 months (around 9/1/2023).\nWe will call you regarding the Vyepti infusion\nBotox: will peak in 2 weeks\nReturn in S months\nAfter Visit Summary\nAdditional Documentation I\nVitals: BP 107/50 $ (Abnormal) (BP Location: Right arm, Patient Position: Sitting, BP Cuff Size: Adult) I\nPulse 73 Temp 37.4\u00b0C (Forehead) Wt 50.9 kg BMI 21.85 kg/m* BSA 1.63 m*Pain Sc O-No pain\nCommunications \u2014 I\n[2% Chart Routed to Ellen Valadez, MD\nAdministrations This Visit I\nPace S af 7\n--- Page 8 ---\nFrom:Ever Grande orthopaedics 421 774 9084 04/09/2023 17:40 #OO2 P.O11/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nketorolac (TORADOL) injection 30 mg . \u2014 I\nAdmin Date Action Dose Route Administered By\n04/01/2023 Given 30 mg intramuscular Cynthia Cagle, LPN\nBilling Information\nExpiration Admin Waste Pack a\nMedication = NDC Lot# Date Manufacturer Qty Qty Size Billing Code\nketorolac 30 0358- 10000181 10/30/2024 BAXTER 1\nmg/m L (1 m L) 23072-65 HEALTHCA m L\nsolution\nOrders Placed\nNone\nMedication Changes\nAs of 4/1/2023 9:22 AM\nRefills Start Date End Date\nAdded: eptinezumab-jjmr (VYEPTI) 100 mg/m L =O 4/1/2023 4/1/2023\nsolution\nInfuse 1 m L (100 mg total) into a venous catheter once for 1 dose. - intravenous\nPrior authorization: Approved\nMedication List at End of Visit\nAs of 4/1/2023 9:22 AM\nRefills Start Date End Date\nclonaze PAM (Klono PIi N) 0.5 mg tablet 5 09/23/2022\nTAKE 1 TABLET (0.5 MG) BY MOUTH EVERY NIGHT I\neptinezumab-jjmr (VYEPT!) 100 mg/m L solution 0 5/1/2023 ~\u2014S\u2014 5/1/2023\nInfuse 71 m L (100 mg tota!) into a venous catheter once for 1 dose. - intravenous\nPrior authorization: Approved I I\nmethyl PRED N!Solone (MEDROL DOSEPACK) 4 0 6/15/2022\nmg tablet\nFOLLOW PACKAGE DIRECTIONS I\nnaproxen sodium\nnaproxen sodium (ANAPROX) 550 mg tablet 11 12/9/2021\nTAKE 1 TABLET BY MOUTH TWICE DAILY AS NEEDED a I I \u2014\nnaproxen sodium (ANAPROX) 550 mg tablet 11 12/9/2021\nTAKE 1 TABLET BY MOUTH TWICE DAILY AS NEEDED\nrimegepant (Nurtec ODT) 75 mg 11 10/20/2022\ntablet,disintegrating\nTake 75 mg by mouth as needed (migraine. Max 1 in 24 hours). - oral\nNo prior authorization was found for this prescription.\n) Found prior authorization for another prescription for the same medication: Closed - Prior\nAuthorization not required for patient/medication\nPage 6 of 7\n--- Page 9 ---\nFrom:Ever Grande orthopaedics 421 771 9084 o0/09/2023 17:40 # 502 P.012/012\nChen, Amy (MRN 01051001) DOB: 05/23/1983 Encounter Date: 04/01/2023\nRefills Start Date End Date\nZOLMitriptan (ZOMIG) 5 mg tablet 11 3/18/2023\nTAKE 1 TABLET BY MOUTH AT ONSET OF MIGRAINE. MAY REPEAT 1 TIME IN 4 HOURS IF NO RELIEF\nMedications Administered\nketorolac tromethamine 30 mg\nVisit Diagnoses ; ; I\nPrimary: intractable chronic migraine without aura and with status migrainosus G43.711\nPrimary insomnia F51.01\nCervicalgia M54.2\nPage 7 of 7",
+        "extraction_errors": []
+      },
+      "filling_results": {
+        "status": "completed",
+        "form_type": "static_overlay",
+        "filled_count": 13,
+        "filled_fields": 13,
+        "total_fields": 13,
+        "fill_rate": 1.0,
+        "fill_percentage": 100.0,
+        "filled_field_details": [
+          {
+            "field_name": "patient_last_name",
+            "tooltip": "last_name",
+            "value": "Chen",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "patient_first_name",
+            "tooltip": "first_name",
+            "value": "Amy",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "patient_mrn",
+            "tooltip": "mrn",
+            "value": "01051001",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "patient_dob",
+            "tooltip": "dob",
+            "value": "05/23/1983",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "patient_weight_kg",
+            "tooltip": "weight_kg",
+            "value": "50.9",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "prescriber_last_name",
+            "tooltip": "last_name",
+            "value": "Nicole",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "prescriber_first_name",
+            "tooltip": "first_name",
+            "value": "Angela",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "patient_phone",
+            "tooltip": "phone",
+            "value": "(615) 593-1048",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "clinical_medication",
+            "tooltip": "medication",
+            "value": "Vyepti (eptinezumab)",
+            "confidence": 0.85,
+            "page": 0
+          },
+          {
+            "field_name": "patient_last_name",
+            "tooltip": "last_name",
+            "value": "Chen",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "patient_first_name",
+            "tooltip": "first_name",
+            "value": "Amy",
+            "confidence": 0.85,
+            "page": 1
+          },
+          {
+            "field_name": "patient_last_name",
+            "tooltip": "last_name",
+            "value": "Chen",
+            "confidence": 0.85,
+            "page": 2
+          },
+          {
+            "field_name": "patient_first_name",
+            "tooltip": "first_name",
+            "value": "Amy",
+            "confidence": 0.85,
+            "page": 2
+          }
+        ],
+        "missing_fields": [],
+        "processing_errors": [],
+        "data_validation": {
+          "is_valid": true,
+          "errors": [],
+          "warnings": [
+            "Suspicious OCR result in extraction_timestamp: 2026-08-21T00:43:11.856363...",
+            "Suspicious OCR result in phone: (615) 593-1048..."
+          ],
+          "suggestions": []
+        }
+      },
+      "reports_generated": [
+        "processing_report.md",
+        "missing_fields.txt",
+        "extracted_referral_data.json"
+      ],
+      "errors": []
+    }
+  ],
+  "configuration": {
+    "confidence_threshold": 0.6,
+    "use_advanced_ocr": true,
+    "generate_comprehensive_reports": true,
+    "generate_missing_fields_reports": true,
+    "save_intermediate_files": true,
+    "log_file": null
+  }
+}

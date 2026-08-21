@@ -224,11 +224,14 @@ class ReportGenerator:
         extraction_errors = extraction_results.get('extraction_errors', [])
         processing_errors = filling_results.get('processing_errors', [])
         
+        fill_percentage = filling_results.get('fill_percentage', 0.0)
         status = "SUCCESS"
-        if extraction_errors or processing_errors:
-            status = "COMPLETED_WITH_ERRORS"
-        if filling_results.get('filled_count', 0) == 0:
+        if fill_percentage >= 90 and not extraction_errors:
+            status = "SUCCESS"
+        elif filling_results.get('filled_count', 0) == 0:
             status = "FAILED"
+        elif extraction_errors or processing_errors or fill_percentage < 90:
+            status = "COMPLETED_WITH_ERRORS"
         
         return {
             'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -336,14 +339,23 @@ class ReportGenerator:
     
     def _format_filled_fields_summary(self, filling_results: Dict[str, Any]) -> str:
         """Format filled fields summary."""
-        filled_fields = filling_results.get('filled_fields', {})
+        filled_fields = filling_results.get('filled_field_details') or filling_results.get('filled_fields', [])
         
         if not filled_fields:
             return "_No fields were successfully filled._"
         
         content = "\n"
-        for field, value in filled_fields.items():
-            content += f"- **{field}:** {value}\n"
+        if isinstance(filled_fields, dict):
+            for field, value in filled_fields.items():
+                content += f"- **{field}:** {value}\n"
+            return content
+
+        for item in filled_fields:
+            if isinstance(item, dict):
+                label = item.get("tooltip") or item.get("field_name")
+                content += f"- **{label}:** {item.get('value', '')}\n"
+            else:
+                content += f"- {item}\n"
         
         return content
     

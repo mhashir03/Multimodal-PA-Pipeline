@@ -58,6 +58,25 @@ def ensure_directory_exists(directory_path: str) -> None:
     Path(directory_path).mkdir(parents=True, exist_ok=True)
 
 
+def find_patient_files(patient_dir: str) -> Tuple[str, str]:
+    """Locate PA form and referral package paths, ignoring filename case."""
+    pa_path = ""
+    referral_path = ""
+    if not os.path.isdir(patient_dir):
+        return pa_path, referral_path
+
+    for name in os.listdir(patient_dir):
+        lower = name.lower()
+        full = os.path.join(patient_dir, name)
+        if not os.path.isfile(full):
+            continue
+        if lower in {"pa.pdf", "pa_form.pdf"}:
+            pa_path = full
+        elif lower == "referral_package.pdf":
+            referral_path = full
+    return pa_path, referral_path
+
+
 def validate_input_files(patient_dir: str) -> Tuple[bool, List[str]]:
     """
     Validate that required input files exist for a patient.
@@ -68,14 +87,12 @@ def validate_input_files(patient_dir: str) -> Tuple[bool, List[str]]:
     Returns:
         Tuple of (is_valid, list_of_missing_files)
     """
-    required_files = ["PA.pdf", "referral_package.pdf"]
+    pa_path, referral_path = find_patient_files(patient_dir)
     missing_files = []
-    
-    for file in required_files:
-        file_path = os.path.join(patient_dir, file)
-        if not os.path.exists(file_path):
-            missing_files.append(file)
-    
+    if not pa_path:
+        missing_files.append("PA.pdf")
+    if not referral_path:
+        missing_files.append("referral_package.pdf")
     return len(missing_files) == 0, missing_files
 
 
@@ -289,7 +306,9 @@ def normalize_field_value(field_name: str, value: Any) -> str:
     Returns:
         Normalized value as string
     """
-    if not value:
+    if value is None:
+        return ""
+    if isinstance(value, str) and not value.strip():
         return ""
     
     # Handle list values (like icd_codes)
